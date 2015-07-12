@@ -1,0 +1,22 @@
+[Execution1]
+crbs=10.224.14.113,10.224.14.114
+drivername=igb_uio
+test_suites=
+    cmdline,
+    hello_world,
+    multiprocess,
+    timer,
+    blacklist,
+    whitelist,
+    ieee1588,
+    checksum_offload,
+    jumboframes,
+    ipfrag,
+    link_flowctrl,
+    fdir,
+    vlan,
+    ip_pipeline,
+    pmd_bonded
+targets=
+    x86_64-native-linuxapp-gcc
+parameters=nic_type=cfg:func=true

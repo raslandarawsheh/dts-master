@@ -1,0 +1,16 @@
+# DUT Port Configuration
+# [DUT IP]
+# ports=
+#     pci=Pci BDF,intf=Kernel interface;
+#     pci=Pci BDF,mac=Mac address,peer=Tester Pci BDF,numa=Port Numa 
+#     pci=Pci BDF,peer=IXIA:card.port
+#[10.224.14.113]
+#ports =
+#    pci=XX:XX.X,intf=eno1;#eth0
+#    pci=YY:YY.Y,mac=XX:XX:XX:XX:XX:XX,peer=ZZ:ZZ.Z,numa=0;
+#    pci=ZZ:ZZ.Y,peer=IXIA:X.Y
+[10.224.14.113]
+ports =
+    pci=21:00.0,intf=eno1;#eth0
+    pci=21:00.0,mac=f4:52:14:2c:5d:21,peer=04:00.0,numa=0;
+    pci=21:00.0,peer=04:00.0
