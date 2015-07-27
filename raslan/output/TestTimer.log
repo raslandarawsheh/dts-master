@@ -1,0 +1,878 @@
+22/07/2015 11:00:04                 INFO: 
+TEST SUITE : TestTimer
+22/07/2015 11:00:04                 INFO: NIC :        cfg
+22/07/2015 11:00:04        SUITE_DUT_CMD: make -j -C examples/timer 
+22/07/2015 11:00:05     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/timer'
+  CC main.o
+  LD timer
+  INSTALL-APP timer
+  INSTALL-MAP timer.map
+make: Leaving directory `/root/dpdk/examples/timer'
+22/07/2015 11:00:05                 INFO: Test Case test_timer_callbacks_verify Begin
+22/07/2015 11:00:05        SUITE_DUT_CMD: ./examples/timer/build/app/timer -n 1 -c 0x2 &
+22/07/2015 11:00:05     SUITE_DUT_OUTPUT: [1] 40469
+22/07/2015 11:00:20        SUITE_DUT_CMD: killall timer
+22/07/2015 11:00:20     SUITE_DUT_OUTPUT: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7fdc6e600000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdc6e200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7fdc2e800000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fdc2e200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdc2de00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7fdb7f800000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7fdb70a00000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fdb70400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fdb6fe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6fa00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6f600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6f200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6ee00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6ea00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6e600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6e200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6de00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6da00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb6d600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7fdb2d800000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2d400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2d000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2cc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2c800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2c400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2c000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2bc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2b800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2b400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2b000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2ac00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdb2a800000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 1 is ready (tid=2f85e880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fdd2e600000
+EAL:   PCI memory mapped at 0x7fdd2e680000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fdd2e684000
+EAL:   PCI memory mapped at 0x7fdd2e704000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Starting mainloop on core 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+22/07/2015 11:00:20                 INFO: Test Case test_timer_callbacks_verify Result PASSED:
+22/07/2015 11:00:21     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:00:21  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:00:21                 INFO: 
+TEST SUITE ENDED: TestTimer
+22/07/2015 14:43:32                 INFO: 
+TEST SUITE : TestTimer
+22/07/2015 14:43:32                 INFO: NIC :        cfg
+22/07/2015 14:43:32        SUITE_DUT_CMD: make -j -C examples/timer 
+22/07/2015 14:43:32     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/timer'
+  CC main.o
+  LD timer
+  INSTALL-APP timer
+  INSTALL-MAP timer.map
+make: Leaving directory `/root/dpdk/examples/timer'
+22/07/2015 14:43:32                 INFO: Test Case test_timer_callbacks_verify Begin
+22/07/2015 14:43:32        SUITE_DUT_CMD: ./examples/timer/build/app/timer -n 1 -c 0x2 &
+22/07/2015 14:43:32     SUITE_DUT_OUTPUT: [1] 37126
+22/07/2015 14:43:47        SUITE_DUT_CMD: killall timer
+22/07/2015 14:43:48     SUITE_DUT_OUTPUT: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f1a65800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f1967200000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1966c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1966600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1966000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1965600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1965000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f1964c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f1964800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f1880600000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f1871c00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1871600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f186a200000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1869c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1869600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1868c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1868600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1868000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1867600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1867000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1866600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1866000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1865a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1865400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1864e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1864400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1863e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1863800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1863200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1862c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1862600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1862000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1861a00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=66c38880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f1a65a00000
+EAL:   PCI memory mapped at 0x7f1a65a80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f1a65a84000
+EAL:   PCI memory mapped at 0x7f1a65b04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Starting mainloop on core 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+22/07/2015 14:43:48                 INFO: Test Case test_timer_callbacks_verify Result PASSED:
+22/07/2015 14:43:49     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:43:49  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:43:49                 INFO: 
+TEST SUITE ENDED: TestTimer
+22/07/2015 16:20:10                 INFO: 
+TEST SUITE : TestTimer
+22/07/2015 16:20:10                 INFO: NIC :        cfg
+22/07/2015 16:20:10        SUITE_DUT_CMD: make -j -C examples/timer 
+22/07/2015 16:20:10     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/timer'
+  CC main.o
+  LD timer
+  INSTALL-APP timer
+  INSTALL-MAP timer.map
+make: Leaving directory `/root/dpdk/examples/timer'
+22/07/2015 16:20:10                 INFO: Test Case test_timer_callbacks_verify Begin
+22/07/2015 16:20:10        SUITE_DUT_CMD: ./examples/timer/build/app/timer -n 1 -c 0x2 &
+22/07/2015 16:20:10     SUITE_DUT_OUTPUT: [1] 53655
+22/07/2015 16:20:25        SUITE_DUT_CMD: killall timer
+22/07/2015 16:20:25     SUITE_DUT_OUTPUT: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb8c6000000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7fb7c7a00000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb7c7400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb7c6e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb7c6800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb7c5e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb7c5800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb7c5400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb7c5000000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7fb6e0e00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7fb6d2400000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6d1e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7fb6caa00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6ca400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c9e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb6c9400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c8e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb6c7e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c7800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb6c6e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c6800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c6200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c5c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c5600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb6c4c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c4600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c4000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c3a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c3400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c2e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c2800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb6c2200000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=c7375880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+Starting mainloop on core 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+22/07/2015 16:20:25                 INFO: Test Case test_timer_callbacks_verify Result PASSED:
+22/07/2015 16:20:26     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 16:20:27  SUITE_TESTER_OUTPUT: tester
+22/07/2015 16:20:27                 INFO: 
+TEST SUITE ENDED: TestTimer
+23/07/2015 15:31:28                 INFO: 
+TEST SUITE : TestTimer
+23/07/2015 15:31:28                 INFO: NIC :        cfg
+23/07/2015 15:31:28        SUITE_DUT_CMD: make -j -C examples/timer 
+23/07/2015 15:31:29     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/timer'
+  CC main.o
+  LD timer
+  INSTALL-APP timer
+  INSTALL-MAP timer.map
+make: Leaving directory `/root/dpdk/examples/timer'
+23/07/2015 15:31:29                 INFO: Test Case test_timer_callbacks_verify Begin
+23/07/2015 15:31:29        SUITE_DUT_CMD: ./examples/timer/build/app/timer -n 1 -c 0x2 &
+23/07/2015 15:31:29     SUITE_DUT_OUTPUT: [1] 65171
+23/07/2015 15:31:44        SUITE_DUT_CMD: killall timer
+23/07/2015 15:31:44     SUITE_DUT_OUTPUT: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7ff039800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7ff035800000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0xbf400000 bytes
+EAL: Virtual area found at 0x7fef76200000 (size = 0xbf400000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7fef3ba00000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fef3b400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fef3ae00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fef3a800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fef39e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fef39800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fef39400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fef38e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fef38400000 (size = 0x800000)
+EAL: Ask a virtual area of 0xbf000000 bytes
+EAL: Virtual area found at 0x7fee79200000 (size = 0xbf000000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7fee54e00000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7fee46400000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee45e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7fee3ea00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3de00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fee3d400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3ce00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3c800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fee3be00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3b800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fee3ae00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3a800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee3a200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee39c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee39600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fee38c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee38600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee38000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee37a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee37400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee36e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee36800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fee36200000 (size = 0x400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7fee35400000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fee35000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fee34c00000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=3ab65880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+Starting mainloop on core 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+23/07/2015 15:31:44                 INFO: Test Case test_timer_callbacks_verify Result PASSED:
+23/07/2015 15:31:45     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 15:31:45  SUITE_TESTER_OUTPUT: tester
+23/07/2015 15:31:45                 INFO: 
+TEST SUITE ENDED: TestTimer
+26/07/2015 16:20:25                 INFO: 
+TEST SUITE : TestTimer
+26/07/2015 16:20:25                 INFO: NIC :        cfg
+26/07/2015 16:20:25        SUITE_DUT_CMD: make -j -C examples/timer 
+26/07/2015 16:20:25     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/timer'
+  CC main.o
+  LD timer
+  INSTALL-APP timer
+  INSTALL-MAP timer.map
+make: Leaving directory `/root/dpdk/examples/timer'
+26/07/2015 16:20:25                 INFO: Test Case test_timer_callbacks_verify Begin
+26/07/2015 16:20:25        SUITE_DUT_CMD: ./examples/timer/build/app/timer -n 1 -c 0x2 &
+26/07/2015 16:20:25     SUITE_DUT_OUTPUT: [1] 5159
+26/07/2015 16:20:40        SUITE_DUT_CMD: killall timer
+26/07/2015 16:20:40     SUITE_DUT_OUTPUT: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f9036e00000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f9036a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f9001c00000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f9001800000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=82375880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+Starting mainloop on core 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+timer0_cb() on lcore 1
+timer1_cb() on lcore 1
+timer1_cb() on lcore 1
+[1]+  Terminated              ./examples/timer/build/app/timer -n 1 -c 0x2
+26/07/2015 16:20:40                 INFO: Test Case test_timer_callbacks_verify Result PASSED:
+26/07/2015 16:20:41     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:20:41  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:20:41                 INFO: 
+TEST SUITE ENDED: TestTimer

@@ -1,0 +1,2760 @@
+22/07/2015 11:07:38                 INFO: 
+TEST SUITE : TestLinkFlowctrl
+22/07/2015 11:07:38                 INFO: NIC :        cfg
+22/07/2015 11:07:38        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --portmask=0x3 --txqflags=0
+22/07/2015 11:07:44     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f2df9000000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2df8c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f2db9200000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2db8c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2db8800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f2d0a200000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f2cfb400000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2cfae00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2cfa800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cfa400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cfa000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf9c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf9800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf9400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf9000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf8c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf8800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf8400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cf8000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f2cb8200000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb7e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb7a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb7600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb7200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb6e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb6a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb6600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb6200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb5e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb5a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb5600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cb5200000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 0 is ready (tid=ba265880;cpuset=[0])
+EAL: lcore 4 is ready (tid=b23cc700;cpuset=[4])
+EAL: lcore 17 is ready (tid=aa1bf700;cpuset=[17])
+EAL: lcore 7 is ready (tid=b05c9700;cpuset=[7])
+EAL: lcore 9 is ready (tid=af1c7700;cpuset=[9])
+EAL: lcore 11 is ready (tid=addc5700;cpuset=[11])
+EAL: lcore 13 is ready (tid=ac9c3700;cpuset=[13])
+EAL: lcore 15 is ready (tid=ab5c1700;cpuset=[15])
+EAL: lcore 5 is ready (tid=b19cb700;cpuset=[5])
+EAL: lcore 18 is ready (tid=a97be700;cpuset=[18])
+EAL: lcore 19 is ready (tid=a8dbd700;cpuset=[19])
+EAL: lcore 22 is ready (tid=a6fba700;cpuset=[22])
+EAL: lcore 23 is ready (tid=a65b9700;cpuset=[23])
+EAL: lcore 28 is ready (tid=a33b4700;cpuset=[28])
+EAL: lcore 26 is ready (tid=a47b6700;cpuset=[26])
+EAL: lcore 31 is ready (tid=a15b1700;cpuset=[31])
+EAL: lcore 8 is ready (tid=afbc8700;cpuset=[8])
+EAL: lcore 33 is ready (tid=a01af700;cpuset=[33])
+EAL: lcore 35 is ready (tid=9edad700;cpuset=[35])
+EAL: lcore 2 is ready (tid=b37ce700;cpuset=[2])
+EAL: lcore 10 is ready (tid=ae7c6700;cpuset=[10])
+EAL: lcore 12 is ready (tid=ad3c4700;cpuset=[12])
+EAL: lcore 16 is ready (tid=aabc0700;cpuset=[16])
+EAL: lcore 20 is ready (tid=a83bc700;cpuset=[20])
+EAL: lcore 27 is ready (tid=a3db5700;cpuset=[27])
+EAL: lcore 25 is ready (tid=a51b7700;cpuset=[25])
+EAL: lcore 30 is ready (tid=a1fb2700;cpuset=[30])
+EAL: lcore 34 is ready (tid=9f7ae700;cpuset=[34])
+EAL: lcore 36 is ready (tid=9e3ac700;cpuset=[36])
+EAL: lcore 14 is ready (tid=abfc2700;cpuset=[14])
+EAL: lcore 21 is ready (tid=a79bb700;cpuset=[21])
+EAL: lcore 29 is ready (tid=a29b3700;cpuset=[29])
+EAL: lcore 3 is ready (tid=b2dcd700;cpuset=[3])
+EAL: lcore 6 is ready (tid=b0fca700;cpuset=[6])
+EAL: lcore 32 is ready (tid=a0bb0700;cpuset=[32])
+EAL: lcore 24 is ready (tid=a5bb8700;cpuset=[24])
+EAL: lcore 1 is ready (tid=b41cf700;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f2eb9000000
+EAL:   PCI memory mapped at 0x7f2eb9080000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f2eb9084000
+EAL:   PCI memory mapped at 0x7f2eb9104000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f2db9ccc380 hw_ring=0x7f2db8ea9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f2db9ccbb00 sw_sc_ring=0x7f2db9ccb5c0 hw_ring=0x7f2db8eb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f2db9cc9380 hw_ring=0x7f2db8ec9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f2db9cc8b00 sw_sc_ring=0x7f2db9cc85c0 hw_ring=0x7f2db8ed9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:07:44                 INFO: Test Case test_flowctrl_off_pause_fwd_off Begin
+22/07/2015 11:07:44        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:07:44     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:07:44        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:07:44     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:07:44        SUITE_DUT_CMD: start
+22/07/2015 11:07:45     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:07:45        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:07:45     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:07:45     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:07:45  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:07:45     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:07:45  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:07:45     SUITE_TESTER_CMD: scapy
+22/07/2015 11:07:46  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:07:48     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:07:48  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:07:50     SUITE_TESTER_CMD: exit()
+22/07/2015 11:07:50  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:07:51        SUITE_DUT_CMD: stop
+22/07/2015 11:07:51     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:07:51        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:07:51     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:07:51        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:07:52     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:07:52        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:07:52     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:07:52        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:07:52     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:07:52        SUITE_DUT_CMD: start
+22/07/2015 11:07:52     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:07:52        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:07:52     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:07:52     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:07:53  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:07:53     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:07:53  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:07:53     SUITE_TESTER_CMD: scapy
+22/07/2015 11:07:53  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:07:55     SUITE_TESTER_CMD: sendp([Ether(src="00:01:02:03:04:05",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:07:55  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:07:57     SUITE_TESTER_CMD: exit()
+22/07/2015 11:07:58  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:07:59        SUITE_DUT_CMD: stop
+22/07/2015 11:07:59     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:07:59        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:07:59     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:07:59        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:07:59     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:07:59        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:08:00     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:00        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:00     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:00        SUITE_DUT_CMD: start
+22/07/2015 11:08:00     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:00        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:00     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:00     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:00  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:00     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:01  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:01     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:01  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:03     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x02\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:03  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:05     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:05  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:06        SUITE_DUT_CMD: stop
+22/07/2015 11:08:07     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:07        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:07     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:07        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:07     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:07        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:08:07     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:07        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:07     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:07        SUITE_DUT_CMD: start
+22/07/2015 11:08:08     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:08        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:08     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:08     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:08  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:08     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:08  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:08     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:09  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:11     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:AB:10",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:11  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:13     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:13  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:14        SUITE_DUT_CMD: stop
+22/07/2015 11:08:14     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:14        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:14     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:14        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:15     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:15                 INFO: Test Case test_flowctrl_off_pause_fwd_off Result PASSED:
+22/07/2015 11:08:15                 INFO: Test Case test_flowctrl_off_pause_fwd_on Begin
+22/07/2015 11:08:15        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 11:08:15     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:15        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:15     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:15        SUITE_DUT_CMD: start
+22/07/2015 11:08:15     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:15        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:16     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:16     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:16  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:16     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:16  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:16     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:16  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:18     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:19  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:21     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:21  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:22        SUITE_DUT_CMD: stop
+22/07/2015 11:08:22     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:22        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:22     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:22        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:22     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:22                ERROR: Test Case test_flowctrl_off_pause_fwd_on Result FAILED: 'Pause Frames are not being received by testpmd (0 received)'
+22/07/2015 11:08:22                 INFO: Test Case test_flowctrl_on_pause_fwd_off Begin
+22/07/2015 11:08:22        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:08:23     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:23        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:23     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:23        SUITE_DUT_CMD: start
+22/07/2015 11:08:23     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:23        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:23     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:23     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:23  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:23     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:24  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:24     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:24  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:26     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:26  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:28     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:28  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:29        SUITE_DUT_CMD: stop
+22/07/2015 11:08:30     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:30        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:30     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:30        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:30     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:30        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:08:30     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:30        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:30     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:30        SUITE_DUT_CMD: start
+22/07/2015 11:08:31     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:31        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:31     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:31     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:31  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:31     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:31  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:31     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:32  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:34     SUITE_TESTER_CMD: sendp([Ether(src="00:01:02:03:04:05",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:34  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:36     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:36  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:37        SUITE_DUT_CMD: stop
+22/07/2015 11:08:37     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:37        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:38     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:38        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:38     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:38        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:08:38     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:38        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:38     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:38        SUITE_DUT_CMD: start
+22/07/2015 11:08:38     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:38        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:39     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:39     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:39  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:39     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:39  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:39     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:39  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:41     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x02\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:42  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:44     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:44  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:45        SUITE_DUT_CMD: stop
+22/07/2015 11:08:45     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:45        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:45     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:45        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:45     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:45        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 11:08:46     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:46        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:46     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:46        SUITE_DUT_CMD: start
+22/07/2015 11:08:46     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:46        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:46     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:46     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:46  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:46     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:47  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:47     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:47  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:49     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:AB:10",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:49  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:51     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:51  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:08:52        SUITE_DUT_CMD: stop
+22/07/2015 11:08:53     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:08:53        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:08:53     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:53        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:08:53     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:08:53                 INFO: Test Case test_flowctrl_on_pause_fwd_off Result PASSED:
+22/07/2015 11:08:53                 INFO: Test Case test_flowctrl_on_pause_fwd_on Begin
+22/07/2015 11:08:53        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 11:08:53     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:08:53        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:08:54     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:08:54        SUITE_DUT_CMD: start
+22/07/2015 11:08:54     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:08:54        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:08:54     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:08:54     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:08:54  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:08:54     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:08:54  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:08:54     SUITE_TESTER_CMD: scapy
+22/07/2015 11:08:55  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:08:57     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:08:57  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:08:59     SUITE_TESTER_CMD: exit()
+22/07/2015 11:08:59  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:09:00        SUITE_DUT_CMD: stop
+22/07/2015 11:09:00     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:09:00        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:09:01     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:09:01        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:09:01     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:09:01        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 11:09:01     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:09:01        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:09:01     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:09:01        SUITE_DUT_CMD: start
+22/07/2015 11:09:01     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:09:01        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:09:02     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:09:02     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:09:02  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:09:02     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:09:02  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:09:02     SUITE_TESTER_CMD: scapy
+22/07/2015 11:09:02  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:09:04     SUITE_TESTER_CMD: sendp([Ether(src="00:01:02:03:04:05",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:09:05  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:09:07     SUITE_TESTER_CMD: exit()
+22/07/2015 11:09:07  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:09:08        SUITE_DUT_CMD: stop
+22/07/2015 11:09:08     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:09:08        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:09:08     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:09:08        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:09:08     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:09:08        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 11:09:09     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 11:09:09        SUITE_DUT_CMD: set fwd io
+22/07/2015 11:09:09     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 11:09:09        SUITE_DUT_CMD: start
+22/07/2015 11:09:09     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:09:09        SUITE_DUT_CMD: clear port stats all
+22/07/2015 11:09:09     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 11:09:09     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:09:10  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:09:10     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:09:10  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:09:10     SUITE_TESTER_CMD: scapy
+22/07/2015 11:09:10  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:09:12     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x02\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 11:09:12  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 11:09:14     SUITE_TESTER_CMD: exit()
+22/07/2015 11:09:15  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:09:16        SUITE_DUT_CMD: stop
+22/07/2015 11:09:16     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:09:16        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:09:16     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:09:16        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:09:16     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:09:16                ERROR: Test Case test_flowctrl_on_pause_fwd_on Result FAILED: 'Pause Frames are not being received by testpmd (0 received)'
+22/07/2015 11:09:16        SUITE_DUT_CMD: quit
+22/07/2015 11:09:17     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 11:09:18     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:09:18  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:09:18                 INFO: 
+TEST SUITE ENDED: TestLinkFlowctrl
+22/07/2015 14:54:20                 INFO: 
+TEST SUITE : TestLinkFlowctrl
+22/07/2015 14:54:20                 INFO: NIC :        cfg
+22/07/2015 14:54:20        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --portmask=0x3 --txqflags=0
+22/07/2015 14:54:25     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fa1b2400000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7fa0b3e00000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fa0b3800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fa0b3200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fa0b2c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fa0b2200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fa0b1c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fa0b1800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fa0b1400000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f9fcd200000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f9fbe800000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fbe200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f9fb6e00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb6800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb6200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f9fb5800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb5200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb4c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f9fb4200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb3c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f9fb3200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb2c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb2600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb2000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb1a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f9fb1000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb0a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fb0400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fafe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9faf800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9faf200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9faec00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f9fae600000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=b382f880;cpuset=[0])
+EAL: lcore 4 is ready (tid=ab7cc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=aadcb700;cpuset=[5])
+EAL: lcore 28 is ready (tid=9c7b4700;cpuset=[28])
+EAL: lcore 2 is ready (tid=acbce700;cpuset=[2])
+EAL: lcore 9 is ready (tid=a85c7700;cpuset=[9])
+EAL: lcore 11 is ready (tid=a71c5700;cpuset=[11])
+EAL: lcore 14 is ready (tid=a53c2700;cpuset=[14])
+EAL: lcore 15 is ready (tid=a49c1700;cpuset=[15])
+EAL: lcore 18 is ready (tid=a2bbe700;cpuset=[18])
+EAL: lcore 17 is ready (tid=a35bf700;cpuset=[17])
+EAL: lcore 19 is ready (tid=a21bd700;cpuset=[19])
+EAL: lcore 22 is ready (tid=a03ba700;cpuset=[22])
+EAL: lcore 24 is ready (tid=9efb8700;cpuset=[24])
+EAL: lcore 25 is ready (tid=9e5b7700;cpuset=[25])
+EAL: lcore 29 is ready (tid=9bdb3700;cpuset=[29])
+EAL: lcore 30 is ready (tid=9b3b2700;cpuset=[30])
+EAL: lcore 31 is ready (tid=9a9b1700;cpuset=[31])
+EAL: lcore 32 is ready (tid=99fb0700;cpuset=[32])
+EAL: lcore 36 is ready (tid=977ac700;cpuset=[36])
+EAL: lcore 1 is ready (tid=ad5cf700;cpuset=[1])
+EAL: lcore 10 is ready (tid=a7bc6700;cpuset=[10])
+EAL: lcore 13 is ready (tid=a5dc3700;cpuset=[13])
+EAL: lcore 16 is ready (tid=a3fc0700;cpuset=[16])
+EAL: lcore 21 is ready (tid=a0dbb700;cpuset=[21])
+EAL: lcore 26 is ready (tid=9dbb6700;cpuset=[26])
+EAL: lcore 27 is ready (tid=9d1b5700;cpuset=[27])
+EAL: lcore 34 is ready (tid=98bae700;cpuset=[34])
+EAL: lcore 3 is ready (tid=ac1cd700;cpuset=[3])
+EAL: lcore 12 is ready (tid=a67c4700;cpuset=[12])
+EAL: lcore 20 is ready (tid=a17bc700;cpuset=[20])
+EAL: lcore 7 is ready (tid=a99c9700;cpuset=[7])
+EAL: lcore 35 is ready (tid=981ad700;cpuset=[35])
+EAL: lcore 6 is ready (tid=aa3ca700;cpuset=[6])
+EAL: lcore 33 is ready (tid=995af700;cpuset=[33])
+EAL: lcore 23 is ready (tid=9f9b9700;cpuset=[23])
+EAL: lcore 8 is ready (tid=a8fc8700;cpuset=[8])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fa1b2600000
+EAL:   PCI memory mapped at 0x7fa1b2680000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fa1b2684000
+EAL:   PCI memory mapped at 0x7fa1b2704000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fa0b48cc380 hw_ring=0x7fa0b3aa9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fa0b48cbb00 sw_sc_ring=0x7fa0b48cb5c0 hw_ring=0x7fa0b3ab9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fa0b48c9380 hw_ring=0x7fa0b3ac9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fa0b48c8b00 sw_sc_ring=0x7fa0b48c85c0 hw_ring=0x7fa0b3ad9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:54:25                 INFO: Test Case test_flowctrl_off_pause_fwd_off Begin
+22/07/2015 14:54:25        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:54:26     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:54:26        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:54:26     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:54:26        SUITE_DUT_CMD: start
+22/07/2015 14:54:26     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:54:26        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:54:26     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:54:26     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:54:26  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:54:26     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:54:27  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:54:27     SUITE_TESTER_CMD: scapy
+22/07/2015 14:54:27  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:54:29     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:54:29  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:54:31     SUITE_TESTER_CMD: exit()
+22/07/2015 14:54:31  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:54:32        SUITE_DUT_CMD: stop
+22/07/2015 14:54:33     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:54:33        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:54:33     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:33        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:54:33     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:33        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:54:33     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:54:33        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:54:34     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:54:34        SUITE_DUT_CMD: start
+22/07/2015 14:54:34     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:54:34        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:54:34     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:54:34     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:54:34  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:54:34     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:54:34  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:54:34     SUITE_TESTER_CMD: scapy
+22/07/2015 14:54:35  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:54:37     SUITE_TESTER_CMD: sendp([Ether(src="00:01:02:03:04:05",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:54:37  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:54:39     SUITE_TESTER_CMD: exit()
+22/07/2015 14:54:39  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:54:40        SUITE_DUT_CMD: stop
+22/07/2015 14:54:40     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:54:40        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:54:41     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:41        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:54:41     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:41        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:54:41     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:54:41        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:54:41     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:54:41        SUITE_DUT_CMD: start
+22/07/2015 14:54:41     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:54:41        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:54:42     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:54:42     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:54:42  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:54:42     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:54:42  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:54:42     SUITE_TESTER_CMD: scapy
+22/07/2015 14:54:42  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:54:44     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x02\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:54:45  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:54:47     SUITE_TESTER_CMD: exit()
+22/07/2015 14:54:47  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:54:48        SUITE_DUT_CMD: stop
+22/07/2015 14:54:48     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:54:48        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:54:48     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:48        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:54:48     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:48        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:54:49     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:54:49        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:54:49     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:54:49        SUITE_DUT_CMD: start
+22/07/2015 14:54:49     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:54:49        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:54:49     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:54:49     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:54:50  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:54:50     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:54:50  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:54:50     SUITE_TESTER_CMD: scapy
+22/07/2015 14:54:50  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:54:52     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:AB:10",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:54:52  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:54:54     SUITE_TESTER_CMD: exit()
+22/07/2015 14:54:55  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:54:56        SUITE_DUT_CMD: stop
+22/07/2015 14:54:56     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:54:56        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:54:56     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:56        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:54:56     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:54:56                 INFO: Test Case test_flowctrl_off_pause_fwd_off Result PASSED:
+22/07/2015 14:54:56                 INFO: Test Case test_flowctrl_off_pause_fwd_on Begin
+22/07/2015 14:54:56        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 14:54:56     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:54:56        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:54:57     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:54:57        SUITE_DUT_CMD: start
+22/07/2015 14:54:57     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:54:57        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:54:57     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:54:57     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:54:57  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:54:57     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:54:57  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:54:57     SUITE_TESTER_CMD: scapy
+22/07/2015 14:54:58  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:00     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:00  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:02     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:02  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:03        SUITE_DUT_CMD: stop
+22/07/2015 14:55:03     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:03        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:04     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:04        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:04     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:04                ERROR: Test Case test_flowctrl_off_pause_fwd_on Result FAILED: 'Pause Frames are not being received by testpmd (0 received)'
+22/07/2015 14:55:04                 INFO: Test Case test_flowctrl_on_pause_fwd_off Begin
+22/07/2015 14:55:04        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:55:04     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:04        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:04     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:04        SUITE_DUT_CMD: start
+22/07/2015 14:55:04     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:04        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:05     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:05     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:05  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:05     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:05  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:05     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:05  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:07     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:08  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:10     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:10  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:11        SUITE_DUT_CMD: stop
+22/07/2015 14:55:11     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:11        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:11     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:11        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:12     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:12        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:55:12     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:12        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:12     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:12        SUITE_DUT_CMD: start
+22/07/2015 14:55:12     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:12        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:12     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:12     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:13  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:13     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:13  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:13     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:13  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:15     SUITE_TESTER_CMD: sendp([Ether(src="00:01:02:03:04:05",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:15  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:17     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:18  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:19        SUITE_DUT_CMD: stop
+22/07/2015 14:55:19     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:19        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:19     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:19        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:19     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:19        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:55:19     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:19        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:20     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:20        SUITE_DUT_CMD: start
+22/07/2015 14:55:20     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:20        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:20     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:20     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:20  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:20     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:20  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:20     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:21  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:23     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x02\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:23  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:25     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:25  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:26        SUITE_DUT_CMD: stop
+22/07/2015 14:55:26     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:26        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:27     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:27        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:27     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:27        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+22/07/2015 14:55:27     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:27        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:27     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:27        SUITE_DUT_CMD: start
+22/07/2015 14:55:28     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:28        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:28     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:28     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:28  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:28     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:28  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:28     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:29  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:31     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:AB:10",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:31  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:33     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:33  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:34        SUITE_DUT_CMD: stop
+22/07/2015 14:55:34     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:34        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:34     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:34        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:35     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:35                 INFO: Test Case test_flowctrl_on_pause_fwd_off Result PASSED:
+22/07/2015 14:55:35                 INFO: Test Case test_flowctrl_on_pause_fwd_on Begin
+22/07/2015 14:55:35        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 14:55:35     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:35        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:35     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:35        SUITE_DUT_CMD: start
+22/07/2015 14:55:35     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:35        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:35     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:35     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:36  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:36     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:36  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:36     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:36  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:38     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:38  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:40     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:41  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:42        SUITE_DUT_CMD: stop
+22/07/2015 14:55:42     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:42        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:42     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:42        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:42     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:42        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 14:55:42     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:42        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:43     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:43        SUITE_DUT_CMD: start
+22/07/2015 14:55:43     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:43        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:43     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:43     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:43  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:43     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:43  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:43     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:44  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:46     SUITE_TESTER_CMD: sendp([Ether(src="00:01:02:03:04:05",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:46  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:48     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:48  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:49        SUITE_DUT_CMD: stop
+22/07/2015 14:55:50     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:50        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:50     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:50        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:50     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:50        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+22/07/2015 14:55:50     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+PMD: ixgbe_flow_ctrl_set(): Rx packet buffer size = 0x80000
+22/07/2015 14:55:50        SUITE_DUT_CMD: set fwd io
+22/07/2015 14:55:50     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+22/07/2015 14:55:50        SUITE_DUT_CMD: start
+22/07/2015 14:55:51     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:55:51        SUITE_DUT_CMD: clear port stats all
+22/07/2015 14:55:51     SUITE_DUT_OUTPUT: clear port stats all
+
+  NIC statistics for port 0 cleared
+
+  NIC statistics for port 1 cleared
+22/07/2015 14:55:51     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:55:51  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:55:51     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:51  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:51     SUITE_TESTER_CMD: scapy
+22/07/2015 14:55:52  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:55:54     SUITE_TESTER_CMD: sendp([Ether(src="00:1b:21:53:20:19",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x02\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens2f1", count=10)
+22/07/2015 14:55:54  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+22/07/2015 14:55:56     SUITE_TESTER_CMD: exit()
+22/07/2015 14:55:56  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:55:57        SUITE_DUT_CMD: stop
+22/07/2015 14:55:57     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:55:57        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:55:57     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:57        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:55:58     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:55:58                ERROR: Test Case test_flowctrl_on_pause_fwd_on Result FAILED: 'Pause Frames are not being received by testpmd (0 received)'
+22/07/2015 14:55:58        SUITE_DUT_CMD: quit
+22/07/2015 14:55:58     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:55:59     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:55:59  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:55:59                 INFO: 
+TEST SUITE ENDED: TestLinkFlowctrl
+22/07/2015 16:22:08                 INFO: 
+TEST SUITE : TestLinkFlowctrl
+22/07/2015 16:22:08                 INFO: NIC :        cfg
+22/07/2015 16:22:08                ERROR: set_up_all failed:
+Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 547, in execute_test_setup_all
+    test_case.set_up_all()
+  File "tests/TestSuite_link_flowctrl.py", line 68, in set_up_all
+    self.verify(len(self.dutPorts) > 1, "Insuficient ports")
+  File "/download/dts-master/framework/test_case.py", line 67, in verify
+    raise VerifyFailure(description)
+VerifyFailure: 'Insuficient ports'
+
+22/07/2015 16:22:08                 INFO: 
+TEST SUITE ENDED: TestLinkFlowctrl
+26/07/2015 16:29:31                 INFO: 
+TEST SUITE : TestLinkFlowctrl
+26/07/2015 16:29:31                 INFO: NIC :        cfg
+26/07/2015 16:29:31        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --portmask=0x3 --txqflags=0
+26/07/2015 16:29:33     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f0e1b600000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f0e1b200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f0de6400000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f0de6000000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=66af1880;cpuset=[1])
+EAL: lcore 21 is ready (tid=e51f2700;cpuset=[21])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: Error - exiting with code: 1
+  Cause: No ports found!
+[PEXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f8564400000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f8564000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f852f200000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f852ee00000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=af8da880;cpuset=[1])
+EAL: lcore 21 is ready (tid=2dff2700;cpuset=[21])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: Error - exiting with code: 1
+  Cause: No ports found!
+[PEXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f5bcf800000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5bcf400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f5b9a600000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5b9a200000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=1ae1c880;cpuset=[1])
+EAL: lcore 21 is ready (tid=993f2700;cpuset=[21])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: Error - exiting with code: 1
+  Cause: No ports found!
+[PEXPECT]# ^C
+[PEXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f39bd200000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f39bce00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f3988000000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f3987c00000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=8674880;cpuset=[0])
+EAL: lcore 4 is ready (tid=84fef700;cpuset=[4])
+EAL: lcore 5 is ready (tid=845ee700;cpuset=[5])
+EAL: lcore 7 is ready (tid=831ec700;cpuset=[7])
+EAL: lcore 25 is ready (tid=77dda700;cpuset=[25])
+EAL: lcore 2 is ready (tid=863f1700;cpuset=[2])
+EAL: lcore 11 is ready (tid=809e8700;cpuset=[11])
+EAL: lcore 12 is ready (tid=7ffe7700;cpuset=[12])
+EAL: lcore 15 is ready (tid=7e1e4700;cpuset=[15])
+EAL: lcore 6 is ready (tid=83bed700;cpuset=[6])
+EAL: lcore 19 is ready (tid=7b9e0700;cpuset=[19])
+EAL: lcore 20 is ready (tid=7afdf700;cpuset=[20])
+EAL: lcore 21 is ready (tid=7a5de700;cpuset=[21])
+EAL: lcore 24 is ready (tid=787db700;cpuset=[24])
+EAL: lcore 26 is ready (tid=773d9700;cpuset=[26])
+EAL: lcore 29 is ready (tid=755d6700;cpuset=[29])
+EAL: lcore 8 is ready (tid=827eb700;cpuset=[8])
+EAL: lcore 31 is ready (tid=741d4700;cpuset=[31])
+EAL: lcore 32 is ready (tid=737d3700;cpuset=[32])
+EAL: lcore 34 is ready (tid=723d1700;cpuset=[34])
+EAL: lcore 3 is ready (tid=859f0700;cpuset=[3])
+EAL: lcore 35 is ready (tid=719d0700;cpuset=[35])
+EAL: lcore 13 is ready (tid=7f5e6700;cpuset=[13])
+EAL: lcore 16 is ready (tid=7d7e3700;cpuset=[16])
+EAL: lcore 18 is ready (tid=7c3e1700;cpuset=[18])
+EAL: lcore 23 is ready (tid=791dc700;cpuset=[23])
+EAL: lcore 28 is ready (tid=75fd7700;cpuset=[28])
+EAL: lcore 9 is ready (tid=81dea700;cpuset=[9])
+EAL: lcore 33 is ready (tid=72dd2700;cpuset=[33])
+EAL: lcore 1 is ready (tid=86df2700;cpuset=[1])
+EAL: lcore 14 is ready (tid=7ebe5700;cpuset=[14])
+EAL: lcore 22 is ready (tid=79bdd700;cpuset=[22])
+EAL: lcore 30 is ready (tid=74bd5700;cpuset=[30])
+EAL: lcore 36 is ready (tid=70fcf700;cpuset=[36])
+EAL: lcore 27 is ready (tid=769d8700;cpuset=[27])
+EAL: lcore 17 is ready (tid=7cde2700;cpuset=[17])
+EAL: lcore 10 is ready (tid=813e9700;cpuset=[10])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Invalid port 0
+Done
+26/07/2015 16:29:33                 INFO: Test Case test_flowctrl_off_pause_fwd_off Begin
+26/07/2015 16:29:33        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+26/07/2015 16:29:33     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+bad flow contrl parameter, return code = -22 
+26/07/2015 16:29:33        SUITE_DUT_CMD: set fwd io
+26/07/2015 16:29:33     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+26/07/2015 16:29:33        SUITE_DUT_CMD: start
+26/07/2015 16:29:33     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:29:33        SUITE_DUT_CMD: clear port stats all
+26/07/2015 16:29:33     SUITE_DUT_OUTPUT: clear port stats all
+26/07/2015 16:29:33     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:29:34  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:29:34     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:29:34  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:29:34     SUITE_TESTER_CMD: scapy
+26/07/2015 16:29:34  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:29:36     SUITE_TESTER_CMD: sendp([Ether(src="f4:52:14:2c:5d:22",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens4d1", count=10)
+26/07/2015 16:29:36  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+26/07/2015 16:29:38     SUITE_TESTER_CMD: exit()
+26/07/2015 16:29:39  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:29:40        SUITE_DUT_CMD: stop
+26/07/2015 16:29:40     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+26/07/2015 16:29:40        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:29:40     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:29:40                ERROR: Test Case test_flowctrl_off_pause_fwd_off Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_link_flowctrl.py", line 258, in test_flowctrl_off_pause_fwd_off
+    port_stats = self.pause_frame_test(frame)
+  File "tests/TestSuite_link_flowctrl.py", line 177, in pause_frame_test
+    port_stats = self.get_testpmd_port_stats((self.rx_port, self.tx_port))
+  File "tests/TestSuite_link_flowctrl.py", line 129, in get_testpmd_port_stats
+    rx_packets = int(rx.search(out).group(1))
+AttributeError: 'NoneType' object has no attribute 'group'
+
+26/07/2015 16:29:40                 INFO: Test Case test_flowctrl_off_pause_fwd_on Begin
+26/07/2015 16:29:40        SUITE_DUT_CMD: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+26/07/2015 16:29:40     SUITE_DUT_OUTPUT: set flow_ctrl rx off tx off 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+bad flow contrl parameter, return code = -22 
+26/07/2015 16:29:40        SUITE_DUT_CMD: set fwd io
+26/07/2015 16:29:40     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+26/07/2015 16:29:40        SUITE_DUT_CMD: start
+26/07/2015 16:29:41     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:29:41        SUITE_DUT_CMD: clear port stats all
+26/07/2015 16:29:41     SUITE_DUT_OUTPUT: clear port stats all
+26/07/2015 16:29:41     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:29:41  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:29:41     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:29:41  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:29:41     SUITE_TESTER_CMD: scapy
+26/07/2015 16:29:42  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:29:44     SUITE_TESTER_CMD: sendp([Ether(src="f4:52:14:2c:5d:22",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens4d1", count=10)
+26/07/2015 16:29:44  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+26/07/2015 16:29:46     SUITE_TESTER_CMD: exit()
+26/07/2015 16:29:46  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:29:47        SUITE_DUT_CMD: stop
+26/07/2015 16:29:47     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+26/07/2015 16:29:47        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:29:47     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:29:47                ERROR: Test Case test_flowctrl_off_pause_fwd_on Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_link_flowctrl.py", line 284, in test_flowctrl_off_pause_fwd_on
+    port_stats = self.pause_frame_test(pause_frame, pause_frame_fwd='on')
+  File "tests/TestSuite_link_flowctrl.py", line 177, in pause_frame_test
+    port_stats = self.get_testpmd_port_stats((self.rx_port, self.tx_port))
+  File "tests/TestSuite_link_flowctrl.py", line 129, in get_testpmd_port_stats
+    rx_packets = int(rx.search(out).group(1))
+AttributeError: 'NoneType' object has no attribute 'group'
+
+26/07/2015 16:29:47                 INFO: Test Case test_flowctrl_on_pause_fwd_off Begin
+26/07/2015 16:29:47        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+26/07/2015 16:29:48     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd off autoneg on 0 
+bad flow contrl parameter, return code = -22 
+26/07/2015 16:29:48        SUITE_DUT_CMD: set fwd io
+26/07/2015 16:29:48     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+26/07/2015 16:29:48        SUITE_DUT_CMD: start
+26/07/2015 16:29:48     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:29:48        SUITE_DUT_CMD: clear port stats all
+26/07/2015 16:29:48     SUITE_DUT_OUTPUT: clear port stats all
+26/07/2015 16:29:48     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:29:48  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:29:48     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:29:49  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:29:49     SUITE_TESTER_CMD: scapy
+26/07/2015 16:29:49  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:29:51     SUITE_TESTER_CMD: sendp([Ether(src="f4:52:14:2c:5d:22",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens4d1", count=10)
+26/07/2015 16:29:51  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+26/07/2015 16:29:53     SUITE_TESTER_CMD: exit()
+26/07/2015 16:29:54  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:29:55        SUITE_DUT_CMD: stop
+26/07/2015 16:29:55     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+26/07/2015 16:29:55        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:29:55     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:29:55                ERROR: Test Case test_flowctrl_on_pause_fwd_off Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_link_flowctrl.py", line 273, in test_flowctrl_on_pause_fwd_off
+    port_stats = self.pause_frame_test(frame, flow_control='on')
+  File "tests/TestSuite_link_flowctrl.py", line 177, in pause_frame_test
+    port_stats = self.get_testpmd_port_stats((self.rx_port, self.tx_port))
+  File "tests/TestSuite_link_flowctrl.py", line 129, in get_testpmd_port_stats
+    rx_packets = int(rx.search(out).group(1))
+AttributeError: 'NoneType' object has no attribute 'group'
+
+26/07/2015 16:29:55                 INFO: Test Case test_flowctrl_on_pause_fwd_on Begin
+26/07/2015 16:29:55        SUITE_DUT_CMD: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+26/07/2015 16:29:55     SUITE_DUT_OUTPUT: set flow_ctrl rx on tx on 300 50 10 1 mac_ctrl_frame_fwd on autoneg on 0 
+bad flow contrl parameter, return code = -22 
+26/07/2015 16:29:55        SUITE_DUT_CMD: set fwd io
+26/07/2015 16:29:55     SUITE_DUT_OUTPUT: set fwd io
+Set io packet forwarding mode
+26/07/2015 16:29:55        SUITE_DUT_CMD: start
+26/07/2015 16:29:56     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:29:56        SUITE_DUT_CMD: clear port stats all
+26/07/2015 16:29:56     SUITE_DUT_OUTPUT: clear port stats all
+26/07/2015 16:29:56     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:29:56  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:29:56     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:29:56  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:29:56     SUITE_TESTER_CMD: scapy
+26/07/2015 16:29:57  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:29:59     SUITE_TESTER_CMD: sendp([Ether(src="f4:52:14:2c:5d:22",dst="01:80:C2:00:00:01",type=0x8808)/("\x00\x01\x00\xFF\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00")], iface="ens4d1", count=10)
+26/07/2015 16:29:59  SUITE_TESTER_OUTPUT: [0m..........
+Sent 10 packets.
+26/07/2015 16:30:01     SUITE_TESTER_CMD: exit()
+26/07/2015 16:30:01  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:30:02        SUITE_DUT_CMD: stop
+26/07/2015 16:30:02     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+26/07/2015 16:30:02        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:30:02     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:30:02                ERROR: Test Case test_flowctrl_on_pause_fwd_on Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_link_flowctrl.py", line 311, in test_flowctrl_on_pause_fwd_on
+    pause_frame_fwd='on')
+  File "tests/TestSuite_link_flowctrl.py", line 177, in pause_frame_test
+    port_stats = self.get_testpmd_port_stats((self.rx_port, self.tx_port))
+  File "tests/TestSuite_link_flowctrl.py", line 129, in get_testpmd_port_stats
+    rx_packets = int(rx.search(out).group(1))
+AttributeError: 'NoneType' object has no attribute 'group'
+
+26/07/2015 16:30:02        SUITE_DUT_CMD: quit
+26/07/2015 16:30:03     SUITE_DUT_OUTPUT: quit
+bye...
+26/07/2015 16:30:04     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:30:04  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:30:04                 INFO: 
+TEST SUITE ENDED: TestLinkFlowctrl

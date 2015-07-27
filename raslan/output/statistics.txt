@@ -1,0 +1,4 @@
+Passed     = 2
+Failed     = 2
+Blocked    = 1
+Pass rate  = 40.0

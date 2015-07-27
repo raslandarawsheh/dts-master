@@ -1,0 +1,799 @@
+22/07/2015 10:57:54                 INFO: 
+TEST SUITE : TestHelloWorld
+22/07/2015 10:57:54                 INFO: NIC :        cfg
+22/07/2015 10:57:54        SUITE_DUT_CMD: make -j -C examples/helloworld 
+22/07/2015 10:57:54     SUITE_DUT_OUTPUT: Killed
+22/07/2015 10:57:54                 INFO: Test Case test_hello_world_all_cores Begin
+22/07/2015 10:57:54        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+22/07/2015 10:57:55     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+22/07/2015 10:57:55                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+22/07/2015 10:57:55                 INFO: Test Case test_hello_world_single_core Begin
+22/07/2015 10:57:55        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 10:57:58                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 10:57:58                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+22/07/2015 10:57:59     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 10:57:59  SUITE_TESTER_OUTPUT: tester
+22/07/2015 10:57:59                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+22/07/2015 14:41:22                 INFO: 
+TEST SUITE : TestHelloWorld
+22/07/2015 14:41:22                 INFO: NIC :        cfg
+22/07/2015 14:41:22        SUITE_DUT_CMD: make -j -C examples/helloworld 
+22/07/2015 14:41:22     SUITE_DUT_OUTPUT: Killed
+22/07/2015 14:41:22                 INFO: Test Case test_hello_world_all_cores Begin
+22/07/2015 14:41:22        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+22/07/2015 14:41:22     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+22/07/2015 14:41:22                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+22/07/2015 14:41:22                 INFO: Test Case test_hello_world_single_core Begin
+22/07/2015 14:41:22        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 14:41:25                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 14:41:25                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+22/07/2015 14:41:26     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:41:27  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:41:27                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+22/07/2015 15:47:37                 INFO: 
+TEST SUITE : TestHelloWorld
+22/07/2015 15:47:37                 INFO: NIC :        cfg
+22/07/2015 15:47:37        SUITE_DUT_CMD: make -j -C examples/helloworld 
+22/07/2015 15:47:37     SUITE_DUT_OUTPUT: Killed
+22/07/2015 15:47:37                 INFO: Test Case test_hello_world_all_cores Begin
+22/07/2015 15:47:37        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+22/07/2015 15:47:37     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+22/07/2015 15:47:37                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+22/07/2015 15:47:37                 INFO: Test Case test_hello_world_single_core Begin
+22/07/2015 15:47:37        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 15:47:40                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 15:47:40                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+22/07/2015 15:47:41     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 15:47:41  SUITE_TESTER_OUTPUT: tester
+22/07/2015 15:47:41                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+22/07/2015 16:18:00                 INFO: 
+TEST SUITE : TestHelloWorld
+22/07/2015 16:18:00                 INFO: NIC :        cfg
+22/07/2015 16:18:00        SUITE_DUT_CMD: make -j -C examples/helloworld 
+22/07/2015 16:18:00     SUITE_DUT_OUTPUT: Killed
+22/07/2015 16:18:00                 INFO: Test Case test_hello_world_all_cores Begin
+22/07/2015 16:18:00        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+22/07/2015 16:18:00     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+22/07/2015 16:18:00                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+22/07/2015 16:18:00                 INFO: Test Case test_hello_world_single_core Begin
+22/07/2015 16:18:00        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 16:18:03                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+22/07/2015 16:18:03                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+22/07/2015 16:18:04     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 16:18:04  SUITE_TESTER_OUTPUT: tester
+22/07/2015 16:18:04                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+23/07/2015 11:40:46                 INFO: 
+TEST SUITE : TestHelloWorld
+23/07/2015 11:40:46                 INFO: NIC :        cfg
+23/07/2015 11:40:46        SUITE_DUT_CMD: make -j -C examples/helloworld 
+23/07/2015 11:40:46     SUITE_DUT_OUTPUT: Killed
+23/07/2015 11:40:46                 INFO: Test Case test_hello_world_all_cores Begin
+23/07/2015 11:40:46        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+23/07/2015 11:40:46     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+23/07/2015 11:40:46                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+23/07/2015 11:40:46                 INFO: Test Case test_hello_world_single_core Begin
+23/07/2015 11:40:46        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+23/07/2015 11:40:48     SUITE_DUT_OUTPUT: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd97c000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7fd978000000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7fd93d800000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd93d200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd93cc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd93c600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fd93bc00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd93b600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd93b200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7fd916e00000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7fd908400000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd907e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7fd900a00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd900400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8ffe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fd8ff400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fee00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fe800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fd8fde00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fd800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fd8fce00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fc800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fc200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fbc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fb600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fd8fac00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fa600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8fa000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8f9a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8f9400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8f8e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8f8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd8f8200000 (size = 0x400000)
+EAL: Requesting 512 pages of size 2MB from socket 0
+EAL: Requesting 512 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 0 is ready (tid=7c82f880;cpuset=[0])
+EAL: lcore 4 is ready (tid=f55ef700;cpuset=[4])
+EAL: lcore 5 is ready (tid=f4bee700;cpuset=[5])
+EAL: lcore 7 is ready (tid=f37ec700;cpuset=[7])
+EAL: lcore 21 is ready (tid=eabde700;cpuset=[21])
+EAL: lcore 10 is ready (tid=f19e9700;cpuset=[10])
+EAL: lcore 11 is ready (tid=f0fe8700;cpuset=[11])
+EAL: lcore 13 is ready (tid=efbe6700;cpuset=[13])
+EAL: lcore 15 is ready (tid=ee7e4700;cpuset=[15])
+EAL: lcore 17 is ready (tid=ed3e2700;cpuset=[17])
+EAL: lcore 19 is ready (tid=ebfe0700;cpuset=[19])
+EAL: lcore 22 is ready (tid=ea1dd700;cpuset=[22])
+EAL: lcore 9 is ready (tid=f23ea700;cpuset=[9])
+EAL: lcore 8 is ready (tid=f2deb700;cpuset=[8])
+EAL: lcore 26 is ready (tid=e79d9700;cpuset=[26])
+EAL: lcore 28 is ready (tid=e65d7700;cpuset=[28])
+EAL: lcore 29 is ready (tid=e5bd6700;cpuset=[29])
+EAL: lcore 31 is ready (tid=e47d4700;cpuset=[31])
+EAL: lcore 32 is ready (tid=e3dd3700;cpuset=[32])
+EAL: lcore 34 is ready (tid=e29d1700;cpuset=[34])
+EAL: lcore 36 is ready (tid=e15cf700;cpuset=[36])
+EAL: lcore 1 is ready (tid=f73f2700;cpuset=[1])
+EAL: lcore 6 is ready (tid=f41ed700;cpuset=[6])
+EAL: lcore 16 is ready (tid=edde3700;cpuset=[16])
+EAL: lcore 20 is ready (tid=eb5df700;cpuset=[20])
+EAL: lcore 24 is ready (tid=e8ddb700;cpuset=[24])
+EAL: lcore 27 is ready (tid=e6fd8700;cpuset=[27])
+EAL: lcore 30 is ready (tid=e51d5700;cpuset=[30])
+EAL: lcore 35 is ready (tid=e1fd0700;cpuset=[35])
+EAL: lcore 2 is ready (tid=f69f1700;cpuset=[2])
+EAL: lcore 18 is ready (tid=ec9e1700;cpuset=[18])
+EAL: lcore 25 is ready (tid=e83da700;cpuset=[25])
+EAL: lcore 33 is ready (tid=e33d2700;cpuset=[33])
+EAL: lcore 14 is ready (tid=ef1e5700;cpuset=[14])
+EAL: lcore 12 is ready (tid=f05e7700;cpuset=[12])
+EAL: lcore 23 is ready (tid=e97dc700;cpuset=[23])
+EAL: lcore 3 is ready (tid=f5ff0700;cpuset=[3])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+hello from core 1
+hello from core 2
+hello from core 3
+hello from core 4
+hello from core 5
+hello from core 6
+hello from core 7
+hello from core 8
+hello from core 9
+hello from core 10
+hello from core 11
+hello from core 12
+hello from core 13
+hello from core 14
+hello from core 15
+hello from core 16
+hello from core 17
+hello from core 18
+hello from core 19
+hello from core 20
+hello from core 21
+hello from core 22
+hello from core 23
+hello from core 24
+hello from core 25
+hello from core 26
+hello from core 27
+hello from core 28
+hello from core 29
+hello from core 30
+hello from core 31
+hello from core 32
+hello from core 33
+hello from core 34
+hello from core 35
+hello from core 36
+hello from core 0
+23/07/2015 11:40:48                 INFO: Test Case test_hello_world_single_core Result PASSED:
+23/07/2015 11:40:48                ERROR:  !!! STOPPING DCTS
+23/07/2015 11:40:49     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 11:40:49  SUITE_TESTER_OUTPUT: tester
+23/07/2015 11:40:49        SUITE_DUT_CMD: ls --color=never /sys/bus/pci/devices/0000:21:00.0/net
+23/07/2015 11:40:50                 INFO: DTS ended
+23/07/2015 15:29:14                 INFO: 
+TEST SUITE : TestHelloWorld
+23/07/2015 15:29:14                 INFO: NIC :        cfg
+23/07/2015 15:29:14        SUITE_DUT_CMD: make -j -C examples/helloworld 
+23/07/2015 15:29:14     SUITE_DUT_OUTPUT: Killed
+23/07/2015 15:29:14                 INFO: Test Case test_hello_world_all_cores Begin
+23/07/2015 15:29:14        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+23/07/2015 15:29:14     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+23/07/2015 15:29:14                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+23/07/2015 15:29:14                 INFO: Test Case test_hello_world_single_core Begin
+23/07/2015 15:29:14        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+23/07/2015 15:29:17                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+23/07/2015 15:29:17                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+23/07/2015 15:29:19     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 15:29:19  SUITE_TESTER_OUTPUT: tester
+23/07/2015 15:29:19                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+26/07/2015 16:18:18                 INFO: 
+TEST SUITE : TestHelloWorld
+26/07/2015 16:18:18                 INFO: NIC :        cfg
+26/07/2015 16:18:18        SUITE_DUT_CMD: make -j -C examples/helloworld 
+26/07/2015 16:18:18     SUITE_DUT_OUTPUT: Killed
+26/07/2015 16:18:18                 INFO: Test Case test_hello_world_all_cores Begin
+26/07/2015 16:18:18        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+26/07/2015 16:18:18     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+26/07/2015 16:18:18                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+26/07/2015 16:18:18                 INFO: Test Case test_hello_world_single_core Begin
+26/07/2015 16:18:18        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+26/07/2015 16:18:21                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+26/07/2015 16:18:21                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+26/07/2015 16:18:22     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:18:23  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:18:23                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+27/07/2015 10:15:28                 INFO: 
+TEST SUITE : TestHelloWorld
+27/07/2015 10:15:28                 INFO: NIC :        cfg
+27/07/2015 10:15:28        SUITE_DUT_CMD: make -j -C examples/helloworld 
+27/07/2015 10:15:29     SUITE_DUT_OUTPUT: Killed
+27/07/2015 10:15:29                 INFO: Test Case test_hello_world_all_cores Begin
+27/07/2015 10:15:29        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+27/07/2015 10:15:29     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+27/07/2015 10:15:29                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+27/07/2015 10:15:29                 INFO: Test Case test_hello_world_single_core Begin
+27/07/2015 10:15:29        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+27/07/2015 10:15:32                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+27/07/2015 10:15:32                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+27/07/2015 10:15:33     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+27/07/2015 10:15:33  SUITE_TESTER_OUTPUT: tester
+27/07/2015 10:15:33                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+27/07/2015 11:02:40                 INFO: 
+TEST SUITE : TestHelloWorld
+27/07/2015 11:02:40                 INFO: NIC :        cfg
+27/07/2015 11:02:40        SUITE_DUT_CMD: make -j -C examples/helloworld 
+27/07/2015 11:02:40     SUITE_DUT_OUTPUT: Killed
+27/07/2015 11:02:40                 INFO: Test Case test_hello_world_all_cores Begin
+27/07/2015 11:02:40        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+27/07/2015 11:02:40     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+27/07/2015 11:02:40                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+27/07/2015 11:02:40                 INFO: Test Case test_hello_world_single_core Begin
+27/07/2015 11:02:40        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+27/07/2015 11:02:43                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+27/07/2015 11:02:43                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+27/07/2015 11:02:44     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+27/07/2015 11:02:45  SUITE_TESTER_OUTPUT: tester
+27/07/2015 11:02:45                 INFO: 
+TEST SUITE ENDED: TestHelloWorld
+27/07/2015 11:05:36                 INFO: 
+TEST SUITE : TestHelloWorld
+27/07/2015 11:05:36                 INFO: NIC :        cfg
+27/07/2015 11:05:36        SUITE_DUT_CMD: make -j -C examples/helloworld 
+27/07/2015 11:05:36     SUITE_DUT_OUTPUT: Killed
+27/07/2015 11:05:36                 INFO: Test Case test_hello_world_all_cores Begin
+27/07/2015 11:05:36        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x1fffffffff
+27/07/2015 11:05:36     SUITE_DUT_OUTPUT: Entering directory `/root/dpdk/examples/helloworld'
+  CC main.o
+  LD helloworld
+  INSTALL-APP helloworld
+  INSTALL-MAP helloworld.map
+make: Leaving directory `/root/dpdk/examples/helloworld'
+27/07/2015 11:05:36                ERROR: Test Case test_hello_world_all_cores Result FAILED: 'EAL not started on core0'
+27/07/2015 11:05:36                 INFO: Test Case test_hello_world_single_core Begin
+27/07/2015 11:05:36        SUITE_DUT_CMD: ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+27/07/2015 11:05:40                ERROR: Test Case test_hello_world_single_core Result FAILED: TIMEOUT on ./examples/helloworld/build/app/helloworld -n 1 -c 0x2
+27/07/2015 11:05:40                ERROR: L: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+
+27/07/2015 11:05:41     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+27/07/2015 11:05:41  SUITE_TESTER_OUTPUT: tester
+27/07/2015 11:05:41                 INFO: 
+TEST SUITE ENDED: TestHelloWorld

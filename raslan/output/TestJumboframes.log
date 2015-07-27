@@ -1,0 +1,3465 @@
+22/07/2015 11:03:15                 INFO: 
+TEST SUITE : TestJumboframes
+22/07/2015 11:03:15                 INFO: NIC :        cfg
+22/07/2015 11:03:15     SUITE_TESTER_CMD: ifconfig ens2f1 mtu 9200
+22/07/2015 11:03:16  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:03:16     SUITE_TESTER_CMD: ifconfig ens2f0 mtu 9200
+22/07/2015 11:03:17  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:03:17                 INFO: Test Case test_jumboframes_bigger_jumbo Begin
+22/07/2015 11:03:18        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+22/07/2015 11:03:24     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f4fc3000000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4fc2c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f4f83200000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4f82c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4f82800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f4ed4200000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f4ec5400000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4ec4e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4ec4800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec4400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec4000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec3c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec3800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec3400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec3000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec2c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec2800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec2400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ec2000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f4e82200000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e81e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e81a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e81600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e81200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e80e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e80a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e80600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e80200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e7fe00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e7fa00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e7f600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4e7f200000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 1 is ready (tid=841d3880;cpuset=[1])
+EAL: lcore 2 is ready (tid=7e1cf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f5083000000
+EAL:   PCI memory mapped at 0x7f5083080000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f5083084000
+EAL:   PCI memory mapped at 0x7f5083104000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f4f83ccd600 hw_ring=0x7f4f82ea9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f4f83cccd80 sw_sc_ring=0x7f4f83ccc840 hw_ring=0x7f4f82eb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=0).
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f4f83cca600 hw_ring=0x7f4f82ec9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f4f83cc9d80 sw_sc_ring=0x7f4f83cc9840 hw_ring=0x7f4f82ed9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=1).
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:03:24        SUITE_DUT_CMD: start
+22/07/2015 11:03:24     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:03:24        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:03:24     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:24        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:03:24     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:24     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:03:25  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:03:25     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:03:25  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:03:25     SUITE_TESTER_CMD: scapy
+22/07/2015 11:03:25  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:03:27     SUITE_TESTER_CMD: nutmac="90:E2:BA:28:E3:4D"
+22/07/2015 11:03:28  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 11:03:28     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=8983)/Raw(load="P"*8963)], iface="ens2f0")
+22/07/2015 11:03:28  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 11:03:30     SUITE_TESTER_CMD: exit()
+22/07/2015 11:03:30  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:03:35        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:03:35     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 1          RX-errors: 1
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:35        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:03:35     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:35        SUITE_DUT_CMD: quit
+22/07/2015 11:03:36     SUITE_DUT_OUTPUT: quit
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  RX-badcrc:  0              RX-badlen:  1             RX-error: 1
+  RX-nombufs: 0             
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 11:03:36                 INFO: Test Case test_jumboframes_bigger_jumbo Result PASSED:
+22/07/2015 11:03:36                 INFO: Test Case test_jumboframes_jumbo_jumbo Begin
+22/07/2015 11:03:38        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+22/07/2015 11:03:43     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7fb1b4e00000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb1b4a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7fb175000000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb174a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb174600000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7fb0c6000000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7fb0b7200000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb0b6c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb0b6600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b6200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b5e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b5a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b5600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b5200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b4e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b4a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b4600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b4200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb0b3e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7fb074000000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb073c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb073800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb073400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb073000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb072c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb072800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb072400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb072000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb071c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb071800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb071400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb071000000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 0 is ready (tid=75fb3880;cpuset=[0])
+EAL: lcore 4 is ready (tid=6e1cc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=6d7cb700;cpuset=[5])
+EAL: lcore 26 is ready (tid=605b6700;cpuset=[26])
+EAL: lcore 8 is ready (tid=6b9c8700;cpuset=[8])
+EAL: lcore 10 is ready (tid=6a5c6700;cpuset=[10])
+EAL: lcore 11 is ready (tid=69bc5700;cpuset=[11])
+EAL: lcore 6 is ready (tid=6cdca700;cpuset=[6])
+EAL: lcore 15 is ready (tid=673c1700;cpuset=[15])
+EAL: lcore 17 is ready (tid=65fbf700;cpuset=[17])
+EAL: lcore 19 is ready (tid=64bbd700;cpuset=[19])
+EAL: lcore 20 is ready (tid=641bc700;cpuset=[20])
+EAL: lcore 23 is ready (tid=623b9700;cpuset=[23])
+EAL: lcore 27 is ready (tid=5fbb5700;cpuset=[27])
+EAL: lcore 29 is ready (tid=5e7b3700;cpuset=[29])
+EAL: lcore 25 is ready (tid=60fb7700;cpuset=[25])
+EAL: lcore 30 is ready (tid=5ddb2700;cpuset=[30])
+EAL: lcore 33 is ready (tid=5bfaf700;cpuset=[33])
+EAL: lcore 9 is ready (tid=6afc7700;cpuset=[9])
+EAL: lcore 34 is ready (tid=5b5ae700;cpuset=[34])
+EAL: lcore 35 is ready (tid=5abad700;cpuset=[35])
+EAL: lcore 13 is ready (tid=687c3700;cpuset=[13])
+EAL: lcore 14 is ready (tid=67dc2700;cpuset=[14])
+EAL: lcore 21 is ready (tid=637bb700;cpuset=[21])
+EAL: lcore 22 is ready (tid=62dba700;cpuset=[22])
+EAL: lcore 7 is ready (tid=6c3c9700;cpuset=[7])
+EAL: lcore 31 is ready (tid=5d3b1700;cpuset=[31])
+EAL: lcore 3 is ready (tid=6ebcd700;cpuset=[3])
+EAL: lcore 1 is ready (tid=6ffcf700;cpuset=[1])
+EAL: lcore 12 is ready (tid=691c4700;cpuset=[12])
+EAL: lcore 18 is ready (tid=655be700;cpuset=[18])
+EAL: lcore 28 is ready (tid=5f1b4700;cpuset=[28])
+EAL: lcore 2 is ready (tid=6f5ce700;cpuset=[2])
+EAL: lcore 16 is ready (tid=669c0700;cpuset=[16])
+EAL: lcore 32 is ready (tid=5c9b0700;cpuset=[32])
+EAL: lcore 24 is ready (tid=619b8700;cpuset=[24])
+EAL: lcore 36 is ready (tid=5a1ac700;cpuset=[36])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fb274e00000
+EAL:   PCI memory mapped at 0x7fb274e80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fb274e84000
+EAL:   PCI memory mapped at 0x7fb274f04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fb175acc380 hw_ring=0x7fb174ca9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fb175acbb00 sw_sc_ring=0x7fb175acb5c0 hw_ring=0x7fb174cb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=0).
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fb175ac9380 hw_ring=0x7fb174cc9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fb175ac8b00 sw_sc_ring=0x7fb175ac85c0 hw_ring=0x7fb174cd9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=1).
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:03:43        SUITE_DUT_CMD: start
+22/07/2015 11:03:44     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:03:44        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:03:44     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:44        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:03:44     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:44     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:03:44  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:03:44     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:03:44  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:03:44     SUITE_TESTER_CMD: scapy
+22/07/2015 11:03:45  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:03:47     SUITE_TESTER_CMD: nutmac="90:E2:BA:28:E3:4D"
+22/07/2015 11:03:47  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 11:03:47     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1501)/Raw(load="P"*1481)], iface="ens2f0")
+22/07/2015 11:03:47  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 11:03:49     SUITE_TESTER_CMD: exit()
+22/07/2015 11:03:50  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:03:55        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:03:55     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1519
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:03:55        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:03:55     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1519
+  ############################################################################
+22/07/2015 11:03:55                ERROR: Test Case test_jumboframes_jumbo_jumbo Result FAILED: 'packet pass assert error'
+22/07/2015 11:03:55                 INFO: Test Case test_jumboframes_jumbo_nojumbo Begin
+22/07/2015 11:03:57        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=1518 --txqflags=0
+22/07/2015 11:04:03     SUITE_DUT_OUTPUT: EXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7fe113a00000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe113600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7fe0d3c00000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe0d3600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe0d3200000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7fe024c00000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7fe015e00000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe015800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe015200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe014e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe014a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe014600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe014200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe013e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe013a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe013600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe013200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe012e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe012a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7fdfd2c00000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd2800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd2400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd2000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd1c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd1800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd1400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd1000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd0c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd0800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd0400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfd0000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fdfcfc00000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 0 is ready (tid=d4c4f880;cpuset=[0])
+EAL: lcore 4 is ready (tid=ccdcc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=cc3cb700;cpuset=[5])
+EAL: lcore 7 is ready (tid=cafc9700;cpuset=[7])
+EAL: lcore 9 is ready (tid=c9bc7700;cpuset=[9])
+EAL: lcore 11 is ready (tid=c87c5700;cpuset=[11])
+EAL: lcore 13 is ready (tid=c73c3700;cpuset=[13])
+EAL: lcore 16 is ready (tid=c55c0700;cpuset=[16])
+EAL: lcore 6 is ready (tid=cb9ca700;cpuset=[6])
+EAL: lcore 18 is ready (tid=c41be700;cpuset=[18])
+EAL: lcore 20 is ready (tid=c2dbc700;cpuset=[20])
+EAL: lcore 22 is ready (tid=c19ba700;cpuset=[22])
+EAL: lcore 23 is ready (tid=c0fb9700;cpuset=[23])
+EAL: lcore 25 is ready (tid=bfbb7700;cpuset=[25])
+EAL: lcore 29 is ready (tid=bd3b3700;cpuset=[29])
+EAL: lcore 30 is ready (tid=bc9b2700;cpuset=[30])
+EAL: lcore 32 is ready (tid=bb5b0700;cpuset=[32])
+EAL: lcore 34 is ready (tid=ba1ae700;cpuset=[34])
+EAL: lcore 35 is ready (tid=b97ad700;cpuset=[35])
+EAL: lcore 2 is ready (tid=ce1ce700;cpuset=[2])
+EAL: lcore 1 is ready (tid=cebcf700;cpuset=[1])
+EAL: lcore 12 is ready (tid=c7dc4700;cpuset=[12])
+EAL: lcore 15 is ready (tid=c5fc1700;cpuset=[15])
+EAL: lcore 19 is ready (tid=c37bd700;cpuset=[19])
+EAL: lcore 26 is ready (tid=bf1b6700;cpuset=[26])
+EAL: lcore 27 is ready (tid=be7b5700;cpuset=[27])
+EAL: lcore 8 is ready (tid=ca5c8700;cpuset=[8])
+EAL: lcore 33 is ready (tid=babaf700;cpuset=[33])
+EAL: lcore 36 is ready (tid=b8dac700;cpuset=[36])
+EAL: lcore 14 is ready (tid=c69c2700;cpuset=[14])
+EAL: lcore 21 is ready (tid=c23bb700;cpuset=[21])
+EAL: lcore 28 is ready (tid=bddb4700;cpuset=[28])
+EAL: lcore 3 is ready (tid=cd7cd700;cpuset=[3])
+EAL: lcore 17 is ready (tid=c4bbf700;cpuset=[17])
+EAL: lcore 31 is ready (tid=bbfb1700;cpuset=[31])
+EAL: lcore 24 is ready (tid=c05b8700;cpuset=[24])
+EAL: lcore 10 is ready (tid=c91c6700;cpuset=[10])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fe1d3a00000
+EAL:   PCI memory mapped at 0x7fe1d3a80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fe1d3a84000
+EAL:   PCI memory mapped at 0x7fe1d3b04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fe0d46cc380 hw_ring=0x7fe0d38a9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fe0d46cbb00 sw_sc_ring=0x7fe0d46cb5c0 hw_ring=0x7fe0d38b9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fe0d46c9380 hw_ring=0x7fe0d38c9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fe0d46c8b00 sw_sc_ring=0x7fe0d46c85c0 hw_ring=0x7fe0d38d9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:04:03        SUITE_DUT_CMD: start
+22/07/2015 11:04:03     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:04:03        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:04:03     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:03        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:04:03     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:03     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:04:03  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:04:03     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:04:04  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:04:04     SUITE_TESTER_CMD: scapy
+22/07/2015 11:04:04  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:04:06     SUITE_TESTER_CMD: nutmac="90:E2:BA:28:E3:4D"
+22/07/2015 11:04:06  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 11:04:06     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1501)/Raw(load="P"*1481)], iface="ens2f0")
+22/07/2015 11:04:06  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 11:04:08     SUITE_TESTER_CMD: exit()
+22/07/2015 11:04:09  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:04:14        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:04:14     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 1          RX-errors: 1
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:14        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:04:14     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:14        SUITE_DUT_CMD: stop
+22/07/2015 11:04:14     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  RX-badcrc:  0              RX-badlen:  1             RX-error: 1
+  RX-nombufs: 0             
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 11:04:14        SUITE_DUT_CMD: quit
+22/07/2015 11:04:15     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 11:04:15                 INFO: Test Case test_jumboframes_jumbo_nojumbo Result PASSED:
+22/07/2015 11:04:15                 INFO: Test Case test_jumboframes_normal_jumbo Begin
+22/07/2015 11:04:17        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+22/07/2015 11:04:22     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f6a06000000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6a05c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f69c6200000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f69c5c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f69c5800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f6917200000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f6908400000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6907e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6907800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6907400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6907000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6906c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6906800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6906400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6906000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6905c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6905800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6905400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6905000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f68c5200000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c4e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c4a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c4600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c4200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c3e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c3a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c3600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c3200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c2e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c2a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c2600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f68c2200000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 0 is ready (tid=c718f880;cpuset=[0])
+EAL: lcore 4 is ready (tid=bf3cc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=be9cb700;cpuset=[5])
+EAL: lcore 7 is ready (tid=bd5c9700;cpuset=[7])
+EAL: lcore 29 is ready (tid=af9b3700;cpuset=[29])
+EAL: lcore 9 is ready (tid=bc1c7700;cpuset=[9])
+EAL: lcore 3 is ready (tid=bfdcd700;cpuset=[3])
+EAL: lcore 11 is ready (tid=badc5700;cpuset=[11])
+EAL: lcore 13 is ready (tid=b99c3700;cpuset=[13])
+EAL: lcore 6 is ready (tid=bdfca700;cpuset=[6])
+EAL: lcore 15 is ready (tid=b85c1700;cpuset=[15])
+EAL: lcore 18 is ready (tid=b67be700;cpuset=[18])
+EAL: lcore 21 is ready (tid=b49bb700;cpuset=[21])
+EAL: lcore 22 is ready (tid=b3fba700;cpuset=[22])
+EAL: lcore 24 is ready (tid=b2bb8700;cpuset=[24])
+EAL: lcore 27 is ready (tid=b0db5700;cpuset=[27])
+EAL: lcore 8 is ready (tid=bcbc8700;cpuset=[8])
+EAL: lcore 31 is ready (tid=ae5b1700;cpuset=[31])
+EAL: lcore 32 is ready (tid=adbb0700;cpuset=[32])
+EAL: lcore 34 is ready (tid=ac7ae700;cpuset=[34])
+EAL: lcore 2 is ready (tid=c07ce700;cpuset=[2])
+EAL: lcore 1 is ready (tid=c11cf700;cpuset=[1])
+EAL: lcore 35 is ready (tid=abdad700;cpuset=[35])
+EAL: lcore 14 is ready (tid=b8fc2700;cpuset=[14])
+EAL: lcore 16 is ready (tid=b7bc0700;cpuset=[16])
+EAL: lcore 20 is ready (tid=b53bc700;cpuset=[20])
+EAL: lcore 26 is ready (tid=b17b6700;cpuset=[26])
+EAL: lcore 25 is ready (tid=b21b7700;cpuset=[25])
+EAL: lcore 33 is ready (tid=ad1af700;cpuset=[33])
+EAL: lcore 10 is ready (tid=bb7c6700;cpuset=[10])
+EAL: lcore 12 is ready (tid=ba3c4700;cpuset=[12])
+EAL: lcore 19 is ready (tid=b5dbd700;cpuset=[19])
+EAL: lcore 28 is ready (tid=b03b4700;cpuset=[28])
+EAL: lcore 36 is ready (tid=ab3ac700;cpuset=[36])
+EAL: lcore 23 is ready (tid=b35b9700;cpuset=[23])
+EAL: lcore 17 is ready (tid=b71bf700;cpuset=[17])
+EAL: lcore 30 is ready (tid=aefb2700;cpuset=[30])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f6ac6000000
+EAL:   PCI memory mapped at 0x7f6ac6080000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f6ac6084000
+EAL:   PCI memory mapped at 0x7f6ac6104000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f69c6ccc380 hw_ring=0x7f69c5ea9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f69c6ccbb00 sw_sc_ring=0x7f69c6ccb5c0 hw_ring=0x7f69c5eb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=0).
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f69c6cc9380 hw_ring=0x7f69c5ec9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f69c6cc8b00 sw_sc_ring=0x7f69c6cc85c0 hw_ring=0x7f69c5ed9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=1).
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:04:22        SUITE_DUT_CMD: start
+22/07/2015 11:04:23     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:04:23        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:04:23     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:23        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:04:23     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:23     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:04:23  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:04:23     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:04:23  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:04:23     SUITE_TESTER_CMD: scapy
+22/07/2015 11:04:24  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:04:26     SUITE_TESTER_CMD: nutmac="90:E2:BA:28:E3:4D"
+22/07/2015 11:04:26  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 11:04:26     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1499)/Raw(load="P"*1479)], iface="ens2f0")
+22/07/2015 11:04:26  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 11:04:28     SUITE_TESTER_CMD: exit()
+22/07/2015 11:04:28  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:04:33        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:04:34     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1517
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:34        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:04:34     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1517
+  ############################################################################
+22/07/2015 11:04:34                ERROR: Test Case test_jumboframes_normal_jumbo Result FAILED: 'packet pass assert error'
+22/07/2015 11:04:34                 INFO: Test Case test_jumboframes_normal_nojumbo Begin
+22/07/2015 11:04:36        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=1518 --txqflags=0
+22/07/2015 11:04:41     SUITE_DUT_OUTPUT: EXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f7838c00000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7838800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f77f8e00000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f77f8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f77f8400000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f7749e00000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f773b000000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f773aa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f773a400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f773a000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7739c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7739800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7739400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7739000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7738c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7738800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7738400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7738000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7737c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f76f7e00000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f7a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f7600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f7200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f6e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f6a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f6600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f6200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f5e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f5a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f5600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f5200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f76f4e00000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 0 is ready (tid=f9e55880;cpuset=[0])
+EAL: lcore 4 is ready (tid=f1fcc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=f15cb700;cpuset=[5])
+EAL: lcore 7 is ready (tid=f01c9700;cpuset=[7])
+EAL: lcore 9 is ready (tid=eedc7700;cpuset=[9])
+EAL: lcore 32 is ready (tid=e07b0700;cpuset=[32])
+EAL: lcore 10 is ready (tid=ee3c6700;cpuset=[10])
+EAL: lcore 11 is ready (tid=ed9c5700;cpuset=[11])
+EAL: lcore 12 is ready (tid=ecfc4700;cpuset=[12])
+EAL: lcore 13 is ready (tid=ec5c3700;cpuset=[13])
+EAL: lcore 16 is ready (tid=ea7c0700;cpuset=[16])
+EAL: lcore 17 is ready (tid=e9dbf700;cpuset=[17])
+EAL: lcore 20 is ready (tid=e7fbc700;cpuset=[20])
+EAL: lcore 23 is ready (tid=e61b9700;cpuset=[23])
+EAL: lcore 22 is ready (tid=e6bba700;cpuset=[22])
+EAL: lcore 27 is ready (tid=e39b5700;cpuset=[27])
+EAL: lcore 25 is ready (tid=e4db7700;cpuset=[25])
+EAL: lcore 29 is ready (tid=e25b3700;cpuset=[29])
+EAL: lcore 30 is ready (tid=e1bb2700;cpuset=[30])
+EAL: lcore 34 is ready (tid=df3ae700;cpuset=[34])
+EAL: lcore 33 is ready (tid=dfdaf700;cpuset=[33])
+EAL: lcore 35 is ready (tid=de9ad700;cpuset=[35])
+EAL: lcore 3 is ready (tid=f29cd700;cpuset=[3])
+EAL: lcore 2 is ready (tid=f33ce700;cpuset=[2])
+EAL: lcore 36 is ready (tid=ddfac700;cpuset=[36])
+EAL: lcore 14 is ready (tid=ebbc2700;cpuset=[14])
+EAL: lcore 19 is ready (tid=e89bd700;cpuset=[19])
+EAL: lcore 24 is ready (tid=e57b8700;cpuset=[24])
+EAL: lcore 26 is ready (tid=e43b6700;cpuset=[26])
+EAL: lcore 31 is ready (tid=e11b1700;cpuset=[31])
+EAL: lcore 6 is ready (tid=f0bca700;cpuset=[6])
+EAL: lcore 15 is ready (tid=eb1c1700;cpuset=[15])
+EAL: lcore 18 is ready (tid=e93be700;cpuset=[18])
+EAL: lcore 8 is ready (tid=ef7c8700;cpuset=[8])
+EAL: lcore 1 is ready (tid=f3dcf700;cpuset=[1])
+EAL: lcore 28 is ready (tid=e2fb4700;cpuset=[28])
+EAL: lcore 21 is ready (tid=e75bb700;cpuset=[21])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f78f8c00000
+EAL:   PCI memory mapped at 0x7f78f8c80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f78f8c84000
+EAL:   PCI memory mapped at 0x7f78f8d04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f77f98cc380 hw_ring=0x7f77f8aa9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f77f98cbb00 sw_sc_ring=0x7f77f98cb5c0 hw_ring=0x7f77f8ab9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f77f98c9380 hw_ring=0x7f77f8ac9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f77f98c8b00 sw_sc_ring=0x7f77f98c85c0 hw_ring=0x7f77f8ad9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:04:41        SUITE_DUT_CMD: start
+22/07/2015 11:04:42     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:04:42        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:04:42     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:42        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:04:42     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:42     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 11:04:42  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:04:42     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:04:42  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:04:42     SUITE_TESTER_CMD: scapy
+22/07/2015 11:04:43  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 11:04:45     SUITE_TESTER_CMD: nutmac="90:E2:BA:28:E3:4D"
+22/07/2015 11:04:45  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 11:04:45     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1499)/Raw(load="P"*1479)], iface="ens2f0")
+22/07/2015 11:04:45  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 11:04:47     SUITE_TESTER_CMD: exit()
+22/07/2015 11:04:47  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 11:04:52        SUITE_DUT_CMD: show port stats 0
+22/07/2015 11:04:53     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1517
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 11:04:53        SUITE_DUT_CMD: show port stats 1
+22/07/2015 11:04:53     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1517
+  ############################################################################
+22/07/2015 11:04:53                ERROR: Test Case test_jumboframes_normal_nojumbo Result FAILED: 'packet pass assert error'
+22/07/2015 11:04:53     SUITE_TESTER_CMD: ifconfig ens2f1 mtu 1518
+22/07/2015 11:04:53  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:04:53     SUITE_TESTER_CMD: ifconfig ens2f0 mtu 1518
+22/07/2015 11:04:54  SUITE_TESTER_OUTPUT: 
+22/07/2015 11:04:55     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:04:55  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:04:55                 INFO: 
+TEST SUITE ENDED: TestJumboframes
+22/07/2015 14:46:40                 INFO: 
+TEST SUITE : TestJumboframes
+22/07/2015 14:46:40                 INFO: NIC :        cfg
+22/07/2015 14:46:40     SUITE_TESTER_CMD: ifconfig ens2f1 mtu 9200
+22/07/2015 14:46:41  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:46:41     SUITE_TESTER_CMD: ifconfig ens2f1 mtu 9200
+22/07/2015 14:46:41  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:46:41                 INFO: Test Case test_jumboframes_bigger_jumbo Begin
+22/07/2015 14:46:43        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+22/07/2015 14:46:48     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7bb7400000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f7ab8e00000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f7ab8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f7ab8200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f7ab7c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f7ab7200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f7ab6c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7ab6800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f7ab6400000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f79d2200000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f79c3800000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79c3200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f79bbe00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79bb800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79bb200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f79ba800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79ba200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b9c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f79b9200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b8c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f79b8200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b7c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b7600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b7000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b6a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f79b6000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b5a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b5400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b4e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b4800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b4200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b3c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f79b3600000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=b87b9880;cpuset=[1])
+EAL: lcore 2 is ready (tid=b25cf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f7bb7600000
+EAL:   PCI memory mapped at 0x7f7bb7680000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f7bb7684000
+EAL:   PCI memory mapped at 0x7f7bb7704000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f7ab98cd600 hw_ring=0x7f7ab8aa9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f7ab98ccd80 sw_sc_ring=0x7f7ab98cc840 hw_ring=0x7f7ab8ab9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=0).
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f7ab98ca600 hw_ring=0x7f7ab8ac9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f7ab98c9d80 sw_sc_ring=0x7f7ab98c9840 hw_ring=0x7f7ab8ad9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=1).
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:46:48        SUITE_DUT_CMD: start
+22/07/2015 14:46:49     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:46:49        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:46:49     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:46:49        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:46:49     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:46:49     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:46:49  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:46:49     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:46:50  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:46:50     SUITE_TESTER_CMD: scapy
+22/07/2015 14:46:50  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:46:52     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:46:52  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:46:52     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=8983)/Raw(load="P"*8963)], iface="ens2f1")
+22/07/2015 14:46:52  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:46:54     SUITE_TESTER_CMD: exit()
+22/07/2015 14:46:55  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:47:00        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:00     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:00        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:00     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 1          RX-errors: 1
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:00        SUITE_DUT_CMD: quit
+22/07/2015 14:47:00     SUITE_DUT_OUTPUT: quit
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  RX-badcrc:  0              RX-badlen:  1             RX-error: 1
+  RX-nombufs: 0             
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:47:00                 INFO: Test Case test_jumboframes_bigger_jumbo Result PASSED:
+22/07/2015 14:47:00                 INFO: Test Case test_jumboframes_jumbo_jumbo Begin
+22/07/2015 14:47:02        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+22/07/2015 14:47:08     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f41b8c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f40ba600000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f40ba000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f40b9a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f40b9400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f40b8a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f40b8400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f40b8000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f40b7c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f3fd3a00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f3fc5000000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fc4a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f3fbd600000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fbd000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fbca00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3fbc000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fbba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fbb400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3fbaa00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fba400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3fb9a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb9400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb8e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb8200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3fb7800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb7200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb6c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb6600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb6000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb5a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb5400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3fb4e00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=b9f0a880;cpuset=[0])
+EAL: lcore 4 is ready (tid=b1fcc700;cpuset=[4])
+EAL: lcore 18 is ready (tid=a93be700;cpuset=[18])
+EAL: lcore 35 is ready (tid=9e9ad700;cpuset=[35])
+EAL: lcore 3 is ready (tid=b29cd700;cpuset=[3])
+EAL: lcore 34 is ready (tid=9f3ae700;cpuset=[34])
+EAL: lcore 2 is ready (tid=b33ce700;cpuset=[2])
+EAL: lcore 11 is ready (tid=ad9c5700;cpuset=[11])
+EAL: lcore 13 is ready (tid=ac5c3700;cpuset=[13])
+EAL: lcore 14 is ready (tid=abbc2700;cpuset=[14])
+EAL: lcore 17 is ready (tid=a9dbf700;cpuset=[17])
+EAL: lcore 19 is ready (tid=a89bd700;cpuset=[19])
+EAL: lcore 20 is ready (tid=a7fbc700;cpuset=[20])
+EAL: lcore 23 is ready (tid=a61b9700;cpuset=[23])
+EAL: lcore 25 is ready (tid=a4db7700;cpuset=[25])
+EAL: lcore 28 is ready (tid=a2fb4700;cpuset=[28])
+EAL: lcore 29 is ready (tid=a25b3700;cpuset=[29])
+EAL: lcore 33 is ready (tid=9fdaf700;cpuset=[33])
+EAL: lcore 31 is ready (tid=a11b1700;cpuset=[31])
+EAL: lcore 36 is ready (tid=9dfac700;cpuset=[36])
+EAL: lcore 7 is ready (tid=b01c9700;cpuset=[7])
+EAL: lcore 8 is ready (tid=af7c8700;cpuset=[8])
+EAL: lcore 9 is ready (tid=aedc7700;cpuset=[9])
+EAL: lcore 10 is ready (tid=ae3c6700;cpuset=[10])
+EAL: lcore 16 is ready (tid=aa7c0700;cpuset=[16])
+EAL: lcore 5 is ready (tid=b15cb700;cpuset=[5])
+EAL: lcore 22 is ready (tid=a6bba700;cpuset=[22])
+EAL: lcore 26 is ready (tid=a43b6700;cpuset=[26])
+EAL: lcore 30 is ready (tid=a1bb2700;cpuset=[30])
+EAL: lcore 1 is ready (tid=b3dcf700;cpuset=[1])
+EAL: lcore 6 is ready (tid=b0bca700;cpuset=[6])
+EAL: lcore 12 is ready (tid=acfc4700;cpuset=[12])
+EAL: lcore 21 is ready (tid=a75bb700;cpuset=[21])
+EAL: lcore 27 is ready (tid=a39b5700;cpuset=[27])
+EAL: lcore 15 is ready (tid=ab1c1700;cpuset=[15])
+EAL: lcore 32 is ready (tid=a07b0700;cpuset=[32])
+EAL: lcore 24 is ready (tid=a57b8700;cpuset=[24])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f41b8e00000
+EAL:   PCI memory mapped at 0x7f41b8e80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f41b8e84000
+EAL:   PCI memory mapped at 0x7f41b8f04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f40bb0cc380 hw_ring=0x7f40ba2a9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f40bb0cbb00 sw_sc_ring=0x7f40bb0cb5c0 hw_ring=0x7f40ba2b9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=0).
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f40bb0c9380 hw_ring=0x7f40ba2c9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f40bb0c8b00 sw_sc_ring=0x7f40bb0c85c0 hw_ring=0x7f40ba2d9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=1).
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:47:08        SUITE_DUT_CMD: start
+22/07/2015 14:47:08     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:47:08        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:08     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:08        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:09     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:09     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:47:09  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:47:09     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:47:09  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:47:09     SUITE_TESTER_CMD: scapy
+22/07/2015 14:47:09  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:47:11     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:47:12  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:47:12     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1501)/Raw(load="P"*1481)], iface="ens2f1")
+22/07/2015 14:47:12  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:47:14     SUITE_TESTER_CMD: exit()
+22/07/2015 14:47:14  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:47:19        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:19     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1519
+  ############################################################################
+22/07/2015 14:47:19        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:19     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1519
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:19        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:20     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1519
+  ############################################################################
+22/07/2015 14:47:20        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:20     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1519
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:20     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:47:20  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:47:20     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:47:20  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:47:20     SUITE_TESTER_CMD: scapy
+22/07/2015 14:47:21  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:47:23     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:47:23  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:47:23     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=8981)/Raw(load="P"*8961)], iface="ens2f1")
+22/07/2015 14:47:23  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:47:25     SUITE_TESTER_CMD: exit()
+22/07/2015 14:47:25  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:47:30        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:31     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 2          TX-errors: 0          TX-bytes:  10518
+  ############################################################################
+22/07/2015 14:47:31        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:31     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 2          RX-missed: 0          RX-bytes:  10518
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:31        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:31     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 2          TX-errors: 0          TX-bytes:  10518
+  ############################################################################
+22/07/2015 14:47:31        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:31     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 2          RX-missed: 0          RX-bytes:  10518
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:31     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:47:31  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:47:31     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:47:32  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:47:32     SUITE_TESTER_CMD: scapy
+22/07/2015 14:47:32  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:47:34     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:47:34  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:47:34     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=8982)/Raw(load="P"*8962)], iface="ens2f1")
+22/07/2015 14:47:34  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:47:36     SUITE_TESTER_CMD: exit()
+22/07/2015 14:47:37  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:47:42        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:42     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 3          TX-errors: 0          TX-bytes:  19518
+  ############################################################################
+22/07/2015 14:47:42        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:42     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 3          RX-missed: 0          RX-bytes:  19518
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:42        SUITE_DUT_CMD: stop
+22/07/2015 14:47:42     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 3              TX-dropped: 0             TX-total: 3
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 3              RX-dropped: 0             RX-total: 3
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 3              RX-dropped: 0             RX-total: 3
+  TX-packets: 3              TX-dropped: 0             TX-total: 3
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:47:42        SUITE_DUT_CMD: quit
+22/07/2015 14:47:43     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:47:43                 INFO: Test Case test_jumboframes_jumbo_jumbo Result PASSED:
+22/07/2015 14:47:43                 INFO: Test Case test_jumboframes_jumbo_nojumbo Begin
+22/07/2015 14:47:45        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=1518 --txqflags=0
+22/07/2015 14:47:50     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f171cc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f161e600000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f161e000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f161da00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f161d400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f161ca00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f161c400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f161c000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f161bc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f1537a00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f1529000000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1528a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f1521600000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1521000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1520a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1520000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151fa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151f400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f151ea00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f151da00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151d400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151ce00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151c800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151c200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f151b800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151b200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151ac00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151a600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151a000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1519a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1519400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1518e00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=1df8a880;cpuset=[0])
+EAL: lcore 4 is ready (tid=15fcc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=155cb700;cpuset=[5])
+EAL: lcore 28 is ready (tid=6fb4700;cpuset=[28])
+EAL: lcore 8 is ready (tid=137c8700;cpuset=[8])
+EAL: lcore 2 is ready (tid=173ce700;cpuset=[2])
+EAL: lcore 1 is ready (tid=17dcf700;cpuset=[1])
+EAL: lcore 9 is ready (tid=12dc7700;cpuset=[9])
+EAL: lcore 10 is ready (tid=123c6700;cpuset=[10])
+EAL: lcore 11 is ready (tid=119c5700;cpuset=[11])
+EAL: lcore 16 is ready (tid=e7c0700;cpuset=[16])
+EAL: lcore 15 is ready (tid=f1c1700;cpuset=[15])
+EAL: lcore 18 is ready (tid=d3be700;cpuset=[18])
+EAL: lcore 19 is ready (tid=c9bd700;cpuset=[19])
+EAL: lcore 22 is ready (tid=abba700;cpuset=[22])
+EAL: lcore 24 is ready (tid=97b8700;cpuset=[24])
+EAL: lcore 26 is ready (tid=83b6700;cpuset=[26])
+EAL: lcore 25 is ready (tid=8db7700;cpuset=[25])
+EAL: lcore 30 is ready (tid=5bb2700;cpuset=[30])
+EAL: lcore 32 is ready (tid=47b0700;cpuset=[32])
+EAL: lcore 34 is ready (tid=33ae700;cpuset=[34])
+EAL: lcore 3 is ready (tid=169cd700;cpuset=[3])
+EAL: lcore 36 is ready (tid=1fac700;cpuset=[36])
+EAL: lcore 12 is ready (tid=10fc4700;cpuset=[12])
+EAL: lcore 13 is ready (tid=105c3700;cpuset=[13])
+EAL: lcore 6 is ready (tid=14bca700;cpuset=[6])
+EAL: lcore 17 is ready (tid=ddbf700;cpuset=[17])
+EAL: lcore 21 is ready (tid=b5bb700;cpuset=[21])
+EAL: lcore 29 is ready (tid=65b3700;cpuset=[29])
+EAL: lcore 27 is ready (tid=79b5700;cpuset=[27])
+EAL: lcore 33 is ready (tid=3daf700;cpuset=[33])
+EAL: lcore 14 is ready (tid=fbc2700;cpuset=[14])
+EAL: lcore 23 is ready (tid=a1b9700;cpuset=[23])
+EAL: lcore 31 is ready (tid=51b1700;cpuset=[31])
+EAL: lcore 20 is ready (tid=bfbc700;cpuset=[20])
+EAL: lcore 35 is ready (tid=29ad700;cpuset=[35])
+EAL: lcore 7 is ready (tid=141c9700;cpuset=[7])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f171ce00000
+EAL:   PCI memory mapped at 0x7f171ce80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f171ce84000
+EAL:   PCI memory mapped at 0x7f171cf04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f161f0cc380 hw_ring=0x7f161e2a9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f161f0cbb00 sw_sc_ring=0x7f161f0cb5c0 hw_ring=0x7f161e2b9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f161f0c9380 hw_ring=0x7f161e2c9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f161f0c8b00 sw_sc_ring=0x7f161f0c85c0 hw_ring=0x7f161e2d9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:47:50        SUITE_DUT_CMD: start
+22/07/2015 14:47:50     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:47:50        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:47:51     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:51        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:47:51     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:47:51     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:47:51  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:47:51     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:47:51  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:47:51     SUITE_TESTER_CMD: scapy
+22/07/2015 14:47:52  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:47:54     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:47:54  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:47:54     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1501)/Raw(load="P"*1481)], iface="ens2f1")
+22/07/2015 14:47:54  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:47:56     SUITE_TESTER_CMD: exit()
+22/07/2015 14:47:56  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:48:01        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:01     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:01        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:02     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 1          RX-errors: 1
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:02        SUITE_DUT_CMD: stop
+22/07/2015 14:48:02     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  RX-badcrc:  0              RX-badlen:  1             RX-error: 1
+  RX-nombufs: 0             
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:48:02        SUITE_DUT_CMD: quit
+22/07/2015 14:48:02     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:48:02                 INFO: Test Case test_jumboframes_jumbo_nojumbo Result PASSED:
+22/07/2015 14:48:02                 INFO: Test Case test_jumboframes_normal_jumbo Begin
+22/07/2015 14:48:04        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+22/07/2015 14:48:10     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f0424200000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f0325c00000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0325600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0325000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0324a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0324000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0323a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f0323600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f0323200000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f023f000000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f0230600000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0230000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f0228c00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0228600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0228000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0227600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0227000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0226a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0226000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0225a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0225000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0224a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0224400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0223e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0223800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0222e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0222800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0222200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0221c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0221600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0221000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0220a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0220400000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=255f4880;cpuset=[0])
+EAL: lcore 4 is ready (tid=1d5cc700;cpuset=[4])
+EAL: lcore 13 is ready (tid=17bc3700;cpuset=[13])
+EAL: lcore 6 is ready (tid=1c1ca700;cpuset=[6])
+EAL: lcore 8 is ready (tid=1adc8700;cpuset=[8])
+EAL: lcore 10 is ready (tid=199c6700;cpuset=[10])
+EAL: lcore 12 is ready (tid=185c4700;cpuset=[12])
+EAL: lcore 16 is ready (tid=15dc0700;cpuset=[16])
+EAL: lcore 15 is ready (tid=167c1700;cpuset=[15])
+EAL: lcore 18 is ready (tid=149be700;cpuset=[18])
+EAL: lcore 20 is ready (tid=135bc700;cpuset=[20])
+EAL: lcore 23 is ready (tid=117b9700;cpuset=[23])
+EAL: lcore 24 is ready (tid=10db8700;cpuset=[24])
+EAL: lcore 28 is ready (tid=e5b4700;cpuset=[28])
+EAL: lcore 26 is ready (tid=f9b6700;cpuset=[26])
+EAL: lcore 30 is ready (tid=d1b2700;cpuset=[30])
+EAL: lcore 32 is ready (tid=bdb0700;cpuset=[32])
+EAL: lcore 34 is ready (tid=a9ae700;cpuset=[34])
+EAL: lcore 35 is ready (tid=9fad700;cpuset=[35])
+EAL: lcore 2 is ready (tid=1e9ce700;cpuset=[2])
+EAL: lcore 36 is ready (tid=95ac700;cpuset=[36])
+EAL: lcore 11 is ready (tid=18fc5700;cpuset=[11])
+EAL: lcore 14 is ready (tid=171c2700;cpuset=[14])
+EAL: lcore 19 is ready (tid=13fbd700;cpuset=[19])
+EAL: lcore 27 is ready (tid=efb5700;cpuset=[27])
+EAL: lcore 22 is ready (tid=121ba700;cpuset=[22])
+EAL: lcore 31 is ready (tid=c7b1700;cpuset=[31])
+EAL: lcore 33 is ready (tid=b3af700;cpuset=[33])
+EAL: lcore 1 is ready (tid=1f3cf700;cpuset=[1])
+EAL: lcore 5 is ready (tid=1cbcb700;cpuset=[5])
+EAL: lcore 21 is ready (tid=12bbb700;cpuset=[21])
+EAL: lcore 29 is ready (tid=dbb3700;cpuset=[29])
+EAL: lcore 3 is ready (tid=1dfcd700;cpuset=[3])
+EAL: lcore 17 is ready (tid=153bf700;cpuset=[17])
+EAL: lcore 7 is ready (tid=1b7c9700;cpuset=[7])
+EAL: lcore 25 is ready (tid=103b7700;cpuset=[25])
+EAL: lcore 9 is ready (tid=1a3c7700;cpuset=[9])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f0424400000
+EAL:   PCI memory mapped at 0x7f0424480000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f0424484000
+EAL:   PCI memory mapped at 0x7f0424504000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f03266cc380 hw_ring=0x7f03258a9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f03266cbb00 sw_sc_ring=0x7f03266cb5c0 hw_ring=0x7f03258b9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=0).
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f03266c9380 hw_ring=0x7f03258c9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f03266c8b00 sw_sc_ring=0x7f03266c85c0 hw_ring=0x7f03258d9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Using Vector Scattered Rx callback (port=1).
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:48:10        SUITE_DUT_CMD: start
+22/07/2015 14:48:10     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:48:10        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:10     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:10        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:10     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:10     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:48:11  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:48:11     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:48:11  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:48:11     SUITE_TESTER_CMD: scapy
+22/07/2015 14:48:11  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:48:13     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:48:13  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:48:13     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1499)/Raw(load="P"*1479)], iface="ens2f1")
+22/07/2015 14:48:14  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:48:16     SUITE_TESTER_CMD: exit()
+22/07/2015 14:48:16  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:48:21        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:21     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1517
+  ############################################################################
+22/07/2015 14:48:21        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:21     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1517
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:21        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:21     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1517
+  ############################################################################
+22/07/2015 14:48:21        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:22     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1517
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:22     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:48:22  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:48:22     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:48:22  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:48:22     SUITE_TESTER_CMD: scapy
+22/07/2015 14:48:22  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:48:24     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:48:25  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:48:25     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1500)/Raw(load="P"*1480)], iface="ens2f1")
+22/07/2015 14:48:25  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:48:27     SUITE_TESTER_CMD: exit()
+22/07/2015 14:48:27  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:48:32        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:32     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 2          TX-errors: 0          TX-bytes:  3035
+  ############################################################################
+22/07/2015 14:48:32        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:32     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 2          RX-missed: 0          RX-bytes:  3035
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:32        SUITE_DUT_CMD: stop
+22/07/2015 14:48:33     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 2              TX-dropped: 0             TX-total: 2
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 2              RX-dropped: 0             RX-total: 2
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 2              RX-dropped: 0             RX-total: 2
+  TX-packets: 2              TX-dropped: 0             TX-total: 2
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:48:33        SUITE_DUT_CMD: quit
+22/07/2015 14:48:33     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:48:33                 INFO: Test Case test_jumboframes_normal_jumbo Result PASSED:
+22/07/2015 14:48:33                 INFO: Test Case test_jumboframes_normal_nojumbo Begin
+22/07/2015 14:48:35        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=1518 --txqflags=0
+22/07/2015 14:48:41     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5b3d600000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f5a3f000000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5a3ea00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5a3e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5a3de00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5a3d400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5a3ce00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5a3ca00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5a3c600000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f5958400000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f5949a00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5949400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f5942000000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5941a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5941400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5940a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5940400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593fe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f593f400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593ee00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f593e400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593de00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593d800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593d200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593cc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f593c200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593bc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593b600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593b000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593aa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f593a400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5939e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5939800000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=3e87f880;cpuset=[0])
+EAL: lcore 4 is ready (tid=369cc700;cpuset=[4])
+EAL: lcore 14 is ready (tid=305c2700;cpuset=[14])
+EAL: lcore 6 is ready (tid=355ca700;cpuset=[6])
+EAL: lcore 1 is ready (tid=387cf700;cpuset=[1])
+EAL: lcore 9 is ready (tid=337c7700;cpuset=[9])
+EAL: lcore 11 is ready (tid=323c5700;cpuset=[11])
+EAL: lcore 13 is ready (tid=30fc3700;cpuset=[13])
+EAL: lcore 15 is ready (tid=2fbc1700;cpuset=[15])
+EAL: lcore 17 is ready (tid=2e7bf700;cpuset=[17])
+EAL: lcore 19 is ready (tid=2d3bd700;cpuset=[19])
+EAL: lcore 21 is ready (tid=2bfbb700;cpuset=[21])
+EAL: lcore 24 is ready (tid=2a1b8700;cpuset=[24])
+EAL: lcore 25 is ready (tid=297b7700;cpuset=[25])
+EAL: lcore 27 is ready (tid=283b5700;cpuset=[27])
+EAL: lcore 7 is ready (tid=34bc9700;cpuset=[7])
+EAL: lcore 31 is ready (tid=25bb1700;cpuset=[31])
+EAL: lcore 32 is ready (tid=251b0700;cpuset=[32])
+EAL: lcore 34 is ready (tid=23dae700;cpuset=[34])
+EAL: lcore 8 is ready (tid=341c8700;cpuset=[8])
+EAL: lcore 35 is ready (tid=233ad700;cpuset=[35])
+EAL: lcore 10 is ready (tid=32dc6700;cpuset=[10])
+EAL: lcore 5 is ready (tid=35fcb700;cpuset=[5])
+EAL: lcore 18 is ready (tid=2ddbe700;cpuset=[18])
+EAL: lcore 22 is ready (tid=2b5ba700;cpuset=[22])
+EAL: lcore 26 is ready (tid=28db6700;cpuset=[26])
+EAL: lcore 29 is ready (tid=26fb3700;cpuset=[29])
+EAL: lcore 33 is ready (tid=247af700;cpuset=[33])
+EAL: lcore 2 is ready (tid=37dce700;cpuset=[2])
+EAL: lcore 12 is ready (tid=319c4700;cpuset=[12])
+EAL: lcore 20 is ready (tid=2c9bc700;cpuset=[20])
+EAL: lcore 28 is ready (tid=279b4700;cpuset=[28])
+EAL: lcore 3 is ready (tid=373cd700;cpuset=[3])
+EAL: lcore 16 is ready (tid=2f1c0700;cpuset=[16])
+EAL: lcore 30 is ready (tid=265b2700;cpuset=[30])
+EAL: lcore 23 is ready (tid=2abb9700;cpuset=[23])
+EAL: lcore 36 is ready (tid=229ac700;cpuset=[36])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f5b3d800000
+EAL:   PCI memory mapped at 0x7f5b3d880000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f5b3d884000
+EAL:   PCI memory mapped at 0x7f5b3d904000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f5a3facc380 hw_ring=0x7f5a3eca9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f5a3facbb00 sw_sc_ring=0x7f5a3facb5c0 hw_ring=0x7f5a3ecb9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f5a3fac9380 hw_ring=0x7f5a3ecc9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f5a3fac8b00 sw_sc_ring=0x7f5a3fac85c0 hw_ring=0x7f5a3ecd9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:48:41        SUITE_DUT_CMD: start
+22/07/2015 14:48:41     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=2
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 14:48:41        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:41     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:41        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:41     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:41     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:48:41  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:48:41     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:48:42  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:48:42     SUITE_TESTER_CMD: scapy
+22/07/2015 14:48:42  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:48:44     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:48:44  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:48:44     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1499)/Raw(load="P"*1479)], iface="ens2f1")
+22/07/2015 14:48:44  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:48:46     SUITE_TESTER_CMD: exit()
+22/07/2015 14:48:47  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:48:52        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:52     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1517
+  ############################################################################
+22/07/2015 14:48:52        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:52     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1517
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:52        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:48:52     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 1          TX-errors: 0          TX-bytes:  1517
+  ############################################################################
+22/07/2015 14:48:52        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:48:52     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 1          RX-missed: 0          RX-bytes:  1517
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:48:52     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+22/07/2015 14:48:53  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:48:53     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:48:53  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:48:53     SUITE_TESTER_CMD: scapy
+22/07/2015 14:48:53  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+22/07/2015 14:48:55     SUITE_TESTER_CMD: nutmac="90:e2:ba:28:e3:4d"
+22/07/2015 14:48:55  SUITE_TESTER_OUTPUT: [0m[34m[1m
+22/07/2015 14:48:55     SUITE_TESTER_CMD: sendp([Ether(dst=nutmac, src="52:00:00:00:00:00")/IP(len=1500)/Raw(load="P"*1480)], iface="ens2f1")
+22/07/2015 14:48:56  SUITE_TESTER_OUTPUT: [0m.
+Sent 1 packets.
+22/07/2015 14:48:58     SUITE_TESTER_CMD: exit()
+22/07/2015 14:48:58  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+22/07/2015 14:49:03        SUITE_DUT_CMD: show port stats 0
+22/07/2015 14:49:03     SUITE_DUT_OUTPUT: show port stats 0
+
+  ######################## NIC statistics for port 0  ########################
+  RX-packets: 0          RX-missed: 0          RX-bytes:  0
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 2          TX-errors: 0          TX-bytes:  3035
+  ############################################################################
+22/07/2015 14:49:03        SUITE_DUT_CMD: show port stats 1
+22/07/2015 14:49:03     SUITE_DUT_OUTPUT: show port stats 1
+
+  ######################## NIC statistics for port 1  ########################
+  RX-packets: 2          RX-missed: 0          RX-bytes:  3035
+  RX-badcrc:  0          RX-badlen: 0          RX-errors: 0
+  RX-nombuf:  0         
+  TX-packets: 0          TX-errors: 0          TX-bytes:  0
+  ############################################################################
+22/07/2015 14:49:03        SUITE_DUT_CMD: stop
+22/07/2015 14:49:03     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  ---------------------- Forward statistics for port 0  ----------------------
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 2              TX-dropped: 0             TX-total: 2
+  ----------------------------------------------------------------------------
+
+  ---------------------- Forward statistics for port 1  ----------------------
+  RX-packets: 2              RX-dropped: 0             RX-total: 2
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ----------------------------------------------------------------------------
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 2              RX-dropped: 0             RX-total: 2
+  TX-packets: 2              TX-dropped: 0             TX-total: 2
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+22/07/2015 14:49:03        SUITE_DUT_CMD: quit
+22/07/2015 14:49:04     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:49:04                 INFO: Test Case test_jumboframes_normal_nojumbo Result PASSED:
+22/07/2015 14:49:04     SUITE_TESTER_CMD: ifconfig ens2f1 mtu 1518
+22/07/2015 14:49:04  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:49:04     SUITE_TESTER_CMD: ifconfig ens2f1 mtu 1518
+22/07/2015 14:49:05  SUITE_TESTER_OUTPUT: 
+22/07/2015 14:49:06     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:49:06  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:49:06                 INFO: 
+TEST SUITE ENDED: TestJumboframes
+22/07/2015 16:22:06                 INFO: 
+TEST SUITE : TestJumboframes
+22/07/2015 16:22:06                 INFO: NIC :        cfg
+22/07/2015 16:22:06                ERROR: set_up_all failed:
+Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 547, in execute_test_setup_all
+    test_case.set_up_all()
+  File "tests/TestSuite_jumboframes.py", line 117, in set_up_all
+    self.verify(len(self.dut_ports) >= 2, "Insufficient ports")
+  File "/download/dts-master/framework/test_case.py", line 67, in verify
+    raise VerifyFailure(description)
+VerifyFailure: 'Insufficient ports'
+
+22/07/2015 16:22:06                 INFO: 
+TEST SUITE ENDED: TestJumboframes
+23/07/2015 15:34:31                 INFO: 
+TEST SUITE : TestJumboframes
+23/07/2015 15:34:31                 INFO: NIC :        cfg
+23/07/2015 15:34:31     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 9200
+23/07/2015 15:34:31                ERROR:  !!! STOPPING DCTS
+23/07/2015 15:34:31     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 1518
+23/07/2015 15:34:31  SUITE_TESTER_OUTPUT: 
+23/07/2015 15:34:31     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 1518
+23/07/2015 15:34:32  SUITE_TESTER_OUTPUT: 
+23/07/2015 15:34:33     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 15:34:33  SUITE_TESTER_OUTPUT: tester
+23/07/2015 15:34:33        SUITE_DUT_CMD: ls --color=never /sys/bus/pci/devices/0000:21:00.0/net
+23/07/2015 15:34:33     SUITE_DUT_OUTPUT: eth4  eth5
+23/07/2015 15:34:33        SUITE_DUT_CMD: ifconfig eth5 up
+23/07/2015 15:34:34     SUITE_DUT_OUTPUT: 
+23/07/2015 15:34:34        SUITE_DUT_CMD: ls --color=never /sys/bus/pci/devices/0000:21:00.0/net
+23/07/2015 15:34:34     SUITE_DUT_OUTPUT: eth4  eth5
+23/07/2015 15:34:34        SUITE_DUT_CMD: ifconfig eth5 up
+23/07/2015 15:34:34     SUITE_DUT_OUTPUT: 
+23/07/2015 15:34:35     SUITE_TESTER_CMD: modprobe igb
+23/07/2015 15:34:35  SUITE_TESTER_OUTPUT: EXPECT]
+23/07/2015 15:34:35     SUITE_TESTER_CMD: modprobe ixgbe
+23/07/2015 15:34:35  SUITE_TESTER_OUTPUT: EXPECT]
+23/07/2015 15:34:35     SUITE_TESTER_CMD: modprobe e1000e
+23/07/2015 15:34:35  SUITE_TESTER_OUTPUT: EXPECT]
+23/07/2015 15:34:35     SUITE_TESTER_CMD: modprobe e1000
+23/07/2015 15:34:35  SUITE_TESTER_OUTPUT: EXPECT]
+23/07/2015 15:34:35     SUITE_TESTER_CMD: lspci -nn | grep -i 04:00.0
+23/07/2015 15:34:35  SUITE_TESTER_OUTPUT: EXPECT]
+23/07/2015 15:34:35     SUITE_TESTER_CMD: ls --color=never /sys/bus/pci/devices/0000:04:00.0/net
+23/07/2015 15:34:35                ERROR:    !!! Restore ITF: invalid literal for int() with base 10: 'ens4d1'
+23/07/2015 15:34:36                 INFO: DTS ended
+26/07/2015 16:23:02                 INFO: 
+TEST SUITE : TestJumboframes
+26/07/2015 16:23:02                 INFO: NIC :        cfg
+26/07/2015 16:23:02     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 9200
+26/07/2015 16:23:03  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:23:03     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 9200
+26/07/2015 16:23:03  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:23:03                 INFO: Test Case test_jumboframes_bigger_jumbo Begin
+26/07/2015 16:23:05        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+26/07/2015 16:23:06     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f8985a00000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f8985600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f8950800000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f8950400000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 1 is ready (tid=d0f36880;cpuset=[1])
+EAL: lcore 2 is ready (tid=4f5f2700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:23:06        SUITE_DUT_CMD: start
+26/07/2015 16:23:07     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:23:07        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:23:07     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:23:07                ERROR: Test Case test_jumboframes_bigger_jumbo Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_jumboframes.py", line 216, in test_jumboframes_bigger_jumbo
+    self.jumboframes_send_packet(ETHER_JUMBO_FRAME_MTU + 1, False)
+  File "tests/TestSuite_jumboframes.py", line 68, in jumboframes_send_packet
+    gp0tx_pkts, _, gp0tx_bytes = [int(_) for _ in self.jumboframes_get_stat(self.rx_port, "tx")]
+TypeError: int() argument must be a string or a number, not 'NoneType'
+
+26/07/2015 16:23:07                 INFO: Test Case test_jumboframes_jumbo_jumbo Begin
+26/07/2015 16:23:09        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+26/07/2015 16:23:11     SUITE_DUT_OUTPUT: EXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f891a600000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f891a200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f88e5400000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f88e5000000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 0 is ready (tid=65baa880;cpuset=[0])
+EAL: lcore 4 is ready (tid=e23ef700;cpuset=[4])
+EAL: lcore 5 is ready (tid=e19ee700;cpuset=[5])
+EAL: lcore 17 is ready (tid=da1e2700;cpuset=[17])
+EAL: lcore 6 is ready (tid=e0fed700;cpuset=[6])
+EAL: lcore 29 is ready (tid=d29d6700;cpuset=[29])
+EAL: lcore 1 is ready (tid=e41f2700;cpuset=[1])
+EAL: lcore 2 is ready (tid=e37f1700;cpuset=[2])
+EAL: lcore 10 is ready (tid=de7e9700;cpuset=[10])
+EAL: lcore 11 is ready (tid=ddde8700;cpuset=[11])
+EAL: lcore 12 is ready (tid=dd3e7700;cpuset=[12])
+EAL: lcore 13 is ready (tid=dc9e6700;cpuset=[13])
+EAL: lcore 14 is ready (tid=dbfe5700;cpuset=[14])
+EAL: lcore 7 is ready (tid=e05ec700;cpuset=[7])
+EAL: lcore 16 is ready (tid=dabe3700;cpuset=[16])
+EAL: lcore 20 is ready (tid=d83df700;cpuset=[20])
+EAL: lcore 22 is ready (tid=d6fdd700;cpuset=[22])
+EAL: lcore 23 is ready (tid=d65dc700;cpuset=[23])
+EAL: lcore 27 is ready (tid=d3dd8700;cpuset=[27])
+EAL: lcore 26 is ready (tid=d47d9700;cpuset=[26])
+EAL: lcore 31 is ready (tid=d15d4700;cpuset=[31])
+EAL: lcore 30 is ready (tid=d1fd5700;cpuset=[30])
+EAL: lcore 32 is ready (tid=d0bd3700;cpuset=[32])
+EAL: lcore 35 is ready (tid=cedd0700;cpuset=[35])
+EAL: lcore 36 is ready (tid=ce3cf700;cpuset=[36])
+EAL: lcore 15 is ready (tid=db5e4700;cpuset=[15])
+EAL: lcore 18 is ready (tid=d97e1700;cpuset=[18])
+EAL: lcore 19 is ready (tid=d8de0700;cpuset=[19])
+EAL: lcore 25 is ready (tid=d51da700;cpuset=[25])
+EAL: lcore 28 is ready (tid=d33d7700;cpuset=[28])
+EAL: lcore 34 is ready (tid=cf7d1700;cpuset=[34])
+EAL: lcore 8 is ready (tid=dfbeb700;cpuset=[8])
+EAL: lcore 24 is ready (tid=d5bdb700;cpuset=[24])
+EAL: lcore 33 is ready (tid=d01d2700;cpuset=[33])
+EAL: lcore 21 is ready (tid=d79de700;cpuset=[21])
+EAL: lcore 3 is ready (tid=e2df0700;cpuset=[3])
+EAL: lcore 9 is ready (tid=df1ea700;cpuset=[9])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:23:11        SUITE_DUT_CMD: start
+26/07/2015 16:23:11     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:23:11        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:23:11     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:23:11                ERROR: Test Case test_jumboframes_jumbo_jumbo Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_jumboframes.py", line 198, in test_jumboframes_jumbo_jumbo
+    self.jumboframes_send_packet(ETHER_STANDARD_MTU + 1)
+  File "tests/TestSuite_jumboframes.py", line 68, in jumboframes_send_packet
+    gp0tx_pkts, _, gp0tx_bytes = [int(_) for _ in self.jumboframes_get_stat(self.rx_port, "tx")]
+TypeError: int() argument must be a string or a number, not 'NoneType'
+
+26/07/2015 16:23:11                 INFO: Test Case test_jumboframes_jumbo_nojumbo Begin
+26/07/2015 16:23:13        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=1518 --txqflags=0
+26/07/2015 16:23:15     SUITE_DUT_OUTPUT: EXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f381b400000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f381b000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f37e6200000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f37e5e00000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 0 is ready (tid=66a24880;cpuset=[0])
+EAL: lcore 4 is ready (tid=e31ef700;cpuset=[4])
+EAL: lcore 5 is ready (tid=e27ee700;cpuset=[5])
+EAL: lcore 22 is ready (tid=d7ddd700;cpuset=[22])
+EAL: lcore 8 is ready (tid=e09eb700;cpuset=[8])
+EAL: lcore 28 is ready (tid=d41d7700;cpuset=[28])
+EAL: lcore 9 is ready (tid=dffea700;cpuset=[9])
+EAL: lcore 12 is ready (tid=de1e7700;cpuset=[12])
+EAL: lcore 14 is ready (tid=dcde5700;cpuset=[14])
+EAL: lcore 17 is ready (tid=dafe2700;cpuset=[17])
+EAL: lcore 16 is ready (tid=db9e3700;cpuset=[16])
+EAL: lcore 18 is ready (tid=da5e1700;cpuset=[18])
+EAL: lcore 20 is ready (tid=d91df700;cpuset=[20])
+EAL: lcore 26 is ready (tid=d55d9700;cpuset=[26])
+EAL: lcore 23 is ready (tid=d73dc700;cpuset=[23])
+EAL: lcore 27 is ready (tid=d4bd8700;cpuset=[27])
+EAL: lcore 32 is ready (tid=d19d3700;cpuset=[32])
+EAL: lcore 10 is ready (tid=df5e9700;cpuset=[10])
+EAL: lcore 30 is ready (tid=d2dd5700;cpuset=[30])
+EAL: lcore 35 is ready (tid=cfbd0700;cpuset=[35])
+EAL: lcore 3 is ready (tid=e3bf0700;cpuset=[3])
+EAL: lcore 36 is ready (tid=cf1cf700;cpuset=[36])
+EAL: lcore 13 is ready (tid=dd7e6700;cpuset=[13])
+EAL: lcore 6 is ready (tid=e1ded700;cpuset=[6])
+EAL: lcore 21 is ready (tid=d87de700;cpuset=[21])
+EAL: lcore 7 is ready (tid=e13ec700;cpuset=[7])
+EAL: lcore 31 is ready (tid=d23d4700;cpuset=[31])
+EAL: lcore 34 is ready (tid=d05d1700;cpuset=[34])
+EAL: lcore 33 is ready (tid=d0fd2700;cpuset=[33])
+EAL: lcore 2 is ready (tid=e45f1700;cpuset=[2])
+EAL: lcore 19 is ready (tid=d9be0700;cpuset=[19])
+EAL: lcore 25 is ready (tid=d5fda700;cpuset=[25])
+EAL: lcore 11 is ready (tid=debe8700;cpuset=[11])
+EAL: lcore 15 is ready (tid=dc3e4700;cpuset=[15])
+EAL: lcore 29 is ready (tid=d37d6700;cpuset=[29])
+EAL: lcore 24 is ready (tid=d69db700;cpuset=[24])
+EAL: lcore 1 is ready (tid=e4ff2700;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:23:15        SUITE_DUT_CMD: start
+26/07/2015 16:23:15     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:23:15        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:23:15     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:23:15                ERROR: Test Case test_jumboframes_jumbo_nojumbo Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_jumboframes.py", line 165, in test_jumboframes_jumbo_nojumbo
+    self.jumboframes_send_packet(ETHER_STANDARD_MTU + 1, False)
+  File "tests/TestSuite_jumboframes.py", line 68, in jumboframes_send_packet
+    gp0tx_pkts, _, gp0tx_bytes = [int(_) for _ in self.jumboframes_get_stat(self.rx_port, "tx")]
+TypeError: int() argument must be a string or a number, not 'NoneType'
+
+26/07/2015 16:23:15                 INFO: Test Case test_jumboframes_normal_jumbo Begin
+26/07/2015 16:23:17        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=9000 --txqflags=0
+26/07/2015 16:23:19     SUITE_DUT_OUTPUT: EXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f99aca00000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f99ac600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f9977800000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f9977400000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=f7fa1880;cpuset=[0])
+EAL: lcore 4 is ready (tid=747ef700;cpuset=[4])
+EAL: lcore 5 is ready (tid=73dee700;cpuset=[5])
+EAL: lcore 25 is ready (tid=675da700;cpuset=[25])
+EAL: lcore 8 is ready (tid=71feb700;cpuset=[8])
+EAL: lcore 10 is ready (tid=70be9700;cpuset=[10])
+EAL: lcore 12 is ready (tid=6f7e7700;cpuset=[12])
+EAL: lcore 14 is ready (tid=6e3e5700;cpuset=[14])
+EAL: lcore 15 is ready (tid=6d9e4700;cpuset=[15])
+EAL: lcore 18 is ready (tid=6bbe1700;cpuset=[18])
+EAL: lcore 19 is ready (tid=6b1e0700;cpuset=[19])
+EAL: lcore 21 is ready (tid=69dde700;cpuset=[21])
+EAL: lcore 23 is ready (tid=689dc700;cpuset=[23])
+EAL: lcore 27 is ready (tid=661d8700;cpuset=[27])
+EAL: lcore 7 is ready (tid=729ec700;cpuset=[7])
+EAL: lcore 28 is ready (tid=657d7700;cpuset=[28])
+EAL: lcore 31 is ready (tid=639d4700;cpuset=[31])
+EAL: lcore 33 is ready (tid=625d2700;cpuset=[33])
+EAL: lcore 9 is ready (tid=715ea700;cpuset=[9])
+EAL: lcore 3 is ready (tid=751f0700;cpuset=[3])
+EAL: lcore 35 is ready (tid=611d0700;cpuset=[35])
+EAL: lcore 11 is ready (tid=701e8700;cpuset=[11])
+EAL: lcore 6 is ready (tid=733ed700;cpuset=[6])
+EAL: lcore 17 is ready (tid=6c5e2700;cpuset=[17])
+EAL: lcore 22 is ready (tid=693dd700;cpuset=[22])
+EAL: lcore 26 is ready (tid=66bd9700;cpuset=[26])
+EAL: lcore 30 is ready (tid=643d5700;cpuset=[30])
+EAL: lcore 34 is ready (tid=61bd1700;cpuset=[34])
+EAL: lcore 2 is ready (tid=75bf1700;cpuset=[2])
+EAL: lcore 13 is ready (tid=6ede6700;cpuset=[13])
+EAL: lcore 20 is ready (tid=6a7df700;cpuset=[20])
+EAL: lcore 29 is ready (tid=64dd6700;cpuset=[29])
+EAL: lcore 1 is ready (tid=765f2700;cpuset=[1])
+EAL: lcore 16 is ready (tid=6cfe3700;cpuset=[16])
+EAL: lcore 32 is ready (tid=62fd3700;cpuset=[32])
+EAL: lcore 24 is ready (tid=67fdb700;cpuset=[24])
+EAL: lcore 36 is ready (tid=607cf700;cpuset=[36])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:23:19        SUITE_DUT_CMD: start
+26/07/2015 16:23:19     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:23:19        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:23:19     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:23:19                ERROR: Test Case test_jumboframes_normal_jumbo Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_jumboframes.py", line 181, in test_jumboframes_normal_jumbo
+    self.jumboframes_send_packet(1517)
+  File "tests/TestSuite_jumboframes.py", line 68, in jumboframes_send_packet
+    gp0tx_pkts, _, gp0tx_bytes = [int(_) for _ in self.jumboframes_get_stat(self.rx_port, "tx")]
+TypeError: int() argument must be a string or a number, not 'NoneType'
+
+26/07/2015 16:23:19                 INFO: Test Case test_jumboframes_normal_nojumbo Begin
+26/07/2015 16:23:21        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --max-pkt-len=1518 --txqflags=0
+26/07/2015 16:23:23     SUITE_DUT_OUTPUT: EXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f4ddf000000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4ddec00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f4da9e00000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4da9a00000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 0 is ready (tid=2a559880;cpuset=[0])
+EAL: lcore 4 is ready (tid=a6def700;cpuset=[4])
+EAL: lcore 5 is ready (tid=a63ee700;cpuset=[5])
+EAL: lcore 7 is ready (tid=a4fec700;cpuset=[7])
+EAL: lcore 22 is ready (tid=9b9dd700;cpuset=[22])
+EAL: lcore 10 is ready (tid=a31e9700;cpuset=[10])
+EAL: lcore 11 is ready (tid=a27e8700;cpuset=[11])
+EAL: lcore 15 is ready (tid=9ffe4700;cpuset=[15])
+EAL: lcore 6 is ready (tid=a59ed700;cpuset=[6])
+EAL: lcore 17 is ready (tid=9ebe2700;cpuset=[17])
+EAL: lcore 19 is ready (tid=9d7e0700;cpuset=[19])
+EAL: lcore 21 is ready (tid=9c3de700;cpuset=[21])
+EAL: lcore 9 is ready (tid=a3bea700;cpuset=[9])
+EAL: lcore 24 is ready (tid=9a5db700;cpuset=[24])
+EAL: lcore 25 is ready (tid=99bda700;cpuset=[25])
+EAL: lcore 28 is ready (tid=97dd7700;cpuset=[28])
+EAL: lcore 33 is ready (tid=94bd2700;cpuset=[33])
+EAL: lcore 32 is ready (tid=955d3700;cpuset=[32])
+EAL: lcore 34 is ready (tid=941d1700;cpuset=[34])
+EAL: lcore 35 is ready (tid=937d0700;cpuset=[35])
+EAL: lcore 3 is ready (tid=a77f0700;cpuset=[3])
+EAL: lcore 36 is ready (tid=92dcf700;cpuset=[36])
+EAL: lcore 14 is ready (tid=a09e5700;cpuset=[14])
+EAL: lcore 18 is ready (tid=9e1e1700;cpuset=[18])
+EAL: lcore 8 is ready (tid=a45eb700;cpuset=[8])
+EAL: lcore 26 is ready (tid=991d9700;cpuset=[26])
+EAL: lcore 29 is ready (tid=973d6700;cpuset=[29])
+EAL: lcore 31 is ready (tid=95fd4700;cpuset=[31])
+EAL: lcore 2 is ready (tid=a81f1700;cpuset=[2])
+EAL: lcore 13 is ready (tid=a13e6700;cpuset=[13])
+EAL: lcore 20 is ready (tid=9cddf700;cpuset=[20])
+EAL: lcore 27 is ready (tid=987d8700;cpuset=[27])
+EAL: lcore 12 is ready (tid=a1de7700;cpuset=[12])
+EAL: lcore 16 is ready (tid=9f5e3700;cpuset=[16])
+EAL: lcore 30 is ready (tid=969d5700;cpuset=[30])
+EAL: lcore 23 is ready (tid=9afdc700;cpuset=[23])
+EAL: lcore 1 is ready (tid=a8bf2700;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:23:23        SUITE_DUT_CMD: start
+26/07/2015 16:23:23     SUITE_DUT_OUTPUT: start
+  io packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:23:23        SUITE_DUT_CMD: show port stats 0
+26/07/2015 16:23:24     SUITE_DUT_OUTPUT: show port stats 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:23:24                ERROR: Test Case test_jumboframes_normal_nojumbo Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_jumboframes.py", line 148, in test_jumboframes_normal_nojumbo
+    self.jumboframes_send_packet(ETHER_STANDARD_MTU - 1)
+  File "tests/TestSuite_jumboframes.py", line 68, in jumboframes_send_packet
+    gp0tx_pkts, _, gp0tx_bytes = [int(_) for _ in self.jumboframes_get_stat(self.rx_port, "tx")]
+TypeError: int() argument must be a string or a number, not 'NoneType'
+
+26/07/2015 16:23:24     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 1518
+26/07/2015 16:23:24  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:23:24     SUITE_TESTER_CMD: ifconfig ens4d1 mtu 1518
+26/07/2015 16:23:24  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:23:25     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:23:26  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:23:26                 INFO: 
+TEST SUITE ENDED: TestJumboframes

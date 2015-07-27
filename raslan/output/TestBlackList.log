@@ -1,0 +1,1570 @@
+22/07/2015 11:00:22                 INFO: 
+TEST SUITE : TestBlackList
+22/07/2015 11:00:22                 INFO: NIC :        cfg
+22/07/2015 11:00:22                 INFO: Test Case test_bl_allbutoneportblacklisted Begin
+22/07/2015 11:00:23        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -b 0000:03:00.0 -b 0000:07:00.0 -- -i  --txqflags=0
+22/07/2015 11:00:28     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7fd143e00000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd143a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7fd104000000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd103a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd103600000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7fd055000000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7fd046200000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd045c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fd045600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd045200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd044e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd044a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd044600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd044200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd043e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd043a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd043600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd043200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd042e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7fd003000000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd002c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd002800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd002400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd002000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd001c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd001800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd001400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd001000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd000c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd000800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd000400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fd000000000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 1 is ready (tid=4e8a880;cpuset=[1])
+EAL: lcore 2 is ready (tid=fefcf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fd203e00000
+EAL:   PCI memory mapped at 0x7fd203e80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fd104ad6500 hw_ring=0x7fd103ca9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fd104ad5c80 sw_sc_ring=0x7fd104ad5740 hw_ring=0x7fd103cb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:00:28                ERROR: Test Case test_bl_allbutoneportblacklisted Result FAILED: 'Blacklisted port is being initialized'
+22/07/2015 11:00:28        SUITE_DUT_CMD: quit
+22/07/2015 11:00:29     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+bye...
+[1]+  Terminated              ./examples/timer/build/app/timer -n 1 -c 0x2
+22/07/2015 11:00:29                 INFO: Test Case test_bl_noblacklisted Begin
+22/07/2015 11:00:29        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i  --txqflags=0
+22/07/2015 11:00:34     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7fc165000000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc164c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7fc125200000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fc124c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc124800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7fc076200000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7fc067400000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fc066e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fc066800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc066400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc066000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc065c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc065800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc065400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc065000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc064c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc064800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc064400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc064000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7fc024200000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc023e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc023a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc023600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc023200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc022e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc022a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc022600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc022200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc021e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc021a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc021600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fc021200000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 1 is ready (tid=26154880;cpuset=[1])
+EAL: lcore 2 is ready (tid=201cf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fc225000000
+EAL:   PCI memory mapped at 0x7fc225080000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fc225084000
+EAL:   PCI memory mapped at 0x7fc225104000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fc125ccd600 hw_ring=0x7fc124ea9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fc125cccd80 sw_sc_ring=0x7fc125ccc840 hw_ring=0x7fc124eb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7fc125cca600 hw_ring=0x7fc124ec9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7fc125cc9d80 sw_sc_ring=0x7fc125cc9840 hw_ring=0x7fc124ed9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:00:34                 INFO: Test Case test_bl_noblacklisted Result PASSED:
+22/07/2015 11:00:34        SUITE_DUT_CMD: quit
+22/07/2015 11:00:35     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 11:00:35                 INFO: Test Case test_bl_oneportblacklisted Begin
+22/07/2015 11:00:36        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4 -b 0000:03:00.0 -- -i -- -i  --txqflags=0
+22/07/2015 11:00:41     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f155e000000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f155dc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f151e200000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f151dc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f151d800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f146f200000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f1460400000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f145fe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f145f800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145f400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145f000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145ec00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145e800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145e400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145e000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145dc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145d800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145d400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f145d000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f141d200000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141ce00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141ca00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141c600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141c200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141be00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141ba00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141b600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141b200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141ae00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141aa00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141a600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f141a200000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 1 is ready (tid=1f09b880;cpuset=[1])
+EAL: lcore 2 is ready (tid=191cf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f161e000000
+EAL:   PCI memory mapped at 0x7f161e080000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f161e084000
+EAL:   PCI memory mapped at 0x7f161e104000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f151eccd600 hw_ring=0x7f151dea9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f151ecccd80 sw_sc_ring=0x7f151eccc840 hw_ring=0x7f151deb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f151ecca600 hw_ring=0x7f151dec9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f151ecc9d80 sw_sc_ring=0x7f151ecc9840 hw_ring=0x7f151ded9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:00:41                 INFO: Test Case test_bl_oneportblacklisted Result PASSED:
+22/07/2015 11:00:41        SUITE_DUT_CMD: quit
+22/07/2015 11:00:42     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 11:00:43     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:00:43  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:00:43                 INFO: 
+TEST SUITE ENDED: TestBlackList
+22/07/2015 14:43:50                 INFO: 
+TEST SUITE : TestBlackList
+22/07/2015 14:43:50                 INFO: NIC :        cfg
+22/07/2015 14:43:50                 INFO: Test Case test_bl_allbutoneportblacklisted Begin
+22/07/2015 14:43:51        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -b 0000:07:00.0 -- -i  --txqflags=0
+22/07/2015 14:43:56     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f3daac00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f3cac600000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3cac000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3caba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3cab400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3caaa00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3caa400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f3caa000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f3ca9c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f3bc5a00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f3bb7000000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3bb6a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f3baf600000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3baf000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3baea00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3bae000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3bada00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3bad400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3baca00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3bac400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3baba00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3bab400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3baae00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3baa800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3baa200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f3ba9800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba9200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba8c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba8600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba8000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba7a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba7400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f3ba6e00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 1 is ready (tid=abf99880;cpuset=[1])
+EAL: lcore 2 is ready (tid=a5dcf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f3daae00000
+EAL:   PCI memory mapped at 0x7f3daae80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f3cad0d6500 hw_ring=0x7f3cac2a9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f3cad0d5c80 sw_sc_ring=0x7f3cad0d5740 hw_ring=0x7f3cac2b9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:43:56                 INFO: Test Case test_bl_allbutoneportblacklisted Result PASSED:
+22/07/2015 14:43:56        SUITE_DUT_CMD: quit
+22/07/2015 14:43:56     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+bye...
+[1]+  Terminated              ./examples/timer/build/app/timer -n 1 -c 0x2
+22/07/2015 14:43:56                 INFO: Test Case test_bl_noblacklisted Begin
+22/07/2015 14:43:56        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i  --txqflags=0
+22/07/2015 14:44:02     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f35de800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f34e0200000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f34dfc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f34df600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f34df000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f34de600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f34de000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f34ddc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f34dd800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f33f9600000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f33eac00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33ea600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f33e3200000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33e2c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33e2600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f33e1c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33e1600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33e1000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f33e0600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33e0000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f33df600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33df000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33dea00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33de400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33dde00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f33dd400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33dce00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33dc800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33dc200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33dbc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33db600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33db000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f33daa00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=dfb20880;cpuset=[1])
+EAL: lcore 2 is ready (tid=d99cf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f35dea00000
+EAL:   PCI memory mapped at 0x7f35dea80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f35dea84000
+EAL:   PCI memory mapped at 0x7f35deb04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f34e0ccd600 hw_ring=0x7f34dfea9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f34e0cccd80 sw_sc_ring=0x7f34e0ccc840 hw_ring=0x7f34dfeb9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f34e0cca600 hw_ring=0x7f34dfec9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f34e0cc9d80 sw_sc_ring=0x7f34e0cc9840 hw_ring=0x7f34dfed9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:44:02                 INFO: Test Case test_bl_noblacklisted Result PASSED:
+22/07/2015 14:44:02        SUITE_DUT_CMD: quit
+22/07/2015 14:44:02     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+Stopping port 1...done
+bye...
+22/07/2015 14:44:02                 INFO: Test Case test_bl_oneportblacklisted Begin
+22/07/2015 14:44:03        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4 -b 0000:07:00.0 -- -i -- -i  --txqflags=0
+22/07/2015 14:44:08     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7ff6d8c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7ff5da600000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff5da000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff5d9a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff5d9400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7ff5d8a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff5d8400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7ff5d8000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7ff5d7c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7ff4f3a00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7ff4e5000000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4e4a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7ff4dd600000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4dd000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4dca00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7ff4dc000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4dba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4db400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7ff4daa00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4da400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7ff4d9a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d9400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d8e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d8200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7ff4d7800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d7200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d6c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d6600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d6000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d5a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d5400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7ff4d4e00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=d9fa1880;cpuset=[1])
+EAL: lcore 2 is ready (tid=d3dcf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Device is blacklisted, not initializing
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7ff6d8e00000
+EAL:   PCI memory mapped at 0x7ff6d8e80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7ff5db0d6500 hw_ring=0x7ff5da2a9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using simple tx code path
+PMD: ixgbe_set_tx_function(): Vector tx enabled.
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7ff5db0d5c80 sw_sc_ring=0x7ff5db0d5740 hw_ring=0x7ff5da2b9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:44:08                 INFO: Test Case test_bl_oneportblacklisted Result PASSED:
+22/07/2015 14:44:08        SUITE_DUT_CMD: quit
+22/07/2015 14:44:09     SUITE_DUT_OUTPUT: quit
+Stopping port 0...done
+bye...
+22/07/2015 14:44:10     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:44:10  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:44:10                 INFO: 
+TEST SUITE ENDED: TestBlackList
+22/07/2015 16:20:28                 INFO: 
+TEST SUITE : TestBlackList
+22/07/2015 16:20:28                 INFO: NIC :        cfg
+22/07/2015 16:20:28                ERROR: set_up_all failed:
+Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 547, in execute_test_setup_all
+    test_case.set_up_all()
+  File "tests/TestSuite_blacklist.py", line 49, in set_up_all
+    self.verify(len(self.ports) >= 2, "Insufficient ports for testing")
+  File "/download/dts-master/framework/test_case.py", line 67, in verify
+    raise VerifyFailure(description)
+VerifyFailure: 'Insufficient ports for testing'
+
+22/07/2015 16:20:28                 INFO: 
+TEST SUITE ENDED: TestBlackList
+23/07/2015 15:31:46                 INFO: 
+TEST SUITE : TestBlackList
+23/07/2015 15:31:46                 INFO: NIC :        cfg
+23/07/2015 15:31:46                 INFO: Test Case test_bl_allbutoneportblacklisted Begin
+23/07/2015 15:31:48        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -b 0000:21:00.0 -- -i  --txqflags=0
+23/07/2015 15:31:52     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f475b800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7f4757800000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0xbf400000 bytes
+EAL: Virtual area found at 0x7f4698200000 (size = 0xbf400000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7f465da00000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f465d400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f465ce00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f465c800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f465be00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f465b800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f465b400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f465ae00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f465a400000 (size = 0x800000)
+EAL: Ask a virtual area of 0xbf000000 bytes
+EAL: Virtual area found at 0x7f459b200000 (size = 0xbf000000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7f4576e00000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f4568400000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4567e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f4560a00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4560400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455fe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f455f400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455ee00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455e800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f455de00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455d800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f455ce00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455c800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455c200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455bc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455b600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f455ac00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455a600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f455a000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4559a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4559400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4558e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4558800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4558200000 (size = 0x400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f4557400000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4557000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f4556c00000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=5ca88880;cpuset=[1])
+EAL: lcore 2 is ready (tid=55bcf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+23/07/2015 15:31:52                ERROR: Test Case test_bl_allbutoneportblacklisted Result FAILED: 'Blacklisted port is being initialized'
+23/07/2015 15:31:52        SUITE_DUT_CMD: quit
+23/07/2015 15:31:53     SUITE_DUT_OUTPUT: quit
+bye...
+[1]+  Terminated              ./examples/timer/build/app/timer -n 1 -c 0x2
+23/07/2015 15:31:53                 INFO: Test Case test_bl_noblacklisted Begin
+23/07/2015 15:31:53        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i  --txqflags=0
+23/07/2015 15:31:57     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe46ee00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7fe46ae00000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0xbf400000 bytes
+EAL: Virtual area found at 0x7fe3ab800000 (size = 0xbf400000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7fe371000000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe370a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe370400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe36fe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fe36f400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe36ee00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe36ea00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe36e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fe36da00000 (size = 0x800000)
+EAL: Ask a virtual area of 0xbf000000 bytes
+EAL: Virtual area found at 0x7fe2ae800000 (size = 0xbf000000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7fe28a400000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7fe27ba00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe27b400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7fe274000000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe273a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe273400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fe272a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe272400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe271e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fe271400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe270e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fe270400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26fe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26f800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26f200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26ec00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fe26e200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26dc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26d600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26d000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26ca00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26c400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26be00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fe26b800000 (size = 0x400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7fe26aa00000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe26a600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fe26a200000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=701c4880;cpuset=[1])
+EAL: lcore 2 is ready (tid=691cf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+23/07/2015 15:31:57                 INFO: Test Case test_bl_noblacklisted Result PASSED:
+23/07/2015 15:31:57        SUITE_DUT_CMD: quit
+23/07/2015 15:31:58     SUITE_DUT_OUTPUT: quit
+bye...
+23/07/2015 15:31:58                 INFO: Test Case test_bl_oneportblacklisted Begin
+23/07/2015 15:31:59        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4 -b 0000:21:00.0 -- -i -- -i  --txqflags=0
+23/07/2015 15:32:03     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6361a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7f635da00000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0xbf400000 bytes
+EAL: Virtual area found at 0x7f629e400000 (size = 0xbf400000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7f6263c00000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6263600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6263000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6262a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f6262000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6261a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6261600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6261000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f6260600000 (size = 0x800000)
+EAL: Ask a virtual area of 0xbf000000 bytes
+EAL: Virtual area found at 0x7f61a1400000 (size = 0xbf000000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7f617d000000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f616e600000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f616e000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f6166c00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6166600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6166000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f6165600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6165000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6164a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f6164000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6163a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f6163000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6162a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6162400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6161e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6161800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f6160e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6160800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6160200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f615fc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f615f600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f615f000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f615ea00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f615e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f615d600000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f615d200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f615ce00000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=62c6e880;cpuset=[1])
+EAL: lcore 2 is ready (tid=5bdcf700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+23/07/2015 15:32:03                 INFO: Test Case test_bl_oneportblacklisted Result PASSED:
+23/07/2015 15:32:03        SUITE_DUT_CMD: quit
+23/07/2015 15:32:04     SUITE_DUT_OUTPUT: quit
+bye...
+23/07/2015 15:32:05     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 15:32:05  SUITE_TESTER_OUTPUT: tester
+23/07/2015 15:32:05                 INFO: 
+TEST SUITE ENDED: TestBlackList
+26/07/2015 16:20:42                 INFO: 
+TEST SUITE : TestBlackList
+26/07/2015 16:20:42                 INFO: NIC :        cfg
+26/07/2015 16:20:42                 INFO: Test Case test_bl_allbutoneportblacklisted Begin
+26/07/2015 16:20:43        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -b 0000:21:00.0 -- -i  --txqflags=0
+26/07/2015 16:20:45     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7fb2f4200000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb2f3e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7fb2bf000000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb2bec00000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=3f7e5880;cpuset=[1])
+EAL: lcore 2 is ready (tid=bddf2700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:20:45                ERROR: Test Case test_bl_allbutoneportblacklisted Result FAILED: 'Blacklisted port is being initialized'
+26/07/2015 16:20:45        SUITE_DUT_CMD: quit
+26/07/2015 16:20:45     SUITE_DUT_OUTPUT: quit
+bye...
+26/07/2015 16:20:45                 INFO: Test Case test_bl_noblacklisted Begin
+26/07/2015 16:20:45        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4  -- -i  --txqflags=0
+26/07/2015 16:20:47     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7fcf4ee00000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fcf4ea00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7fcf19c00000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fcf19800000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=9a34b880;cpuset=[1])
+EAL: lcore 2 is ready (tid=189f2700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:20:47                 INFO: Test Case test_bl_noblacklisted Result PASSED:
+26/07/2015 16:20:47        SUITE_DUT_CMD: quit
+26/07/2015 16:20:47     SUITE_DUT_OUTPUT: quit
+bye...
+26/07/2015 16:20:47                 INFO: Test Case test_bl_oneportblacklisted Begin
+26/07/2015 16:20:48        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x6 -n 4 -b 0000:21:00.0 -- -i -- -i  --txqflags=0
+26/07/2015 16:20:50     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f0351400000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f0351000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f031c200000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f031be00000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=9c9fd880;cpuset=[1])
+EAL: lcore 2 is ready (tid=1aff2700;cpuset=[2])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Done
+26/07/2015 16:20:50                 INFO: Test Case test_bl_oneportblacklisted Result PASSED:
+26/07/2015 16:20:50        SUITE_DUT_CMD: quit
+26/07/2015 16:20:50     SUITE_DUT_OUTPUT: quit
+bye...
+26/07/2015 16:20:51     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:20:51  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:20:51                 INFO: 
+TEST SUITE ENDED: TestBlackList

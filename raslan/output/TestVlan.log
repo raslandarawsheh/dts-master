@@ -1,0 +1,826 @@
+22/07/2015 11:13:10                 INFO: 
+TEST SUITE : TestVlan
+22/07/2015 11:13:10                 INFO: NIC :        cfg
+22/07/2015 11:13:10        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --portmask=0x2 --txqflags=0
+22/07/2015 11:13:15     SUITE_DUT_OUTPUT: Killed
+[PEXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f6956e00000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6956a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f6917000000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6916a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6916600000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f6868000000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f6859200000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6858c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6858600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6858200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6857e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6857a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6857600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6857200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6856e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6856a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6856600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6856200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6855e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f6816000000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6815c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6815800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6815400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6815000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6814c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6814800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6814400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6814000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6813c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6813800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6813400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6813000000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792998 KHz
+EAL: Master lcore 0 is ready (tid=18013880;cpuset=[0])
+EAL: lcore 4 is ready (tid=101cc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=f7cb700;cpuset=[5])
+EAL: lcore 27 is ready (tid=1bb5700;cpuset=[27])
+EAL: lcore 8 is ready (tid=d9c8700;cpuset=[8])
+EAL: lcore 10 is ready (tid=c5c6700;cpuset=[10])
+EAL: lcore 12 is ready (tid=b1c4700;cpuset=[12])
+EAL: lcore 6 is ready (tid=edca700;cpuset=[6])
+EAL: lcore 16 is ready (tid=89c0700;cpuset=[16])
+EAL: lcore 17 is ready (tid=7fbf700;cpuset=[17])
+EAL: lcore 19 is ready (tid=6bbd700;cpuset=[19])
+EAL: lcore 23 is ready (tid=43b9700;cpuset=[23])
+EAL: lcore 21 is ready (tid=57bb700;cpuset=[21])
+EAL: lcore 26 is ready (tid=25b6700;cpuset=[26])
+EAL: lcore 28 is ready (tid=11b4700;cpuset=[28])
+EAL: lcore 25 is ready (tid=2fb7700;cpuset=[25])
+EAL: lcore 31 is ready (tid=ff3b1700;cpuset=[31])
+EAL: lcore 32 is ready (tid=fe9b0700;cpuset=[32])
+EAL: lcore 33 is ready (tid=fdfaf700;cpuset=[33])
+EAL: lcore 35 is ready (tid=fcbad700;cpuset=[35])
+EAL: lcore 36 is ready (tid=fc1ac700;cpuset=[36])
+EAL: lcore 11 is ready (tid=bbc5700;cpuset=[11])
+EAL: lcore 14 is ready (tid=9dc2700;cpuset=[14])
+EAL: lcore 18 is ready (tid=75be700;cpuset=[18])
+EAL: lcore 22 is ready (tid=4dba700;cpuset=[22])
+EAL: lcore 7 is ready (tid=e3c9700;cpuset=[7])
+EAL: lcore 30 is ready (tid=ffdb2700;cpuset=[30])
+EAL: lcore 34 is ready (tid=fd5ae700;cpuset=[34])
+EAL: lcore 2 is ready (tid=115ce700;cpuset=[2])
+EAL: lcore 13 is ready (tid=a7c3700;cpuset=[13])
+EAL: lcore 20 is ready (tid=61bc700;cpuset=[20])
+EAL: lcore 29 is ready (tid=7b3700;cpuset=[29])
+EAL: lcore 3 is ready (tid=10bcd700;cpuset=[3])
+EAL: lcore 15 is ready (tid=93c1700;cpuset=[15])
+EAL: lcore 9 is ready (tid=cfc7700;cpuset=[9])
+EAL: lcore 24 is ready (tid=39b8700;cpuset=[24])
+EAL: lcore 1 is ready (tid=11fcf700;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f6a16e00000
+EAL:   PCI memory mapped at 0x7f6a16e80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f6a16e84000
+EAL:   PCI memory mapped at 0x7f6a16f04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+previous number of forwarding ports 2 - changed to number of configured ports 1
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f6917acc380 hw_ring=0x7f6916ca9500 dma_addr=0x6046a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f6917acbb00 sw_sc_ring=0x7f6917acb5c0 hw_ring=0x7f6916cb9500 dma_addr=0x6046b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f6917ac9380 hw_ring=0x7f6916cc9580 dma_addr=0x6046c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f6917ac8b00 sw_sc_ring=0x7f6917ac85c0 hw_ring=0x7f6916cd9580 dma_addr=0x6046d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 11:13:15        SUITE_DUT_CMD: set verbose 1
+22/07/2015 11:13:15     SUITE_DUT_OUTPUT: set verbose 1
+Change verbose level from 0 to 1
+22/07/2015 11:13:15        SUITE_DUT_CMD: set fwd mac
+22/07/2015 11:13:16     SUITE_DUT_OUTPUT: set fwd mac
+Set mac packet forwarding mode
+22/07/2015 11:13:16        SUITE_DUT_CMD: vlan set strip off 1
+22/07/2015 11:13:16     SUITE_DUT_OUTPUT: vlan set strip off 1
+22/07/2015 11:13:16                 INFO: Test Case test_vlan_disable_receipt Begin
+22/07/2015 11:13:16        SUITE_DUT_CMD: rx_vlan rm 1 1
+22/07/2015 11:13:16     SUITE_DUT_OUTPUT: rx_vlan rm 1 1
+22/07/2015 11:13:16        SUITE_DUT_CMD: start
+22/07/2015 11:13:16     SUITE_DUT_OUTPUT: start
+
+Warning! Cannot handle an odd number of ports with the current port topology. Configuration must be changed to have an even number of ports, or relaunch application with --port-topology=chained
+
+  mac packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=1
+  RX queues=1 - RX desc=128 - RX free threshold=32
+  RX threshold registers: pthresh=8 hthresh=8 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=32
+  TX threshold registers: pthresh=32 hthresh=0 wthresh=0
+  TX RS bit threshold=32 - TXQ flags=0x0
+22/07/2015 11:13:16                ERROR: Test Case test_vlan_disable_receipt Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_vlan.py", line 125, in test_vlan_disable_receipt
+    self.vlan_send_packet(1)
+  File "tests/TestSuite_vlan.py", line 82, in vlan_send_packet
+    port = self.tester.get_local_port(valports[1])
+IndexError: list index out of range
+
+22/07/2015 11:13:16                 INFO: Test Case test_vlan_enable_receipt Begin
+22/07/2015 11:13:16        SUITE_DUT_CMD: set promisc all off
+22/07/2015 11:13:16     SUITE_DUT_OUTPUT: set promisc all off
+22/07/2015 11:13:16        SUITE_DUT_CMD: rx_vlan add 1 1
+22/07/2015 11:13:17     SUITE_DUT_OUTPUT: rx_vlan add 1 1
+22/07/2015 11:13:17        SUITE_DUT_CMD: start
+22/07/2015 11:13:17     SUITE_DUT_OUTPUT: start
+Packet forwarding already started
+22/07/2015 11:13:17                ERROR: Test Case test_vlan_enable_receipt Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_vlan.py", line 111, in test_vlan_enable_receipt
+    self.vlan_send_packet(1)
+  File "tests/TestSuite_vlan.py", line 82, in vlan_send_packet
+    port = self.tester.get_local_port(valports[1])
+IndexError: list index out of range
+
+22/07/2015 11:13:17                 INFO: Test Case test_vlan_strip_config_off Begin
+22/07/2015 11:13:17        SUITE_DUT_CMD: vlan set strip off 1
+22/07/2015 11:13:17     SUITE_DUT_OUTPUT: vlan set strip off 1
+22/07/2015 11:13:17        SUITE_DUT_CMD: show port info 1
+22/07/2015 11:13:17     SUITE_DUT_OUTPUT: show port info 1
+
+********************* Infos for port 1  *********************
+MAC address: 90:E2:BA:28:E3:4D
+Connect to socket: 0
+memory allocation on the socket: 0
+Link status: up
+Link speed: 10000 Mbps
+Link duplex: full-duplex
+Promiscuous mode: disabled
+Allmulticast mode: disabled
+Maximum number of MAC addresses: 127
+Maximum number of MAC addresses of hash filtering: 4096
+VLAN offload: 
+  strip off 
+  filter on 
+  qinq(extend) off 
+Redirection table size: 128
+Supported flow types:
+  ipv4
+  ipv4-tcp
+  ipv4-udp
+  ipv6
+  ipv6-tcp
+  ipv6-udp
+  unknown
+  unknown
+  unknown
+22/07/2015 11:13:17        SUITE_DUT_CMD: set nbport 2
+22/07/2015 11:13:17     SUITE_DUT_OUTPUT: set nbport 2
+nb fwd ports 2 > 1 (number of configured ports) - ignored
+22/07/2015 11:13:17        SUITE_DUT_CMD: start
+22/07/2015 11:13:18     SUITE_DUT_OUTPUT: start
+Packet forwarding already started
+22/07/2015 11:13:18                ERROR: Test Case test_vlan_strip_config_off Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_vlan.py", line 157, in test_vlan_strip_config_off
+    self.vlan_send_packet(1)
+  File "tests/TestSuite_vlan.py", line 82, in vlan_send_packet
+    port = self.tester.get_local_port(valports[1])
+IndexError: list index out of range
+
+22/07/2015 11:13:18                 INFO: Test Case test_vlan_strip_config_on Begin
+22/07/2015 11:13:18        SUITE_DUT_CMD: vlan set strip on 1
+22/07/2015 11:13:18     SUITE_DUT_OUTPUT: vlan set strip on 1
+22/07/2015 11:13:18        SUITE_DUT_CMD: set promisc all off
+22/07/2015 11:13:18     SUITE_DUT_OUTPUT: set promisc all off
+22/07/2015 11:13:18        SUITE_DUT_CMD: vlan set strip on 1
+22/07/2015 11:13:18     SUITE_DUT_OUTPUT: vlan set strip on 1
+22/07/2015 11:13:18        SUITE_DUT_CMD: start
+22/07/2015 11:13:18     SUITE_DUT_OUTPUT: start
+Packet forwarding already started
+22/07/2015 11:13:18                ERROR: Test Case test_vlan_strip_config_on Result ERROR: Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 579, in execute_test_case
+    test_case()
+  File "tests/TestSuite_vlan.py", line 142, in test_vlan_strip_config_on
+    self.vlan_send_packet(1)
+  File "tests/TestSuite_vlan.py", line 82, in vlan_send_packet
+    port = self.tester.get_local_port(valports[1])
+IndexError: list index out of range
+
+22/07/2015 11:13:20     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 11:13:20  SUITE_TESTER_OUTPUT: tester
+22/07/2015 11:13:20                 INFO: 
+TEST SUITE ENDED: TestVlan
+22/07/2015 14:59:50                 INFO: 
+TEST SUITE : TestVlan
+22/07/2015 14:59:50                 INFO: NIC :        cfg
+22/07/2015 14:59:50        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --portmask=0x0 --txqflags=0
+22/07/2015 14:59:56     SUITE_DUT_OUTPUT: Killed
+[PEXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f453ec00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f4440600000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4440000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f443fa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f443f400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f443ea00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f443e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f443e000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f443dc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f4359a00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f434b000000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f434aa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f4343600000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4343000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4342a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f4342000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4341a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4341400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f4340a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f4340400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f433fa00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433f400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433ee00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433e800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433e200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f433d800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433d200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433cc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433c600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433c000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433ba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433b400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f433ae00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=4004d880;cpuset=[0])
+EAL: lcore 4 is ready (tid=37fcc700;cpuset=[4])
+EAL: lcore 5 is ready (tid=375cb700;cpuset=[5])
+EAL: lcore 7 is ready (tid=361c9700;cpuset=[7])
+EAL: lcore 23 is ready (tid=2c1b9700;cpuset=[23])
+EAL: lcore 8 is ready (tid=357c8700;cpuset=[8])
+EAL: lcore 9 is ready (tid=34dc7700;cpuset=[9])
+EAL: lcore 32 is ready (tid=267b0700;cpuset=[32])
+EAL: lcore 13 is ready (tid=325c3700;cpuset=[13])
+EAL: lcore 14 is ready (tid=31bc2700;cpuset=[14])
+EAL: lcore 16 is ready (tid=307c0700;cpuset=[16])
+EAL: lcore 18 is ready (tid=2f3be700;cpuset=[18])
+EAL: lcore 21 is ready (tid=2d5bb700;cpuset=[21])
+EAL: lcore 22 is ready (tid=2cbba700;cpuset=[22])
+EAL: lcore 10 is ready (tid=343c6700;cpuset=[10])
+EAL: lcore 11 is ready (tid=339c5700;cpuset=[11])
+EAL: lcore 25 is ready (tid=2adb7700;cpuset=[25])
+EAL: lcore 29 is ready (tid=285b3700;cpuset=[29])
+EAL: lcore 31 is ready (tid=271b1700;cpuset=[31])
+EAL: lcore 34 is ready (tid=253ae700;cpuset=[34])
+EAL: lcore 1 is ready (tid=39dcf700;cpuset=[1])
+EAL: lcore 2 is ready (tid=393ce700;cpuset=[2])
+EAL: lcore 35 is ready (tid=249ad700;cpuset=[35])
+EAL: lcore 15 is ready (tid=311c1700;cpuset=[15])
+EAL: lcore 17 is ready (tid=2fdbf700;cpuset=[17])
+EAL: lcore 20 is ready (tid=2dfbc700;cpuset=[20])
+EAL: lcore 26 is ready (tid=2a3b6700;cpuset=[26])
+EAL: lcore 27 is ready (tid=299b5700;cpuset=[27])
+EAL: lcore 30 is ready (tid=27bb2700;cpuset=[30])
+EAL: lcore 3 is ready (tid=389cd700;cpuset=[3])
+EAL: lcore 36 is ready (tid=23fac700;cpuset=[36])
+EAL: lcore 19 is ready (tid=2e9bd700;cpuset=[19])
+EAL: lcore 24 is ready (tid=2b7b8700;cpuset=[24])
+EAL: lcore 12 is ready (tid=32fc4700;cpuset=[12])
+EAL: lcore 6 is ready (tid=36bca700;cpuset=[6])
+EAL: lcore 28 is ready (tid=28fb4700;cpuset=[28])
+EAL: lcore 33 is ready (tid=25daf700;cpuset=[33])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f453ee00000
+EAL:   PCI memory mapped at 0x7f453ee80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f453ee84000
+EAL:   PCI memory mapped at 0x7f453ef04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+Interactive-mode selected
+Invalid NULL mask of ports
+Configuring Port 0 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f44410cc380 hw_ring=0x7f44402a9500 dma_addr=0x5d16a9500
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f44410cbb00 sw_sc_ring=0x7f44410cb5c0 hw_ring=0x7f44402b9500 dma_addr=0x5d16b9500
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 0: 90:E2:BA:28:E3:4C
+Configuring Port 1 (socket 0)
+PMD: ixgbe_dev_tx_queue_setup(): sw_ring=0x7f44410c9380 hw_ring=0x7f44402c9580 dma_addr=0x5d16c9580
+PMD: ixgbe_set_tx_function(): Using full-featured tx code path
+PMD: ixgbe_set_tx_function():  - txq_flags = 0 [IXGBE_SIMPLE_FLAGS=f01]
+PMD: ixgbe_set_tx_function():  - tx_rs_thresh = 32 [RTE_PMD_IXGBE_TX_MAX_BURST=32]
+PMD: ixgbe_dev_rx_queue_setup(): sw_ring=0x7f44410c8b00 sw_sc_ring=0x7f44410c85c0 hw_ring=0x7f44402d9580 dma_addr=0x5d16d9580
+PMD: ixgbe_set_rx_function(): Vector rx enabled, please make sure RX burst size no less than 32.
+Port 1: 90:E2:BA:28:E3:4D
+Checking link statuses...
+Port 0 Link Up - speed 10000 Mbps - full-duplex
+Port 1 Link Up - speed 10000 Mbps - full-duplex
+Done
+22/07/2015 14:59:56        SUITE_DUT_CMD: set verbose 1
+22/07/2015 14:59:56     SUITE_DUT_OUTPUT: set verbose 1
+Change verbose level from 0 to 1
+22/07/2015 14:59:56        SUITE_DUT_CMD: set fwd mac
+22/07/2015 14:59:56     SUITE_DUT_OUTPUT: set fwd mac
+Set mac packet forwarding mode
+22/07/2015 14:59:56                ERROR: set_up_all failed:
+Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 547, in execute_test_setup_all
+    test_case.set_up_all()
+  File "tests/TestSuite_vlan.py", line 71, in set_up_all
+    self.dut.send_expect("vlan set strip off %s" % valports[0], "testpmd> ")
+IndexError: list index out of range
+
+22/07/2015 14:59:56                 INFO: 
+TEST SUITE ENDED: TestVlan
+22/07/2015 16:22:10                 INFO: 
+TEST SUITE : TestVlan
+22/07/2015 16:22:10                 INFO: NIC :        cfg
+22/07/2015 16:22:10                ERROR: set_up_all failed:
+Traceback (most recent call last):
+  File "/download/dts-master/framework/dts.py", line 547, in execute_test_setup_all
+    test_case.set_up_all()
+  File "tests/TestSuite_vlan.py", line 59, in set_up_all
+    self.verify(len(ports) >= 2, "Insufficient ports")
+  File "/download/dts-master/framework/test_case.py", line 67, in verify
+    raise VerifyFailure(description)
+VerifyFailure: 'Insufficient ports'
+
+22/07/2015 16:22:10                 INFO: 
+TEST SUITE ENDED: TestVlan
+26/07/2015 16:33:32                 INFO: 
+TEST SUITE : TestVlan
+26/07/2015 16:33:32                 INFO: NIC :        cfg
+26/07/2015 16:33:32        SUITE_DUT_CMD: ./x86_64-native-linuxapp-gcc/app/testpmd -c 0x1fffffffff -n 4  -- -i --portmask=0x3 --txqflags=0
+26/07/2015 16:33:33     SUITE_DUT_OUTPUT: Killed
+[PEXPECT]# EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x4b000000 bytes
+EAL: Virtual area found at 0x7f5041c00000 (size = 0x4b000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5041800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f500ca00000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f500c600000 (size = 0x200000)
+EAL: Requesting 600 pages of size 2MB from socket 0
+EAL: Requesting 424 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 0 is ready (tid=8d210880;cpuset=[0])
+EAL: lcore 4 is ready (tid=99ef700;cpuset=[4])
+EAL: lcore 5 is ready (tid=8fee700;cpuset=[5])
+EAL: lcore 27 is ready (tid=fb3d8700;cpuset=[27])
+EAL: lcore 9 is ready (tid=67ea700;cpuset=[9])
+EAL: lcore 29 is ready (tid=f9fd6700;cpuset=[29])
+EAL: lcore 11 is ready (tid=53e8700;cpuset=[11])
+EAL: lcore 6 is ready (tid=85ed700;cpuset=[6])
+EAL: lcore 15 is ready (tid=2be4700;cpuset=[15])
+EAL: lcore 17 is ready (tid=17e2700;cpuset=[17])
+EAL: lcore 22 is ready (tid=fe5dd700;cpuset=[22])
+EAL: lcore 19 is ready (tid=3e0700;cpuset=[19])
+EAL: lcore 25 is ready (tid=fc7da700;cpuset=[25])
+EAL: lcore 7 is ready (tid=7bec700;cpuset=[7])
+EAL: lcore 8 is ready (tid=71eb700;cpuset=[8])
+EAL: lcore 28 is ready (tid=fa9d7700;cpuset=[28])
+EAL: lcore 33 is ready (tid=f77d2700;cpuset=[33])
+EAL: lcore 30 is ready (tid=f95d5700;cpuset=[30])
+EAL: lcore 3 is ready (tid=a3f0700;cpuset=[3])
+EAL: lcore 2 is ready (tid=adf1700;cpuset=[2])
+EAL: lcore 1 is ready (tid=b7f2700;cpuset=[1])
+EAL: lcore 34 is ready (tid=f6dd1700;cpuset=[34])
+EAL: lcore 14 is ready (tid=35e5700;cpuset=[14])
+EAL: lcore 18 is ready (tid=de1700;cpuset=[18])
+EAL: lcore 21 is ready (tid=fefde700;cpuset=[21])
+EAL: lcore 24 is ready (tid=fd1db700;cpuset=[24])
+EAL: lcore 32 is ready (tid=f81d3700;cpuset=[32])
+EAL: lcore 10 is ready (tid=5de9700;cpuset=[10])
+EAL: lcore 35 is ready (tid=f63d0700;cpuset=[35])
+EAL: lcore 13 is ready (tid=3fe6700;cpuset=[13])
+EAL: lcore 20 is ready (tid=ff9df700;cpuset=[20])
+EAL: lcore 26 is ready (tid=fbdd9700;cpuset=[26])
+EAL: lcore 12 is ready (tid=49e7700;cpuset=[12])
+EAL: lcore 16 is ready (tid=21e3700;cpuset=[16])
+EAL: lcore 31 is ready (tid=f8bd4700;cpuset=[31])
+EAL: lcore 23 is ready (tid=fdbdc700;cpuset=[23])
+EAL: lcore 36 is ready (tid=f59cf700;cpuset=[36])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: No probed ethernet devices
+Interactive-mode selected
+Invalid port 0
+Done
+26/07/2015 16:33:33        SUITE_DUT_CMD: set verbose 1
+26/07/2015 16:33:34     SUITE_DUT_OUTPUT: set verbose 1
+Change verbose level from 0 to 1
+26/07/2015 16:33:34        SUITE_DUT_CMD: set fwd mac
+26/07/2015 16:33:34     SUITE_DUT_OUTPUT: set fwd mac
+Set mac packet forwarding mode
+26/07/2015 16:33:34        SUITE_DUT_CMD: vlan set strip off 0
+26/07/2015 16:33:34     SUITE_DUT_OUTPUT: vlan set strip off 0
+Invalid port 0
+26/07/2015 16:33:34                 INFO: Test Case test_vlan_disable_receipt Begin
+26/07/2015 16:33:34        SUITE_DUT_CMD: rx_vlan rm 1 0
+26/07/2015 16:33:34     SUITE_DUT_OUTPUT: rx_vlan rm 1 0
+Invalid port 0
+26/07/2015 16:33:34        SUITE_DUT_CMD: start
+26/07/2015 16:33:35     SUITE_DUT_OUTPUT: start
+  mac packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:33:35     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:33:35  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:33:35     SUITE_TESTER_CMD: scp sniff.py root@10.224.14.113:~/
+26/07/2015 16:33:35     SUITE_TESTER_CMD: SCAPY Receive setup:
+import os
+conf.color_theme=NoTheme()
+RESULT=""
+p=sniff(iface="ens4d1",count=1,timeout=5)
+RESULT=str(p)
+f = open('scapyResult.txt','w')
+f.write(RESULT)
+f.close()
+exit()
+
+26/07/2015 16:33:35     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:33:36  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:33:36     SUITE_TESTER_CMD: scapy
+26/07/2015 16:33:36  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:33:36     SUITE_TESTER_CMD: subprocess.call("scapy -c sniff.py &", shell=True)
+26/07/2015 16:33:36  SUITE_TESTER_OUTPUT: [0m0
+26/07/2015 16:33:38     SUITE_TESTER_CMD: sendp([Ether(dst="f4:52:14:2c:5d:42")/Dot1Q(vlan=1)/IP(len=46)], iface="ens4d1")
+26/07/2015 16:33:38  SUITE_TESTER_OUTPUT: NFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+.
+Sent 1 packets.
+26/07/2015 16:33:40     SUITE_TESTER_CMD: exit()
+26/07/2015 16:33:40  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:33:40     SUITE_TESTER_CMD: cat scapyResult.txt
+26/07/2015 16:33:41  SUITE_TESTER_OUTPUT: [<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>][PEXPECT]
+26/07/2015 16:33:41     SUITE_TESTER_CMD: SCAPY Result:
+[<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>][PEXPECT]
+
+
+
+26/07/2015 16:33:41                ERROR: Test Case test_vlan_disable_receipt Result FAILED: 'Wrong vlan:[<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>]'
+26/07/2015 16:33:41                 INFO: Test Case test_vlan_enable_receipt Begin
+26/07/2015 16:33:41        SUITE_DUT_CMD: set promisc all off
+26/07/2015 16:33:41     SUITE_DUT_OUTPUT: set promisc all off
+26/07/2015 16:33:41        SUITE_DUT_CMD: rx_vlan add 1 0
+26/07/2015 16:33:41     SUITE_DUT_OUTPUT: rx_vlan add 1 0
+Invalid port 0
+26/07/2015 16:33:41        SUITE_DUT_CMD: start
+26/07/2015 16:33:41     SUITE_DUT_OUTPUT: start
+Packet forwarding already started
+26/07/2015 16:33:41     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:33:41  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:33:41     SUITE_TESTER_CMD: scp sniff.py root@10.224.14.113:~/
+26/07/2015 16:33:42     SUITE_TESTER_CMD: SCAPY Receive setup:
+import os
+conf.color_theme=NoTheme()
+RESULT=""
+p=sniff(iface="ens4d1",count=1,timeout=5)
+RESULT=str(p)
+f = open('scapyResult.txt','w')
+f.write(RESULT)
+f.close()
+exit()
+
+26/07/2015 16:33:42     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:33:42  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:33:42     SUITE_TESTER_CMD: scapy
+26/07/2015 16:33:43  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:33:43     SUITE_TESTER_CMD: subprocess.call("scapy -c sniff.py &", shell=True)
+26/07/2015 16:33:43  SUITE_TESTER_OUTPUT: [0m0
+26/07/2015 16:33:45     SUITE_TESTER_CMD: sendp([Ether(dst="f4:52:14:2c:5d:42")/Dot1Q(vlan=1)/IP(len=46)], iface="ens4d1")
+26/07/2015 16:33:45  SUITE_TESTER_OUTPUT: NFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+.
+Sent 1 packets.
+26/07/2015 16:33:47     SUITE_TESTER_CMD: exit()
+26/07/2015 16:33:47  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:33:47     SUITE_TESTER_CMD: cat scapyResult.txt
+26/07/2015 16:33:47  SUITE_TESTER_OUTPUT: [<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>][PEXPECT]
+26/07/2015 16:33:47     SUITE_TESTER_CMD: SCAPY Result:
+[<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>][PEXPECT]
+
+
+
+26/07/2015 16:33:47        SUITE_DUT_CMD: stop
+26/07/2015 16:33:48     SUITE_DUT_OUTPUT: stop
+Telling cores to stop...
+Waiting for lcores to finish...
+
+  +++++++++++++++ Accumulated forward statistics for all ports+++++++++++++++
+  RX-packets: 0              RX-dropped: 0             RX-total: 0
+  TX-packets: 0              TX-dropped: 0             TX-total: 0
+  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Done.
+26/07/2015 16:33:48                 INFO: Test Case test_vlan_enable_receipt Result PASSED:
+26/07/2015 16:33:48                 INFO: Test Case test_vlan_strip_config_off Begin
+26/07/2015 16:33:48        SUITE_DUT_CMD: vlan set strip off 0
+26/07/2015 16:33:48     SUITE_DUT_OUTPUT: vlan set strip off 0
+Invalid port 0
+26/07/2015 16:33:48        SUITE_DUT_CMD: show port info 0
+26/07/2015 16:33:48     SUITE_DUT_OUTPUT: show port info 0
+Invalid port 0
+Valid port range is [0]
+26/07/2015 16:33:48                ERROR: Test Case test_vlan_strip_config_off Result FAILED: 'Wrong strip:show port info 0\r\r\nInvalid port 0\r\nValid port range is [0]'
+26/07/2015 16:33:48                 INFO: Test Case test_vlan_strip_config_on Begin
+26/07/2015 16:33:48        SUITE_DUT_CMD: vlan set strip on 0
+26/07/2015 16:33:48     SUITE_DUT_OUTPUT: vlan set strip on 0
+Invalid port 0
+26/07/2015 16:33:48        SUITE_DUT_CMD: set promisc all off
+26/07/2015 16:33:48     SUITE_DUT_OUTPUT: set promisc all off
+26/07/2015 16:33:48        SUITE_DUT_CMD: vlan set strip on 0
+26/07/2015 16:33:49     SUITE_DUT_OUTPUT: vlan set strip on 0
+Invalid port 0
+26/07/2015 16:33:49        SUITE_DUT_CMD: start
+26/07/2015 16:33:49     SUITE_DUT_OUTPUT: start
+  mac packet forwarding - CRC stripping disabled - packets/burst=32
+  nb forwarding cores=1 - nb forwarding ports=0
+  RX queues=1 - RX desc=128 - RX free threshold=0
+  RX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX queues=1 - TX desc=512 - TX free threshold=0
+  TX threshold registers: pthresh=0 hthresh=0 wthresh=0
+  TX RS bit threshold=0 - TXQ flags=0x0
+26/07/2015 16:33:49     SUITE_TESTER_CMD: echo -n '' >  scapyResult.txt
+26/07/2015 16:33:49  SUITE_TESTER_OUTPUT: 
+26/07/2015 16:33:49     SUITE_TESTER_CMD: scp sniff.py root@10.224.14.113:~/
+26/07/2015 16:33:50     SUITE_TESTER_CMD: SCAPY Receive setup:
+import os
+conf.color_theme=NoTheme()
+RESULT=""
+p=sniff(iface="ens4d1",count=1,timeout=5)
+RESULT=str(p)
+f = open('scapyResult.txt','w')
+f.write(RESULT)
+f.close()
+exit()
+
+26/07/2015 16:33:50     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:33:50  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:33:50     SUITE_TESTER_CMD: scapy
+26/07/2015 16:33:50  SUITE_TESTER_OUTPUT: INFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+Welcome to Scapy (2.2.0-dev)
+26/07/2015 16:33:50     SUITE_TESTER_CMD: subprocess.call("scapy -c sniff.py &", shell=True)
+26/07/2015 16:33:51  SUITE_TESTER_OUTPUT: [0m0
+26/07/2015 16:33:53     SUITE_TESTER_CMD: sendp([Ether(dst="f4:52:14:2c:5d:42")/Dot1Q(vlan=1)/IP(len=46)], iface="ens4d1")
+26/07/2015 16:33:53  SUITE_TESTER_OUTPUT: NFO: Can't import python gnuplot wrapper . Won't be able to plot.
+INFO: Can't import PyX. Won't be able to use psdump() or pdfdump().
+ERROR: Unable to import pcap module: No module named pcap/No module named pcapy
+WARNING: No route found for IPv6 destination :: (no default route?)
+.
+Sent 1 packets.
+26/07/2015 16:33:55     SUITE_TESTER_CMD: exit()
+26/07/2015 16:33:55  SUITE_TESTER_OUTPUT: [0m[PEXPECT]
+26/07/2015 16:33:55     SUITE_TESTER_CMD: cat scapyResult.txt
+26/07/2015 16:33:55  SUITE_TESTER_OUTPUT: [<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>][PEXPECT]
+26/07/2015 16:33:55     SUITE_TESTER_CMD: SCAPY Result:
+[<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>][PEXPECT]
+
+
+
+26/07/2015 16:33:55                ERROR: Test Case test_vlan_strip_config_on Result FAILED: 'Wrong vlan:[<Ether  dst=f4:52:14:2c:5d:42 src=00:00:00:00:00:00 type=n_802_1Q |<Dot1Q  prio=0L id=0L vlan=1L type=IPv4 |<IP  version=4L ihl=5L tos=0x0 len=46 id=1 flags= frag=0L ttl=64 proto=ip chksum=0x7ccd src=127.0.0.1 dst=127.0.0.1 |>>>]'
+26/07/2015 16:33:56     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:33:56  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:33:56                 INFO: 
+TEST SUITE ENDED: TestVlan

@@ -1,0 +1,1997 @@
+22/07/2015 10:57:44                 INFO: 
+TEST SUITE : TestCmdline
+22/07/2015 10:57:44                 INFO: NIC :        cfg
+22/07/2015 10:57:44        SUITE_DUT_CMD: make -j -C examples/cmdline 
+22/07/2015 10:57:45     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-MAP cmdline.map
+  INSTALL-APP cmdline
+make: Leaving directory `/root/dpdk/examples/cmdline'
+22/07/2015 10:57:45        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+22/07/2015 10:57:49     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xc0000000 bytes
+EAL: Virtual area found at 0x7f6be9c00000 (size = 0xc0000000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6be9800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3f800000 bytes
+EAL: Virtual area found at 0x7f6ba9e00000 (size = 0x3f800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6ba9800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6ba9400000 (size = 0x200000)
+EAL: Ask a virtual area of 0xae400000 bytes
+EAL: Virtual area found at 0x7f6afae00000 (size = 0xae400000)
+EAL: Ask a virtual area of 0xec00000 bytes
+EAL: Virtual area found at 0x7f6aec000000 (size = 0xec00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6aeba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f6aeb400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aeb000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aeac00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aea800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aea400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aea000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6ae9c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6ae9800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6ae9400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6ae9000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6ae8c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f6aa8e00000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa8a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa8600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa8200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa7e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa7a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa7600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa7200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa6e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa6a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa6600000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa6200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f6aa5e00000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2792999 KHz
+EAL: Master lcore 1 is ready (tid=aae11880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f6ca9c00000
+EAL:   PCI memory mapped at 0x7f6ca9c80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f6ca9c84000
+EAL:   PCI memory mapped at 0x7f6ca9d04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+22/07/2015 10:57:49                 INFO: Test Case test_cmdline_sample_commands Begin
+22/07/2015 10:57:49        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 10:57:50     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+22/07/2015 10:57:50        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 10:57:50     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+22/07/2015 10:57:50        SUITE_DUT_CMD: show objtest
+22/07/2015 10:57:50     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+22/07/2015 10:57:50        SUITE_DUT_CMD: del objtest
+22/07/2015 10:57:50     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+22/07/2015 10:57:50        SUITE_DUT_CMD: del objtest
+22/07/2015 10:57:50     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+22/07/2015 10:57:50        SUITE_DUT_CMD: show objtest
+22/07/2015 10:57:51     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+22/07/2015 10:57:51        SUITE_DUT_CMD: help
+22/07/2015 10:57:51     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+22/07/2015 10:57:51        SUITE_DUT_CMD: ?
+22/07/2015 10:57:51     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+22/07/2015 10:57:51                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+22/07/2015 10:57:53     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 10:57:53  SUITE_TESTER_OUTPUT: tester
+22/07/2015 10:57:53                 INFO: 
+TEST SUITE ENDED: TestCmdline
+22/07/2015 14:41:12                 INFO: 
+TEST SUITE : TestCmdline
+22/07/2015 14:41:12                 INFO: NIC :        cfg
+22/07/2015 14:41:12        SUITE_DUT_CMD: make -j -C examples/cmdline 
+22/07/2015 14:41:12     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+22/07/2015 14:41:12        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+22/07/2015 14:41:17     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f051bc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f041d600000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f041d000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f041ca00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f041c400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f041ba00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f041b400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f041b000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f041ac00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f0336a00000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f0328000000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0327a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f0320600000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0320000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031fa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f031f000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031ea00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031e400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f031da00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031d400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f031ca00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031c400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031be00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031b800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031b200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f031a800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f031a200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0319c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0319600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0319000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0318a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0318400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0317e00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=1cf6a880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f051be00000
+EAL:   PCI memory mapped at 0x7f051be80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f051be84000
+EAL:   PCI memory mapped at 0x7f051bf04000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+22/07/2015 14:41:17                 INFO: Test Case test_cmdline_sample_commands Begin
+22/07/2015 14:41:17        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 14:41:17     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+22/07/2015 14:41:17        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 14:41:17     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+22/07/2015 14:41:17        SUITE_DUT_CMD: show objtest
+22/07/2015 14:41:18     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+22/07/2015 14:41:18        SUITE_DUT_CMD: del objtest
+22/07/2015 14:41:18     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+22/07/2015 14:41:18        SUITE_DUT_CMD: del objtest
+22/07/2015 14:41:18     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+22/07/2015 14:41:18        SUITE_DUT_CMD: show objtest
+22/07/2015 14:41:18     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+22/07/2015 14:41:18        SUITE_DUT_CMD: help
+22/07/2015 14:41:18     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+22/07/2015 14:41:18        SUITE_DUT_CMD: ?
+22/07/2015 14:41:19     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+22/07/2015 14:41:19                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+22/07/2015 14:41:21     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 14:41:21  SUITE_TESTER_OUTPUT: tester
+22/07/2015 14:41:21                 INFO: 
+TEST SUITE ENDED: TestCmdline
+22/07/2015 15:47:26                 INFO: 
+TEST SUITE : TestCmdline
+22/07/2015 15:47:26                 INFO: NIC :        cfg
+22/07/2015 15:47:26        SUITE_DUT_CMD: make -j -C examples/cmdline 
+22/07/2015 15:47:27     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+22/07/2015 15:47:27        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+22/07/2015 15:47:32     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb885a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7fb787400000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb786e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb786800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb786200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb785800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb785200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb784e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fb784a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7fb6a0800000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7fb691e00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb691800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7fb68a400000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb689e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb689800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb688e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb688800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb688200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb687800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb687200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb686800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb686200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb685c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb685600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb685000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fb684600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb684000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb683a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb683400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb682e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb682800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb682200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fb681c00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=86def880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7fb885c00000
+EAL:   PCI memory mapped at 0x7fb885c80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+22/07/2015 15:47:32                 INFO: Test Case test_cmdline_sample_commands Begin
+22/07/2015 15:47:32        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 15:47:32     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+22/07/2015 15:47:32        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 15:47:32     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+22/07/2015 15:47:32        SUITE_DUT_CMD: show objtest
+22/07/2015 15:47:32     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+22/07/2015 15:47:32        SUITE_DUT_CMD: del objtest
+22/07/2015 15:47:32     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+22/07/2015 15:47:32        SUITE_DUT_CMD: del objtest
+22/07/2015 15:47:33     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+22/07/2015 15:47:33        SUITE_DUT_CMD: show objtest
+22/07/2015 15:47:33     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+22/07/2015 15:47:33        SUITE_DUT_CMD: help
+22/07/2015 15:47:33     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+22/07/2015 15:47:33        SUITE_DUT_CMD: ?
+22/07/2015 15:47:33     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+22/07/2015 15:47:33                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+22/07/2015 15:47:35     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 15:47:36  SUITE_TESTER_OUTPUT: tester
+22/07/2015 15:47:36                 INFO: 
+TEST SUITE ENDED: TestCmdline
+22/07/2015 15:50:44                 INFO: 
+TEST SUITE : TestCmdline
+22/07/2015 15:50:44                 INFO: NIC :        cfg
+22/07/2015 15:50:44        SUITE_DUT_CMD: make -j -C examples/cmdline 
+22/07/2015 15:50:45     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-MAP cmdline.map
+  INSTALL-APP cmdline
+make: Leaving directory `/root/dpdk/examples/cmdline'
+22/07/2015 15:50:45        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+22/07/2015 15:50:50     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f22eba00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f21ed400000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f21ece00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f21ec800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f21ec200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f21eb800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f21eb200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f21eae00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f21eaa00000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f2106800000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f20f7e00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20f7800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f20f0400000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20efe00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ef800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f20eee00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ee800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ee200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f20ed800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ed200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f20ec800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ec200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ebc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20eb600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20eb000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f20ea600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20ea000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20e9a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20e9400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20e8e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20e8800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20e8200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f20e7c00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=ece4c880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f22ebc00000
+EAL:   PCI memory mapped at 0x7f22ebc80000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+22/07/2015 15:50:50                 INFO: Test Case test_cmdline_sample_commands Begin
+22/07/2015 15:50:50        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 15:50:50     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+22/07/2015 15:50:50        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 15:50:50     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+22/07/2015 15:50:50        SUITE_DUT_CMD: show objtest
+22/07/2015 15:50:50     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+22/07/2015 15:50:50        SUITE_DUT_CMD: del objtest
+22/07/2015 15:50:51     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+22/07/2015 15:50:51        SUITE_DUT_CMD: del objtest
+22/07/2015 15:50:51     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+22/07/2015 15:50:51        SUITE_DUT_CMD: show objtest
+22/07/2015 15:50:51     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+22/07/2015 15:50:51        SUITE_DUT_CMD: help
+22/07/2015 15:50:51     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+22/07/2015 15:50:51        SUITE_DUT_CMD: ?
+22/07/2015 15:50:51     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+22/07/2015 15:50:51                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+22/07/2015 15:50:52                ERROR:  !!! STOPPING DCTS
+22/07/2015 15:50:54     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 15:50:55  SUITE_TESTER_OUTPUT: tester
+22/07/2015 15:50:55        SUITE_DUT_CMD: echo 0000:07:00.0 > /sys/bus/pci/devices/0000\:07\:00.0/driver/unbind
+22/07/2015 15:50:55     SUITE_DUT_OUTPUT: Killed
+22/07/2015 15:50:55        SUITE_DUT_CMD: modprobe ixgbe
+22/07/2015 15:50:55     SUITE_DUT_OUTPUT: EXPECT]
+22/07/2015 15:50:55        SUITE_DUT_CMD: echo 0000:07:00.0 > /sys/bus/pci/drivers/ixgbe/bind
+22/07/2015 15:50:55     SUITE_DUT_OUTPUT: EXPECT]
+22/07/2015 15:50:55        SUITE_DUT_CMD: ls --color=never /sys/bus/pci/devices/0000:07:00.0/net
+22/07/2015 15:50:56                 INFO: DTS ended
+22/07/2015 16:17:49                 INFO: 
+TEST SUITE : TestCmdline
+22/07/2015 16:17:49                 INFO: NIC :        cfg
+22/07/2015 16:17:49        SUITE_DUT_CMD: make -j -C examples/cmdline 
+22/07/2015 16:17:50     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+22/07/2015 16:17:50        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+22/07/2015 16:17:55     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f150c800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xfe400000 bytes
+EAL: Virtual area found at 0x7f140e200000 (size = 0xfe400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f140dc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f140d600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f140d000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f140c600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f140c000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f140bc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f140b800000 (size = 0x200000)
+EAL: Ask a virtual area of 0xe4000000 bytes
+EAL: Virtual area found at 0x7f1327600000 (size = 0xe4000000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f1318c00000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1318600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f1311200000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1310c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1310600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f130fc00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130f600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130f000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f130e600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130e000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f130d600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130d000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130ca00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130c400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130be00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f130b400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130ae00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130a800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f130a200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1309c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1309600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1309000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1308a00000 (size = 0x400000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=dba9880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+22/07/2015 16:17:55                 INFO: Test Case test_cmdline_sample_commands Begin
+22/07/2015 16:17:55        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 16:17:55     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+22/07/2015 16:17:55        SUITE_DUT_CMD: add objtest 192.168.0.1
+22/07/2015 16:17:55     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+22/07/2015 16:17:55        SUITE_DUT_CMD: show objtest
+22/07/2015 16:17:55     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+22/07/2015 16:17:55        SUITE_DUT_CMD: del objtest
+22/07/2015 16:17:55     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+22/07/2015 16:17:55        SUITE_DUT_CMD: del objtest
+22/07/2015 16:17:56     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+22/07/2015 16:17:56        SUITE_DUT_CMD: show objtest
+22/07/2015 16:17:56     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+22/07/2015 16:17:56        SUITE_DUT_CMD: help
+22/07/2015 16:17:56     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+22/07/2015 16:17:56        SUITE_DUT_CMD: ?
+22/07/2015 16:17:56     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+22/07/2015 16:17:56                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+22/07/2015 16:17:58     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+22/07/2015 16:17:59  SUITE_TESTER_OUTPUT: tester
+22/07/2015 16:17:59                 INFO: 
+TEST SUITE ENDED: TestCmdline
+23/07/2015 11:40:39                 INFO: 
+TEST SUITE : TestCmdline
+23/07/2015 11:40:39                 INFO: NIC :        cfg
+23/07/2015 11:40:39        SUITE_DUT_CMD: make -j -C examples/cmdline 
+23/07/2015 11:40:39     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+23/07/2015 11:40:39        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+23/07/2015 11:40:41     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f1074e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7f1070e00000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7f1036600000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1036000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1035a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1035400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f1034a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1034400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f1034000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7f100fc00000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7f1001200000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f1000c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7f0ff9800000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff9200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff8c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0ff8200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff7c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff7600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0ff6c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff6600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0ff5c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff5600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff5000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff4a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff4400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f0ff3a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff3400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff2e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff2800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff2200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff1c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff1600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f0ff1000000 (size = 0x400000)
+EAL: Requesting 512 pages of size 2MB from socket 0
+EAL: Requesting 512 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=754ff880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+23/07/2015 11:40:41                 INFO: Test Case test_cmdline_sample_commands Begin
+23/07/2015 11:40:41        SUITE_DUT_CMD: add objtest 192.168.0.1
+23/07/2015 11:40:41     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+23/07/2015 11:40:41        SUITE_DUT_CMD: add objtest 192.168.0.1
+23/07/2015 11:40:42     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+23/07/2015 11:40:42        SUITE_DUT_CMD: show objtest
+23/07/2015 11:40:42     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+23/07/2015 11:40:42        SUITE_DUT_CMD: del objtest
+23/07/2015 11:40:42     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+23/07/2015 11:40:42        SUITE_DUT_CMD: del objtest
+23/07/2015 11:40:42     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+23/07/2015 11:40:42        SUITE_DUT_CMD: show objtest
+23/07/2015 11:40:42     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+23/07/2015 11:40:42        SUITE_DUT_CMD: help
+23/07/2015 11:40:43     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+23/07/2015 11:40:43        SUITE_DUT_CMD: ?
+23/07/2015 11:40:43     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+23/07/2015 11:40:43                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+23/07/2015 11:40:45     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 11:40:45  SUITE_TESTER_OUTPUT: tester
+23/07/2015 11:40:45                 INFO: 
+TEST SUITE ENDED: TestCmdline
+23/07/2015 15:29:04                 INFO: 
+TEST SUITE : TestCmdline
+23/07/2015 15:29:04                 INFO: NIC :        cfg
+23/07/2015 15:29:04        SUITE_DUT_CMD: make -j -C examples/cmdline 
+23/07/2015 15:29:04     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+23/07/2015 15:29:04        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+23/07/2015 15:29:09     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fbe3bc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3e00000 bytes
+EAL: Virtual area found at 0x7fbe37c00000 (size = 0x3e00000)
+EAL: Ask a virtual area of 0xbf400000 bytes
+EAL: Virtual area found at 0x7fbd78600000 (size = 0xbf400000)
+EAL: Ask a virtual area of 0x3a600000 bytes
+EAL: Virtual area found at 0x7fbd3de00000 (size = 0x3a600000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbd3d800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbd3d200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbd3cc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fbd3c200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbd3bc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fbd3b800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbd3b200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fbd3a800000 (size = 0x800000)
+EAL: Ask a virtual area of 0xbf000000 bytes
+EAL: Virtual area found at 0x7fbc7b600000 (size = 0xbf000000)
+EAL: Ask a virtual area of 0x24200000 bytes
+EAL: Virtual area found at 0x7fbc57200000 (size = 0x24200000)
+EAL: Ask a virtual area of 0xe800000 bytes
+EAL: Virtual area found at 0x7fbc48800000 (size = 0xe800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc48200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x7200000 bytes
+EAL: Virtual area found at 0x7fbc40e00000 (size = 0x7200000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc40800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc40200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fbc3f800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3f200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3ec00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fbc3e200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3dc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fbc3d200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3cc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3c600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3c000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3ba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7fbc3b000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3aa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc3a400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc39e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc39800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc39200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc38c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7fbc38600000 (size = 0x400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7fbc37800000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fbc37400000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7fbc37000000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793001 KHz
+EAL: Master lcore 1 is ready (tid=3cf2a880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+23/07/2015 15:29:09                 INFO: Test Case test_cmdline_sample_commands Begin
+23/07/2015 15:29:09        SUITE_DUT_CMD: add objtest 192.168.0.1
+23/07/2015 15:29:09     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+23/07/2015 15:29:09        SUITE_DUT_CMD: add objtest 192.168.0.1
+23/07/2015 15:29:09     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+23/07/2015 15:29:09        SUITE_DUT_CMD: show objtest
+23/07/2015 15:29:09     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+23/07/2015 15:29:09        SUITE_DUT_CMD: del objtest
+23/07/2015 15:29:10     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+23/07/2015 15:29:10        SUITE_DUT_CMD: del objtest
+23/07/2015 15:29:10     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+23/07/2015 15:29:10        SUITE_DUT_CMD: show objtest
+23/07/2015 15:29:10     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+23/07/2015 15:29:10        SUITE_DUT_CMD: help
+23/07/2015 15:29:10     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+23/07/2015 15:29:10        SUITE_DUT_CMD: ?
+23/07/2015 15:29:10     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+23/07/2015 15:29:10                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+23/07/2015 15:29:13     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+23/07/2015 15:29:13  SUITE_TESTER_OUTPUT: tester
+23/07/2015 15:29:13                 INFO: 
+TEST SUITE ENDED: TestCmdline
+26/07/2015 16:18:08                 INFO: 
+TEST SUITE : TestCmdline
+26/07/2015 16:18:08                 INFO: NIC :        cfg
+26/07/2015 16:18:08        SUITE_DUT_CMD: make -j -C examples/cmdline 
+26/07/2015 16:18:08     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+26/07/2015 16:18:08        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+26/07/2015 16:18:13     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0xb8c00000 bytes
+EAL: Virtual area found at 0x7f2e0f000000 (size = 0xb8c00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2e0e600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x3800000 bytes
+EAL: Virtual area found at 0x7f2e0ac00000 (size = 0x3800000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f2e09e00000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2e09800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2e09200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2e08c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x40000000 bytes
+EAL: Virtual area found at 0x7f2dc8a00000 (size = 0x40000000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2dc8000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2dc7600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2dc6c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2dc6600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2dc6200000 (size = 0x200000)
+EAL: Ask a virtual area of 0x7c000000 bytes
+EAL: Virtual area found at 0x7f2d4a000000 (size = 0x7c000000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f2d49200000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x34400000 bytes
+EAL: Virtual area found at 0x7f2d14c00000 (size = 0x34400000)
+EAL: Ask a virtual area of 0xa400000 bytes
+EAL: Virtual area found at 0x7f2d0a600000 (size = 0xa400000)
+EAL: Ask a virtual area of 0x1400000 bytes
+EAL: Virtual area found at 0x7f2d09000000 (size = 0x1400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f2d08200000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x1800000 bytes
+EAL: Virtual area found at 0x7f2d06800000 (size = 0x1800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2d06200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2d05c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2d05600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2d05000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2d04c00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x3fc00000 bytes
+EAL: Virtual area found at 0x7f2cc4e00000 (size = 0x3fc00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cc4a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f2cc4600000 (size = 0x200000)
+EAL: Requesting 2048 pages of size 2MB from socket 0
+EAL: Requesting 2048 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=c8c69880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+26/07/2015 16:18:13                 INFO: Test Case test_cmdline_sample_commands Begin
+26/07/2015 16:18:13        SUITE_DUT_CMD: add objtest 192.168.0.1
+26/07/2015 16:18:13     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+26/07/2015 16:18:13        SUITE_DUT_CMD: add objtest 192.168.0.1
+26/07/2015 16:18:13     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+26/07/2015 16:18:13        SUITE_DUT_CMD: show objtest
+26/07/2015 16:18:14     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+26/07/2015 16:18:14        SUITE_DUT_CMD: del objtest
+26/07/2015 16:18:14     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+26/07/2015 16:18:14        SUITE_DUT_CMD: del objtest
+26/07/2015 16:18:14     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+26/07/2015 16:18:14        SUITE_DUT_CMD: show objtest
+26/07/2015 16:18:14     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+26/07/2015 16:18:14        SUITE_DUT_CMD: help
+26/07/2015 16:18:14     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+26/07/2015 16:18:14        SUITE_DUT_CMD: ?
+26/07/2015 16:18:15     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+26/07/2015 16:18:15                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+26/07/2015 16:18:17     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+26/07/2015 16:18:17  SUITE_TESTER_OUTPUT: tester
+26/07/2015 16:18:17                 INFO: 
+TEST SUITE ENDED: TestCmdline
+27/07/2015 10:15:18                 INFO: 
+TEST SUITE : TestCmdline
+27/07/2015 10:15:18                 INFO: NIC :        cfg
+27/07/2015 10:15:18        SUITE_DUT_CMD: make -j -C examples/cmdline 
+27/07/2015 10:15:19     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+27/07/2015 10:15:19        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+27/07/2015 10:15:24     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f586fc00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f586f600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f586f000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f586ea00000 (size = 0x400000)
+EAL: Ask a virtual area of 0xd000000 bytes
+EAL: Virtual area found at 0x7f5861800000 (size = 0xd000000)
+EAL: Ask a virtual area of 0xb8c00000 bytes
+EAL: Virtual area found at 0x7f57a8a00000 (size = 0xb8c00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f57a8000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x3800000 bytes
+EAL: Virtual area found at 0x7f57a4600000 (size = 0x3800000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f57a3800000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f57a3200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f57a2c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f57a2600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x3cc00000 bytes
+EAL: Virtual area found at 0x7f5765800000 (size = 0x3cc00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5764e00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5764400000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5763a00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5763400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x73400000 bytes
+EAL: Virtual area found at 0x7f56efe00000 (size = 0x73400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f56ef000000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x34400000 bytes
+EAL: Virtual area found at 0x7f56baa00000 (size = 0x34400000)
+EAL: Ask a virtual area of 0xa400000 bytes
+EAL: Virtual area found at 0x7f56b0400000 (size = 0xa400000)
+EAL: Ask a virtual area of 0x1400000 bytes
+EAL: Virtual area found at 0x7f56aee00000 (size = 0x1400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f56ae000000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x1800000 bytes
+EAL: Virtual area found at 0x7f56ac600000 (size = 0x1800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f56ac000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f56aba00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f56ab400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f56aae00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f56aa800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x8400000 bytes
+EAL: Virtual area found at 0x7f56a2200000 (size = 0x8400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f56a1e00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f566d000000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f566cc00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f566c200000 (size = 0x800000)
+EAL: Requesting 2136 pages of size 2MB from socket 0
+EAL: Requesting 1960 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=71629880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+27/07/2015 10:15:24                 INFO: Test Case test_cmdline_sample_commands Begin
+27/07/2015 10:15:24        SUITE_DUT_CMD: add objtest 192.168.0.1
+27/07/2015 10:15:24     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+27/07/2015 10:15:24        SUITE_DUT_CMD: add objtest 192.168.0.1
+27/07/2015 10:15:24     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+27/07/2015 10:15:24        SUITE_DUT_CMD: show objtest
+27/07/2015 10:15:24     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+27/07/2015 10:15:24        SUITE_DUT_CMD: del objtest
+27/07/2015 10:15:24     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+27/07/2015 10:15:24        SUITE_DUT_CMD: del objtest
+27/07/2015 10:15:25     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+27/07/2015 10:15:25        SUITE_DUT_CMD: show objtest
+27/07/2015 10:15:25     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+27/07/2015 10:15:25        SUITE_DUT_CMD: help
+27/07/2015 10:15:25     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+27/07/2015 10:15:25        SUITE_DUT_CMD: ?
+27/07/2015 10:15:25     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+27/07/2015 10:15:25                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+27/07/2015 10:15:27     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+27/07/2015 10:15:27  SUITE_TESTER_OUTPUT: tester
+27/07/2015 10:15:27                 INFO: 
+TEST SUITE ENDED: TestCmdline
+27/07/2015 11:02:30                 INFO: 
+TEST SUITE : TestCmdline
+27/07/2015 11:02:30                 INFO: NIC :        cfg
+27/07/2015 11:02:30        SUITE_DUT_CMD: make -j -C examples/cmdline 
+27/07/2015 11:02:30     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+27/07/2015 11:02:30        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+27/07/2015 11:02:35     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5426800000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5426200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5425c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5425600000 (size = 0x400000)
+EAL: Ask a virtual area of 0xd000000 bytes
+EAL: Virtual area found at 0x7f5418400000 (size = 0xd000000)
+EAL: Ask a virtual area of 0xb8c00000 bytes
+EAL: Virtual area found at 0x7f535f600000 (size = 0xb8c00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f535ec00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x3800000 bytes
+EAL: Virtual area found at 0x7f535b200000 (size = 0x3800000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f535a400000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5359e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5359800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5359200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x3cc00000 bytes
+EAL: Virtual area found at 0x7f531c400000 (size = 0x3cc00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f531ba00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f531b000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f531a600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f531a000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x73400000 bytes
+EAL: Virtual area found at 0x7f52a6a00000 (size = 0x73400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f52a5c00000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x34400000 bytes
+EAL: Virtual area found at 0x7f5271600000 (size = 0x34400000)
+EAL: Ask a virtual area of 0xa400000 bytes
+EAL: Virtual area found at 0x7f5267000000 (size = 0xa400000)
+EAL: Ask a virtual area of 0x1400000 bytes
+EAL: Virtual area found at 0x7f5265a00000 (size = 0x1400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f5264c00000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x1800000 bytes
+EAL: Virtual area found at 0x7f5263200000 (size = 0x1800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5262c00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5262600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5262000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5261a00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f5261400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x8400000 bytes
+EAL: Virtual area found at 0x7f5258e00000 (size = 0x8400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5258a00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f5223c00000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f5223800000 (size = 0x200000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f5222e00000 (size = 0x800000)
+EAL: Requesting 2136 pages of size 2MB from socket 0
+EAL: Requesting 1960 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=28246880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f5427000000
+EAL:   PCI memory mapped at 0x7f5427080000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 3
+PMD: eth_ixgbe_dev_init(): port 0 vendorID=0x8086 deviceID=0x10fb
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   PCI memory mapped at 0x7f5427084000
+EAL:   PCI memory mapped at 0x7f5427104000
+PMD: eth_ixgbe_dev_init(): MAC: 2, PHY: 12, SFP+: 4
+PMD: eth_ixgbe_dev_init(): port 1 vendorID=0x8086 deviceID=0x10fb
+27/07/2015 11:02:35                 INFO: Test Case test_cmdline_sample_commands Begin
+27/07/2015 11:02:35        SUITE_DUT_CMD: add objtest 192.168.0.1
+27/07/2015 11:02:35     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+27/07/2015 11:02:35        SUITE_DUT_CMD: add objtest 192.168.0.1
+27/07/2015 11:02:35     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+27/07/2015 11:02:35        SUITE_DUT_CMD: show objtest
+27/07/2015 11:02:36     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+27/07/2015 11:02:36        SUITE_DUT_CMD: del objtest
+27/07/2015 11:02:36     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+27/07/2015 11:02:36        SUITE_DUT_CMD: del objtest
+27/07/2015 11:02:36     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+27/07/2015 11:02:36        SUITE_DUT_CMD: show objtest
+27/07/2015 11:02:36     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+27/07/2015 11:02:36        SUITE_DUT_CMD: help
+27/07/2015 11:02:36     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+27/07/2015 11:02:36        SUITE_DUT_CMD: ?
+27/07/2015 11:02:37     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+27/07/2015 11:02:37                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+27/07/2015 11:02:39     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+27/07/2015 11:02:39  SUITE_TESTER_OUTPUT: tester
+27/07/2015 11:02:39                 INFO: 
+TEST SUITE ENDED: TestCmdline
+27/07/2015 11:05:26                 INFO: 
+TEST SUITE : TestCmdline
+27/07/2015 11:05:26                 INFO: NIC :        cfg
+27/07/2015 11:05:26        SUITE_DUT_CMD: make -j -C examples/cmdline 
+27/07/2015 11:05:26     SUITE_DUT_OUTPUT: make: Entering directory `/root/dpdk/examples/cmdline'
+  CC main.o
+  CC commands.o
+  CC parse_obj_list.o
+  LD cmdline
+  INSTALL-APP cmdline
+  INSTALL-MAP cmdline.map
+make: Leaving directory `/root/dpdk/examples/cmdline'
+27/07/2015 11:05:26        SUITE_DUT_CMD: ./examples/cmdline/build/app/cmdline -n 1 -c 0x2
+27/07/2015 11:05:31     SUITE_DUT_OUTPUT: EAL: Detected lcore 0 as core 0 on socket 0
+EAL: Detected lcore 1 as core 1 on socket 0
+EAL: Detected lcore 2 as core 2 on socket 0
+EAL: Detected lcore 3 as core 3 on socket 0
+EAL: Detected lcore 4 as core 4 on socket 0
+EAL: Detected lcore 5 as core 8 on socket 0
+EAL: Detected lcore 6 as core 9 on socket 0
+EAL: Detected lcore 7 as core 10 on socket 0
+EAL: Detected lcore 8 as core 11 on socket 0
+EAL: Detected lcore 9 as core 12 on socket 0
+EAL: Detected lcore 10 as core 0 on socket 1
+EAL: Detected lcore 11 as core 1 on socket 1
+EAL: Detected lcore 12 as core 2 on socket 1
+EAL: Detected lcore 13 as core 3 on socket 1
+EAL: Detected lcore 14 as core 4 on socket 1
+EAL: Detected lcore 15 as core 8 on socket 1
+EAL: Detected lcore 16 as core 9 on socket 1
+EAL: Detected lcore 17 as core 10 on socket 1
+EAL: Detected lcore 18 as core 11 on socket 1
+EAL: Detected lcore 19 as core 12 on socket 1
+EAL: Detected lcore 20 as core 0 on socket 0
+EAL: Detected lcore 21 as core 1 on socket 0
+EAL: Detected lcore 22 as core 2 on socket 0
+EAL: Detected lcore 23 as core 3 on socket 0
+EAL: Detected lcore 24 as core 4 on socket 0
+EAL: Detected lcore 25 as core 8 on socket 0
+EAL: Detected lcore 26 as core 9 on socket 0
+EAL: Detected lcore 27 as core 10 on socket 0
+EAL: Detected lcore 28 as core 11 on socket 0
+EAL: Detected lcore 29 as core 12 on socket 0
+EAL: Detected lcore 30 as core 0 on socket 1
+EAL: Detected lcore 31 as core 1 on socket 1
+EAL: Detected lcore 32 as core 2 on socket 1
+EAL: Detected lcore 33 as core 3 on socket 1
+EAL: Detected lcore 34 as core 4 on socket 1
+EAL: Detected lcore 35 as core 8 on socket 1
+EAL: Detected lcore 36 as core 9 on socket 1
+EAL: Detected lcore 37 as core 10 on socket 1
+EAL: Detected lcore 38 as core 11 on socket 1
+EAL: Detected lcore 39 as core 12 on socket 1
+EAL: Support maximum 128 logical core(s) by configuration.
+EAL: Detected 40 lcore(s)
+EAL: Setting up memory...
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f289fe00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f289f800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f289f200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f289ec00000 (size = 0x400000)
+EAL: Ask a virtual area of 0xd000000 bytes
+EAL: Virtual area found at 0x7f2891a00000 (size = 0xd000000)
+EAL: Ask a virtual area of 0xb8c00000 bytes
+EAL: Virtual area found at 0x7f27d8c00000 (size = 0xb8c00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f27d8200000 (size = 0x800000)
+EAL: Ask a virtual area of 0x3800000 bytes
+EAL: Virtual area found at 0x7f27d4800000 (size = 0x3800000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f27d3a00000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f27d3400000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f27d2e00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f27d2800000 (size = 0x400000)
+EAL: Ask a virtual area of 0x3cc00000 bytes
+EAL: Virtual area found at 0x7f2795a00000 (size = 0x3cc00000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2795000000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2794600000 (size = 0x800000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f2793c00000 (size = 0x800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f2793600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x73400000 bytes
+EAL: Virtual area found at 0x7f2720000000 (size = 0x73400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f271f200000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x34400000 bytes
+EAL: Virtual area found at 0x7f26eac00000 (size = 0x34400000)
+EAL: Ask a virtual area of 0xa400000 bytes
+EAL: Virtual area found at 0x7f26e0600000 (size = 0xa400000)
+EAL: Ask a virtual area of 0x1400000 bytes
+EAL: Virtual area found at 0x7f26df000000 (size = 0x1400000)
+EAL: Ask a virtual area of 0xc00000 bytes
+EAL: Virtual area found at 0x7f26de200000 (size = 0xc00000)
+EAL: Ask a virtual area of 0x1800000 bytes
+EAL: Virtual area found at 0x7f26dc800000 (size = 0x1800000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f26dc200000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f26dbc00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f26db600000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f26db000000 (size = 0x400000)
+EAL: Ask a virtual area of 0x400000 bytes
+EAL: Virtual area found at 0x7f26daa00000 (size = 0x400000)
+EAL: Ask a virtual area of 0x8400000 bytes
+EAL: Virtual area found at 0x7f26d2400000 (size = 0x8400000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f26d2000000 (size = 0x200000)
+EAL: Ask a virtual area of 0x34c00000 bytes
+EAL: Virtual area found at 0x7f269d200000 (size = 0x34c00000)
+EAL: Ask a virtual area of 0x200000 bytes
+EAL: Virtual area found at 0x7f269ce00000 (size = 0x200000)
+EAL: Ask a virtual area of 0x800000 bytes
+EAL: Virtual area found at 0x7f269c400000 (size = 0x800000)
+EAL: Requesting 2136 pages of size 2MB from socket 0
+EAL: Requesting 1960 pages of size 2MB from socket 1
+EAL: TSC frequency is ~2793000 KHz
+EAL: Master lcore 1 is ready (tid=a1825880;cpuset=[1])
+EAL: PCI device 0000:07:00.0 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+EAL: PCI device 0000:07:00.1 on NUMA socket 0
+EAL:   probe driver: 8086:10fb rte_ixgbe_pmd
+EAL:   Not managed by a supported kernel driver, skipped
+27/07/2015 11:05:31                 INFO: Test Case test_cmdline_sample_commands Begin
+27/07/2015 11:05:31        SUITE_DUT_CMD: add objtest 192.168.0.1
+27/07/2015 11:05:31     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest added, ip=192.168.0.1
+27/07/2015 11:05:31        SUITE_DUT_CMD: add objtest 192.168.0.1
+27/07/2015 11:05:32     SUITE_DUT_OUTPUT: add objtest 192.168.0.1
+Object objtest already exist
+27/07/2015 11:05:32        SUITE_DUT_CMD: show objtest
+27/07/2015 11:05:32     SUITE_DUT_OUTPUT: show objtest
+Object objtest, ip=192.168.0.1
+27/07/2015 11:05:32        SUITE_DUT_CMD: del objtest
+27/07/2015 11:05:32     SUITE_DUT_OUTPUT: del objtest
+Object objtest removed, ip=192.168.0.1
+27/07/2015 11:05:32        SUITE_DUT_CMD: del objtest
+27/07/2015 11:05:32     SUITE_DUT_OUTPUT: del objtest
+Bad arguments
+27/07/2015 11:05:32        SUITE_DUT_CMD: show objtest
+27/07/2015 11:05:32     SUITE_DUT_OUTPUT: show objtest
+Bad arguments
+27/07/2015 11:05:32        SUITE_DUT_CMD: help
+27/07/2015 11:05:33     SUITE_DUT_OUTPUT: help
+Demo example of command line interface in RTE
+
+This is a readline-like interface that can be used to
+debug your RTE application. It supports some features
+of GNU readline like completion, cut/paste, and some
+other special bindings.
+
+This demo shows how rte_cmdline library can be
+extended to handle a list of objects. There are
+3 commands:
+- add obj_name IP
+- del obj_name
+- show obj_name
+
+27/07/2015 11:05:33        SUITE_DUT_CMD: ?
+27/07/2015 11:05:33     SUITE_DUT_OUTPUT: 
+ show [Mul-choice STRING]: Show/del an object
+ del [Mul-choice STRING]: Show/del an object
+ add [Fixed STRING]: Add an object (name, val)
+ help [Fixed STRING]: show help
+27/07/2015 11:05:33                 INFO: Test Case test_cmdline_sample_commands Result PASSED:
+27/07/2015 11:05:35     SUITE_TESTER_CMD: killall scapy 2>/dev/null; echo tester
+27/07/2015 11:05:35  SUITE_TESTER_OUTPUT: tester
+27/07/2015 11:05:35                 INFO: 
+TEST SUITE ENDED: TestCmdline
